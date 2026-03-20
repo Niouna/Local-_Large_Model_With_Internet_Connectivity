@@ -1,0 +1,52 @@
+# --- Java (IntelliJ IDEA & Maven/Gradle) ---
+.idea/
+*.iml
+*.class
+*.jar
+*.war
+target/
+pom.xml.tag
+*.log
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Python Virtual Environment (关键！忽略整个 .venv) ---
+.venv/
+venv/
+ENV/
+env/
+
+# --- IDEs (VS Code, etc) ---
+.vscode/
+*.swp
+*.swo
+
+# --- OS Files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Secrets (防止泄露 API Key) ---
+# 如果你有 config.properties 或 .env 文件存了密钥，取消下面这行的注释
+# .env
+# config.properties
