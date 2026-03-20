@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本地AI助手 - 管理后台</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="brand">
+            <h1>⚙️ 管理后台</h1>
+        </div>
+        <!-- 主导航：仪表盘、会话、记忆 -->
+        <nav class="tab-nav">
+            <button class="tab-btn active" data-tab="dashboard">仪表盘</button>
+            <button class="tab-btn" data-tab="sessions">会话管理</button>
+            <button class="tab-btn" data-tab="memories">记忆管理</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 仪表盘内容 -->
+        <div id="dashboard" class="tab-content active">
+            <div class="section-header">
+                <h2>系统状态概览</h2>
+            </div>
+
+            <!-- 新增：内部状态切换器 (解决文字过多问题) -->
+            <div class="status-tabs">
+                <div class="status-tab-nav">
+                    <button class="status-tab-btn active" data-status="ollama">Ollama 服务</button>
+                    <button class="status-tab-btn" data-status="session-stats">会话统计</button>
+                    <button class="status-tab-btn" data-status="memory-stats">记忆统计</button>
+                    <button class="status-tab-btn" data-status="snapshot-info">调试快照</button>
+                </div>
+
+                <div class="status-tab-content-wrapper">
+                    <div id="ollama" class="status-panel active">
+                        <h3>Ollama 服务状态</h3>
+                        <div id="ollama-status" class="status-detail">加载中...</div>
+                    </div>
+                    <div id="session-stats" class="status-panel">
+                        <h3>会话统计数据</h3>
+                        <div id="session-stats" class="status-detail">加载中...</div>
+                    </div>
+                    <div id="memory-stats" class="status-panel">
+                        <h3>记忆统计数据</h3>
+                        <div id="memory-stats" class="status-detail">加载中...</div>
+                    </div>
+                    <div id="snapshot-info" class="status-panel">
+                        <h3>调试快照信息</h3>
+                        <div id="snapshot-info" class="status-detail">加载中...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 会话管理内容 -->
+        <div id="sessions" class="tab-content">
+            <div class="section-header">
+                <h2>活跃会话</h2>
+                <div class="toolbar">
+                    <button id="refresh-sessions" class="btn">🔄 刷新</button>
+                </div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>会话ID</th>
+                        <th>模型</th>
+                        <th>轮数</th>
+                        <th>最后活动</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody id="sessions-body">
+                    <tr><td colspan="5">加载中...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 记忆管理内容 -->
+        <div id="memories" class="tab-content">
+            <div class="section-header">
+                <h2>记忆列表</h2>
+                <div class="toolbar">
+                    <button id="refresh-memories" class="btn">🔄 刷新</button>
+                    <button id="clear-all-memories" class="btn danger">🗑️ 清空所有记忆</button>
+                </div>
+            </div>
+
+            <div class="filters">
+                <input type="text" id="filter-session" placeholder="筛选会话ID">
+                <select id="filter-level">
+                    <option value="">所有层级</option>
+                    <option value="1">L1</option>
+                    <option value="2">L2</option>
+                    <option value="3">L3</option>
+                </select>
+                <select id="filter-active">
+                    <option value="">所有状态</option>
+                    <option value="true">活跃</option>
+                    <option value="false">已归档</option>
+                </select>
+                <button id="apply-filter" class="btn">应用筛选</button>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>会话ID</th>
+                        <th>层级</th>
+                        <th>内容</th>
+                        <th>创建时间</th>
+                        <th>活跃</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody id="memories-body">
+                    <tr><td colspan="7">加载中...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="memories-pagination" class="pagination"></div>
+        </div>
+    </main>
+</div>
+
+<!-- 会话详情弹窗 -->
+<div id="session-detail-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="detail-session-id">会话详情</h2>
+        <div id="detail-history"></div>
+        <div id="detail-memory"></div>
+    </div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>

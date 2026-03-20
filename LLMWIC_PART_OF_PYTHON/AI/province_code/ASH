@@ -1,0 +1,68 @@
+[
+  {
+    "code": "WwcJd",
+    "province": "上海市",
+    "city": "上海",
+    "url": "/publish/forecast/ASH/shanghai.html"
+  },
+  {
+    "code": "bwUMl",
+    "province": "上海市",
+    "city": "徐家汇",
+    "url": "/publish/forecast/ASH/xujiahui.html"
+  },
+  {
+    "code": "QtPRO",
+    "province": "上海市",
+    "city": "宝山",
+    "url": "/publish/forecast/ASH/baoshan.html"
+  },
+  {
+    "code": "fndTJ",
+    "province": "上海市",
+    "city": "崇明",
+    "url": "/publish/forecast/ASH/chongming.html"
+  },
+  {
+    "code": "BOoen",
+    "province": "上海市",
+    "city": "奉贤",
+    "url": "/publish/forecast/ASH/fengxian.html"
+  },
+  {
+    "code": "HZYrL",
+    "province": "上海市",
+    "city": "嘉定",
+    "url": "/publish/forecast/ASH/jiading.html"
+  },
+  {
+    "code": "XJLoP",
+    "province": "上海市",
+    "city": "金山",
+    "url": "/publish/forecast/ASH/jinshan.html"
+  },
+  {
+    "code": "atcMf",
+    "province": "上海市",
+    "city": "浦东",
+    "url": "/publish/forecast/ASH/pudong.html"
+  },
+  {
+    "code": "xZqWL",
+    "province": "上海市",
+    "city": "青浦",
+    "url": "/publish/forecast/ASH/qingpu.html"
+  },
+  {
+    "code": "FkyWg",
+    "province": "上海市",
+    "city": "松江",
+    "url": "/publish/forecast/ASH/songjiang.html"
+  },
+  {
+    "code": "ttcsH",
+    "province": "上海市",
+    "city": "闵行",
+    "url": "/publish/forecast/ASH/zuoxing.html"
+  }
+]

@@ -1,0 +1,500 @@
+[
+  {
+    "code": "bSpCz",
+    "province": "湖北省",
+    "city": "武汉",
+    "url": "/publish/forecast/AHB/wuhan.html"
+  },
+  {
+    "code": "Agzls",
+    "province": "湖北省",
+    "city": "鄂州",
+    "url": "/publish/forecast/AHB/ezhou.html"
+  },
+  {
+    "code": "zKHUp",
+    "province": "湖北省",
+    "city": "恩施",
+    "url": "/publish/forecast/AHB/enshi.html"
+  },
+  {
+    "code": "sWCpi",
+    "province": "湖北省",
+    "city": "黄冈",
+    "url": "/publish/forecast/AHB/huanggang.html"
+  },
+  {
+    "code": "MTZwr",
+    "province": "湖北省",
+    "city": "黄石",
+    "url": "/publish/forecast/AHB/huangshi.html"
+  },
+  {
+    "code": "vGwSN",
+    "province": "湖北省",
+    "city": "荆门",
+    "url": "/publish/forecast/AHB/jingmen.html"
+  },
+  {
+    "code": "xBZlA",
+    "province": "湖北省",
+    "city": "荆州",
+    "url": "/publish/forecast/AHB/jingzhou.html"
+  },
+  {
+    "code": "NcQaQ",
+    "province": "湖北省",
+    "city": "麻城",
+    "url": "/publish/forecast/AHB/macheng.html"
+  },
+  {
+    "code": "MKtOV",
+    "province": "湖北省",
+    "city": "潜江",
+    "url": "/publish/forecast/AHB/qianjiang.html"
+  },
+  {
+    "code": "liRVu",
+    "province": "湖北省",
+    "city": "神农架",
+    "url": "/publish/forecast/AHB/shennongjia.html"
+  },
+  {
+    "code": "BREJr",
+    "province": "湖北省",
+    "city": "十堰",
+    "url": "/publish/forecast/AHB/shiyan.html"
+  },
+  {
+    "code": "VHSxv",
+    "province": "湖北省",
+    "city": "随州",
+    "url": "/publish/forecast/AHB/suizhou.html"
+  },
+  {
+    "code": "WxkfH",
+    "province": "湖北省",
+    "city": "天门",
+    "url": "/publish/forecast/AHB/tianmen.html"
+  },
+  {
+    "code": "vAcxm",
+    "province": "湖北省",
+    "city": "仙桃",
+    "url": "/publish/forecast/AHB/xiantao.html"
+  },
+  {
+    "code": "BokVQ",
+    "province": "湖北省",
+    "city": "咸宁",
+    "url": "/publish/forecast/AHB/xianning.html"
+  },
+  {
+    "code": "fTXja",
+    "province": "湖北省",
+    "city": "襄阳",
+    "url": "/publish/forecast/AHB/xiangyang.html"
+  },
+  {
+    "code": "CQLZw",
+    "province": "湖北省",
+    "city": "孝感",
+    "url": "/publish/forecast/AHB/xiaogan.html"
+  },
+  {
+    "code": "ekVpr",
+    "province": "湖北省",
+    "city": "宜昌",
+    "url": "/publish/forecast/AHB/yichang.html"
+  },
+  {
+    "code": "WAkbT",
+    "province": "湖北省",
+    "city": "宜城",
+    "url": "/publish/forecast/AHB/yicheng.html"
+  },
+  {
+    "code": "uGloJ",
+    "province": "湖北省",
+    "city": "枣阳",
+    "url": "/publish/forecast/AHB/zaoyang.html"
+  },
+  {
+    "code": "RMZis",
+    "province": "湖北省",
+    "city": "安陆",
+    "url": "/publish/forecast/AHB/anlu.html"
+  },
+  {
+    "code": "zJfzY",
+    "province": "湖北省",
+    "city": "巴东",
+    "url": "/publish/forecast/AHB/badong.html"
+  },
+  {
+    "code": "oqWyH",
+    "province": "湖北省",
+    "city": "保康",
+    "url": "/publish/forecast/AHB/baokang.html"
+  },
+  {
+    "code": "lfZTF",
+    "province": "湖北省",
+    "city": "蔡甸",
+    "url": "/publish/forecast/AHB/caidian.html"
+  },
+  {
+    "code": "uAZAP",
+    "province": "湖北省",
+    "city": "长阳",
+    "url": "/publish/forecast/AHB/changyang.html"
+  },
+  {
+    "code": "KTWwX",
+    "province": "湖北省",
+    "city": "赤壁",
+    "url": "/publish/forecast/AHB/chibi.html"
+  },
+  {
+    "code": "fYXOt",
+    "province": "湖北省",
+    "city": "崇阳",
+    "url": "/publish/forecast/AHB/chongyang.html"
+  },
+  {
+    "code": "bmINw",
+    "province": "湖北省",
+    "city": "大悟",
+    "url": "/publish/forecast/AHB/dawu.html"
+  },
+  {
+    "code": "LvTkA",
+    "province": "湖北省",
+    "city": "大冶",
+    "url": "/publish/forecast/AHB/daye.html"
+  },
+  {
+    "code": "ztads",
+    "province": "湖北省",
+    "city": "丹江口",
+    "url": "/publish/forecast/AHB/danjiangkou.html"
+  },
+  {
+    "code": "LwXQO",
+    "province": "湖北省",
+    "city": "当阳",
+    "url": "/publish/forecast/AHB/dangyang.html"
+  },
+  {
+    "code": "FEijB",
+    "province": "湖北省",
+    "city": "房县",
+    "url": "/publish/forecast/AHB/fangxian.html"
+  },
+  {
+    "code": "KekHK",
+    "province": "湖北省",
+    "city": "公安",
+    "url": "/publish/forecast/AHB/gongan.html"
+  },
+  {
+    "code": "WjbHS",
+    "province": "湖北省",
+    "city": "谷城",
+    "url": "/publish/forecast/AHB/gucheng.html"
+  },
+  {
+    "code": "Zafip",
+    "province": "湖北省",
+    "city": "广水",
+    "url": "/publish/forecast/AHB/guangshui.html"
+  },
+  {
+    "code": "Kogbd",
+    "province": "湖北省",
+    "city": "汉川",
+    "url": "/publish/forecast/AHB/hanchuan.html"
+  },
+  {
+    "code": "aTFNA",
+    "province": "湖北省",
+    "city": "鹤峰",
+    "url": "/publish/forecast/AHB/hefeng.html"
+  },
+  {
+    "code": "qYxqF",
+    "province": "湖北省",
+    "city": "洪湖",
+    "url": "/publish/forecast/AHB/honghu.html"
+  },
+  {
+    "code": "OYqFU",
+    "province": "湖北省",
+    "city": "红安",
+    "url": "/publish/forecast/AHB/hongan.html"
+  },
+  {
+    "code": "YfzjW",
+    "province": "湖北省",
+    "city": "黄梅",
+    "url": "/publish/forecast/AHB/huangmei.html"
+  },
+  {
+    "code": "Inpll",
+    "province": "湖北省",
+    "city": "黄陂",
+    "url": "/publish/forecast/AHB/huangzuo.html"
+  },
+  {
+    "code": "xyZup",
+    "province": "湖北省",
+    "city": "嘉鱼",
+    "url": "/publish/forecast/AHB/jiayu.html"
+  },
+  {
+    "code": "yShDj",
+    "province": "湖北省",
+    "city": "监利",
+    "url": "/publish/forecast/AHB/jianli.html"
+  },
+  {
+    "code": "SRuMv",
+    "province": "湖北省",
+    "city": "建始",
+    "url": "/publish/forecast/AHB/jianshi.html"
+  },
+  {
+    "code": "Qtbbb",
+    "province": "湖北省",
+    "city": "江陵",
+    "url": "/publish/forecast/AHB/jiangling.html"
+  },
+  {
+    "code": "XiGox",
+    "province": "湖北省",
+    "city": "江夏",
+    "url": "/publish/forecast/AHB/jiangxia.html"
+  },
+  {
+    "code": "zeDBq",
+    "province": "湖北省",
+    "city": "京山",
+    "url": "/publish/forecast/AHB/jingshan.html"
+  },
+  {
+    "code": "NNfJp",
+    "province": "湖北省",
+    "city": "来凤",
+    "url": "/publish/forecast/AHB/laifeng.html"
+  },
+  {
+    "code": "DBJmD",
+    "province": "湖北省",
+    "city": "老河口",
+    "url": "/publish/forecast/AHB/laohekou.html"
+  },
+  {
+    "code": "bLYlG",
+    "province": "湖北省",
+    "city": "利川",
+    "url": "/publish/forecast/AHB/lichuan.html"
+  },
+  {
+    "code": "ieWay",
+    "province": "湖北省",
+    "city": "罗田",
+    "url": "/publish/forecast/AHB/luotian.html"
+  },
+  {
+    "code": "qCEfB",
+    "province": "湖北省",
+    "city": "南漳",
+    "url": "/publish/forecast/AHB/nanzhang.html"
+  },
+  {
+    "code": "NSAwY",
+    "province": "湖北省",
+    "city": "沙洋",
+    "url": "/publish/forecast/AHB/shayang.html"
+  },
+  {
+    "code": "NOyuq",
+    "province": "湖北省",
+    "city": "石首",
+    "url": "/publish/forecast/AHB/shishou.html"
+  },
+  {
+    "code": "CHdCL",
+    "province": "湖北省",
+    "city": "松滋",
+    "url": "/publish/forecast/AHB/songzi.html"
+  },
+  {
+    "code": "zMqDf",
+    "province": "湖北省",
+    "city": "随县",
+    "url": "/publish/forecast/AHB/suixian.html"
+  },
+  {
+    "code": "xhjfq",
+    "province": "湖北省",
+    "city": "通城",
+    "url": "/publish/forecast/AHB/tongcheng.html"
+  },
+  {
+    "code": "xNLyS",
+    "province": "湖北省",
+    "city": "通山",
+    "url": "/publish/forecast/AHB/tongshan.html"
+  },
+  {
+    "code": "pEszq",
+    "province": "湖北省",
+    "city": "团风",
+    "url": "/publish/forecast/AHB/tuanfeng.html"
+  },
+  {
+    "code": "DOsub",
+    "province": "湖北省",
+    "city": "武穴",
+    "url": "/publish/forecast/AHB/wuxue.html"
+  },
+  {
+    "code": "AAHzJ",
+    "province": "湖北省",
+    "city": "五峰",
+    "url": "/publish/forecast/AHB/wufeng.html"
+  },
+  {
+    "code": "KSDOF",
+    "province": "湖北省",
+    "city": "咸丰",
+    "url": "/publish/forecast/AHB/xianfeng.html"
+  },
+  {
+    "code": "QtbbO",
+    "province": "湖北省",
+    "city": "孝昌",
+    "url": "/publish/forecast/AHB/xiaochang.html"
+  },
+  {
+    "code": "RZaJI",
+    "province": "湖北省",
+    "city": "新洲",
+    "url": "/publish/forecast/AHB/xinzhou.html"
+  },
+  {
+    "code": "zevgq",
+    "province": "湖北省",
+    "city": "兴山",
+    "url": "/publish/forecast/AHB/xingshan.html"
+  },
+  {
+    "code": "FufZg",
+    "province": "湖北省",
+    "city": "宣恩",
+    "url": "/publish/forecast/AHB/xuanen.html"
+  },
+  {
+    "code": "vraeg",
+    "province": "湖北省",
+    "city": "阳新",
+    "url": "/publish/forecast/AHB/yangxin.html"
+  },
+  {
+    "code": "hVvAC",
+    "province": "湖北省",
+    "city": "夷陵",
+    "url": "/publish/forecast/AHB/yiling.html"
+  },
+  {
+    "code": "bTPcC",
+    "province": "湖北省",
+    "city": "夷陵三峡",
+    "url": "/publish/forecast/AHB/yilingsanxia.html"
+  },
+  {
+    "code": "JHJWL",
+    "province": "湖北省",
+    "city": "宜都",
+    "url": "/publish/forecast/AHB/yidu.html"
+  },
+  {
+    "code": "aNScZ",
+    "province": "湖北省",
+    "city": "英山",
+    "url": "/publish/forecast/AHB/yingshan.html"
+  },
+  {
+    "code": "rGLMc",
+    "province": "湖北省",
+    "city": "应城",
+    "url": "/publish/forecast/AHB/yingcheng.html"
+  },
+  {
+    "code": "nRCDs",
+    "province": "湖北省",
+    "city": "远安",
+    "url": "/publish/forecast/AHB/yuanan.html"
+  },
+  {
+    "code": "PLBSr",
+    "province": "湖北省",
+    "city": "云梦",
+    "url": "/publish/forecast/AHB/yunmeng.html"
+  },
+  {
+    "code": "dqXoc",
+    "province": "湖北省",
+    "city": "郧西",
+    "url": "/publish/forecast/AHB/yunxi.html"
+  },
+  {
+    "code": "MdlIv",
+    "province": "湖北省",
+    "city": "郧阳",
+    "url": "/publish/forecast/AHB/yunyang.html"
+  },
+  {
+    "code": "Bhwex",
+    "province": "湖北省",
+    "city": "枝江",
+    "url": "/publish/forecast/AHB/zhijiang.html"
+  },
+  {
+    "code": "FLmyq",
+    "province": "湖北省",
+    "city": "钟祥",
+    "url": "/publish/forecast/AHB/zhongxiang.html"
+  },
+  {
+    "code": "ZVetP",
+    "province": "湖北省",
+    "city": "竹山",
+    "url": "/publish/forecast/AHB/zhushan.html"
+  },
+  {
+    "code": "ftxHu",
+    "province": "湖北省",
+    "city": "竹溪",
+    "url": "/publish/forecast/AHB/zhuxi.html"
+  },
+  {
+    "code": "dfWmt",
+    "province": "湖北省",
+    "city": "蕲春",
+    "url": "/publish/forecast/AHB/zuochun.html"
+  },
+  {
+    "code": "HndlP",
+    "province": "湖北省",
+    "city": "浠水",
+    "url": "/publish/forecast/AHB/zuoshui.html"
+  },
+  {
+    "code": "VQNUU",
+    "province": "湖北省",
+    "city": "秭归",
+    "url": "/publish/forecast/AHB/zuogui.html"
+  }
+]

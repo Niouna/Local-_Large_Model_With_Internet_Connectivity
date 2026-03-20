@@ -1,0 +1,998 @@
+[
+  {
+    "code": "yGYHR",
+    "province": "四川省",
+    "city": "成都",
+    "url": "/publish/forecast/ASC/chengdu.html"
+  },
+  {
+    "code": "ujnor",
+    "province": "四川省",
+    "city": "阿坝",
+    "url": "/publish/forecast/ASC/aba.html"
+  },
+  {
+    "code": "UxUlc",
+    "province": "四川省",
+    "city": "巴中",
+    "url": "/publish/forecast/ASC/bazhong.html"
+  },
+  {
+    "code": "OwVVP",
+    "province": "四川省",
+    "city": "达川",
+    "url": "/publish/forecast/ASC/dachuan.html"
+  },
+  {
+    "code": "uEFLb",
+    "province": "四川省",
+    "city": "达州",
+    "url": "/publish/forecast/ASC/dazhou.html"
+  },
+  {
+    "code": "JKQBL",
+    "province": "四川省",
+    "city": "峨眉山",
+    "url": "/publish/forecast/ASC/emeishan.html"
+  },
+  {
+    "code": "EvJZp",
+    "province": "四川省",
+    "city": "甘孜",
+    "url": "/publish/forecast/ASC/ganzi.html"
+  },
+  {
+    "code": "zJhEo",
+    "province": "四川省",
+    "city": "广安",
+    "url": "/publish/forecast/ASC/guangan.html"
+  },
+  {
+    "code": "FoeFd",
+    "province": "四川省",
+    "city": "广安区",
+    "url": "/publish/forecast/ASC/guanganqu.html"
+  },
+  {
+    "code": "OwVIj",
+    "province": "四川省",
+    "city": "广元",
+    "url": "/publish/forecast/ASC/guangyuan.html"
+  },
+  {
+    "code": "YuAXe",
+    "province": "四川省",
+    "city": "乐山",
+    "url": "/publish/forecast/ASC/leshan.html"
+  },
+  {
+    "code": "kSbRT",
+    "province": "四川省",
+    "city": "凉山",
+    "url": "/publish/forecast/ASC/liangshan.html"
+  },
+  {
+    "code": "aHQGR",
+    "province": "四川省",
+    "city": "罗江",
+    "url": "/publish/forecast/ASC/luojiang.html"
+  },
+  {
+    "code": "zkdYW",
+    "province": "四川省",
+    "city": "眉山",
+    "url": "/publish/forecast/ASC/meishan.html"
+  },
+  {
+    "code": "GcFwG",
+    "province": "四川省",
+    "city": "绵阳",
+    "url": "/publish/forecast/ASC/mianyang.html"
+  },
+  {
+    "code": "vihpz",
+    "province": "四川省",
+    "city": "南充",
+    "url": "/publish/forecast/ASC/nanchong.html"
+  },
+  {
+    "code": "wNtyv",
+    "province": "四川省",
+    "city": "内江",
+    "url": "/publish/forecast/ASC/neijiang.html"
+  },
+  {
+    "code": "jrDgO",
+    "province": "四川省",
+    "city": "攀枝花",
+    "url": "/publish/forecast/ASC/panzhihua.html"
+  },
+  {
+    "code": "pcHfo",
+    "province": "四川省",
+    "city": "遂宁",
+    "url": "/publish/forecast/ASC/suining.html"
+  },
+  {
+    "code": "Whzpi",
+    "province": "四川省",
+    "city": "西昌",
+    "url": "/publish/forecast/ASC/xichang.html"
+  },
+  {
+    "code": "MfnxC",
+    "province": "四川省",
+    "city": "雅安",
+    "url": "/publish/forecast/ASC/yaan.html"
+  },
+  {
+    "code": "AVVPj",
+    "province": "四川省",
+    "city": "资阳",
+    "url": "/publish/forecast/ASC/ziyang.html"
+  },
+  {
+    "code": "MIIAp",
+    "province": "四川省",
+    "city": "自贡",
+    "url": "/publish/forecast/ASC/zigong.html"
+  },
+  {
+    "code": "YIwsD",
+    "province": "四川省",
+    "city": "泸县",
+    "url": "/publish/forecast/ASC/zuoxian2.html"
+  },
+  {
+    "code": "TuuMx",
+    "province": "四川省",
+    "city": "安岳",
+    "url": "/publish/forecast/ASC/anyue.html"
+  },
+  {
+    "code": "wCrVC",
+    "province": "四川省",
+    "city": "安州",
+    "url": "/publish/forecast/ASC/anzhou.html"
+  },
+  {
+    "code": "QYPTJ",
+    "province": "四川省",
+    "city": "巴塘",
+    "url": "/publish/forecast/ASC/batang.html"
+  },
+  {
+    "code": "BSGFT",
+    "province": "四川省",
+    "city": "白玉",
+    "url": "/publish/forecast/ASC/baiyu.html"
+  },
+  {
+    "code": "fbWMU",
+    "province": "四川省",
+    "city": "宝兴",
+    "url": "/publish/forecast/ASC/baoxing.html"
+  },
+  {
+    "code": "Xgqiu",
+    "province": "四川省",
+    "city": "北川",
+    "url": "/publish/forecast/ASC/beichuan.html"
+  },
+  {
+    "code": "rlCwh",
+    "province": "四川省",
+    "city": "布拖",
+    "url": "/publish/forecast/ASC/butuo.html"
+  },
+  {
+    "code": "QNApE",
+    "province": "四川省",
+    "city": "苍溪",
+    "url": "/publish/forecast/ASC/cangxi.html"
+  },
+  {
+    "code": "CXrGz",
+    "province": "四川省",
+    "city": "长宁",
+    "url": "/publish/forecast/ASC/changning.html"
+  },
+  {
+    "code": "VPihc",
+    "province": "四川省",
+    "city": "崇州",
+    "url": "/publish/forecast/ASC/chongzhou.html"
+  },
+  {
+    "code": "HUYio",
+    "province": "四川省",
+    "city": "大邑",
+    "url": "/publish/forecast/ASC/dayi.html"
+  },
+  {
+    "code": "wQKcH",
+    "province": "四川省",
+    "city": "大英",
+    "url": "/publish/forecast/ASC/daying.html"
+  },
+  {
+    "code": "mFxpi",
+    "province": "四川省",
+    "city": "大竹",
+    "url": "/publish/forecast/ASC/dazhu.html"
+  },
+  {
+    "code": "TgXGK",
+    "province": "四川省",
+    "city": "丹巴",
+    "url": "/publish/forecast/ASC/danba.html"
+  },
+  {
+    "code": "TEect",
+    "province": "四川省",
+    "city": "丹棱",
+    "url": "/publish/forecast/ASC/danleng.html"
+  },
+  {
+    "code": "Cirzd",
+    "province": "四川省",
+    "city": "稻城",
+    "url": "/publish/forecast/ASC/daocheng.html"
+  },
+  {
+    "code": "ISnyf",
+    "province": "四川省",
+    "city": "道孚",
+    "url": "/publish/forecast/ASC/daozuo.html"
+  },
+  {
+    "code": "QVWfY",
+    "province": "四川省",
+    "city": "德昌",
+    "url": "/publish/forecast/ASC/dechang.html"
+  },
+  {
+    "code": "BLtuX",
+    "province": "四川省",
+    "city": "德格",
+    "url": "/publish/forecast/ASC/dege.html"
+  },
+  {
+    "code": "QFQLG",
+    "province": "四川省",
+    "city": "德阳",
+    "url": "/publish/forecast/ASC/deyang.html"
+  },
+  {
+    "code": "gPeiI",
+    "province": "四川省",
+    "city": "得荣",
+    "url": "/publish/forecast/ASC/derong.html"
+  },
+  {
+    "code": "GrSbA",
+    "province": "四川省",
+    "city": "都江堰",
+    "url": "/publish/forecast/ASC/dujiangyan.html"
+  },
+  {
+    "code": "SlKXy",
+    "province": "四川省",
+    "city": "峨边",
+    "url": "/publish/forecast/ASC/ebian.html"
+  },
+  {
+    "code": "EuzbB",
+    "province": "四川省",
+    "city": "峨眉",
+    "url": "/publish/forecast/ASC/emei.html"
+  },
+  {
+    "code": "bmhEc",
+    "province": "四川省",
+    "city": "富顺",
+    "url": "/publish/forecast/ASC/fushun.html"
+  },
+  {
+    "code": "sXvuQ",
+    "province": "四川省",
+    "city": "甘洛",
+    "url": "/publish/forecast/ASC/ganluo.html"
+  },
+  {
+    "code": "ChpSp",
+    "province": "四川省",
+    "city": "高县",
+    "url": "/publish/forecast/ASC/gaoxian.html"
+  },
+  {
+    "code": "JkbCa",
+    "province": "四川省",
+    "city": "古蔺",
+    "url": "/publish/forecast/ASC/guzuo.html"
+  },
+  {
+    "code": "YXpHm",
+    "province": "四川省",
+    "city": "广汉",
+    "url": "/publish/forecast/ASC/guanghan.html"
+  },
+  {
+    "code": "fCUHs",
+    "province": "四川省",
+    "city": "汉源",
+    "url": "/publish/forecast/ASC/hanyuan.html"
+  },
+  {
+    "code": "DprjI",
+    "province": "四川省",
+    "city": "合江",
+    "url": "/publish/forecast/ASC/hejiang.html"
+  },
+  {
+    "code": "laiax",
+    "province": "四川省",
+    "city": "黑水",
+    "url": "/publish/forecast/ASC/heishui.html"
+  },
+  {
+    "code": "xWemk",
+    "province": "四川省",
+    "city": "洪雅",
+    "url": "/publish/forecast/ASC/hongya.html"
+  },
+  {
+    "code": "sCzWb",
+    "province": "四川省",
+    "city": "红原",
+    "url": "/publish/forecast/ASC/hongyuan.html"
+  },
+  {
+    "code": "EjrYd",
+    "province": "四川省",
+    "city": "华蓥",
+    "url": "/publish/forecast/ASC/huazuo.html"
+  },
+  {
+    "code": "QcLmg",
+    "province": "四川省",
+    "city": "会东",
+    "url": "/publish/forecast/ASC/huidong.html"
+  },
+  {
+    "code": "sEwty",
+    "province": "四川省",
+    "city": "会理城区",
+    "url": "/publish/forecast/ASC/huilichengqu.html"
+  },
+  {
+    "code": "XgNyH",
+    "province": "四川省",
+    "city": "夹江",
+    "url": "/publish/forecast/ASC/jiajiang.html"
+  },
+  {
+    "code": "IhZxf",
+    "province": "四川省",
+    "city": "简阳",
+    "url": "/publish/forecast/ASC/jianyang.html"
+  },
+  {
+    "code": "MfaOt",
+    "province": "四川省",
+    "city": "剑阁",
+    "url": "/publish/forecast/ASC/jiange.html"
+  },
+  {
+    "code": "EcUZo",
+    "province": "四川省",
+    "city": "江安",
+    "url": "/publish/forecast/ASC/jiangan.html"
+  },
+  {
+    "code": "YaiqO",
+    "province": "四川省",
+    "city": "江油",
+    "url": "/publish/forecast/ASC/jiangyou.html"
+  },
+  {
+    "code": "ngpCL",
+    "province": "四川省",
+    "city": "金川",
+    "url": "/publish/forecast/ASC/jinchuan.html"
+  },
+  {
+    "code": "udKik",
+    "province": "四川省",
+    "city": "金堂",
+    "url": "/publish/forecast/ASC/jintang.html"
+  },
+  {
+    "code": "kJJlc",
+    "province": "四川省",
+    "city": "金阳",
+    "url": "/publish/forecast/ASC/jinyang.html"
+  },
+  {
+    "code": "XkJdi",
+    "province": "四川省",
+    "city": "井研",
+    "url": "/publish/forecast/ASC/jingyan.html"
+  },
+  {
+    "code": "xXGPT",
+    "province": "四川省",
+    "city": "九龙",
+    "url": "/publish/forecast/ASC/jiulong.html"
+  },
+  {
+    "code": "YZuzT",
+    "province": "四川省",
+    "city": "九寨沟",
+    "url": "/publish/forecast/ASC/jiuzhaigou.html"
+  },
+  {
+    "code": "Qdtso",
+    "province": "四川省",
+    "city": "开江",
+    "url": "/publish/forecast/ASC/kaijiang.html"
+  },
+  {
+    "code": "qsqTU",
+    "province": "四川省",
+    "city": "康定",
+    "url": "/publish/forecast/ASC/kangding.html"
+  },
+  {
+    "code": "YStkV",
+    "province": "四川省",
+    "city": "乐至",
+    "url": "/publish/forecast/ASC/lezhi.html"
+  },
+  {
+    "code": "UtzFE",
+    "province": "四川省",
+    "city": "雷波",
+    "url": "/publish/forecast/ASC/leibo.html"
+  },
+  {
+    "code": "AJBNE",
+    "province": "四川省",
+    "city": "理塘",
+    "url": "/publish/forecast/ASC/litang.html"
+  },
+  {
+    "code": "xYIdl",
+    "province": "四川省",
+    "city": "理县",
+    "url": "/publish/forecast/ASC/lixian.html"
+  },
+  {
+    "code": "EhvQh",
+    "province": "四川省",
+    "city": "邻水",
+    "url": "/publish/forecast/ASC/linshui.html"
+  },
+  {
+    "code": "mqsMW",
+    "province": "四川省",
+    "city": "龙泉驿",
+    "url": "/publish/forecast/ASC/longquanzuo.html"
+  },
+  {
+    "code": "mKxEY",
+    "province": "四川省",
+    "city": "隆昌",
+    "url": "/publish/forecast/ASC/longchang.html"
+  },
+  {
+    "code": "LiKdk",
+    "province": "四川省",
+    "city": "芦山",
+    "url": "/publish/forecast/ASC/lushan.html"
+  },
+  {
+    "code": "wazHg",
+    "province": "四川省",
+    "city": "炉霍",
+    "url": "/publish/forecast/ASC/luhuo.html"
+  },
+  {
+    "code": "qoufd",
+    "province": "四川省",
+    "city": "马边",
+    "url": "/publish/forecast/ASC/mabian.html"
+  },
+  {
+    "code": "FNPwO",
+    "province": "四川省",
+    "city": "马尔康",
+    "url": "/publish/forecast/ASC/maerkang.html"
+  },
+  {
+    "code": "TgyZk",
+    "province": "四川省",
+    "city": "茂县",
+    "url": "/publish/forecast/ASC/maoxian.html"
+  },
+  {
+    "code": "CqHKW",
+    "province": "四川省",
+    "city": "美姑",
+    "url": "/publish/forecast/ASC/meigu.html"
+  },
+  {
+    "code": "GQBkM",
+    "province": "四川省",
+    "city": "米易",
+    "url": "/publish/forecast/ASC/miyi.html"
+  },
+  {
+    "code": "YxJmk",
+    "province": "四川省",
+    "city": "绵竹",
+    "url": "/publish/forecast/ASC/mianzhu.html"
+  },
+  {
+    "code": "tGNAv",
+    "province": "四川省",
+    "city": "冕宁",
+    "url": "/publish/forecast/ASC/mianning.html"
+  },
+  {
+    "code": "FdPbr",
+    "province": "四川省",
+    "city": "名山",
+    "url": "/publish/forecast/ASC/mingshan.html"
+  },
+  {
+    "code": "bmyFo",
+    "province": "四川省",
+    "city": "木里",
+    "url": "/publish/forecast/ASC/muli.html"
+  },
+  {
+    "code": "PVPXd",
+    "province": "四川省",
+    "city": "纳溪",
+    "url": "/publish/forecast/ASC/naxi.html"
+  },
+  {
+    "code": "gGLzn",
+    "province": "四川省",
+    "city": "南部",
+    "url": "/publish/forecast/ASC/nanbu.html"
+  },
+  {
+    "code": "viieF",
+    "province": "四川省",
+    "city": "南江",
+    "url": "/publish/forecast/ASC/nanjiang.html"
+  },
+  {
+    "code": "VNdMl",
+    "province": "四川省",
+    "city": "南溪",
+    "url": "/publish/forecast/ASC/nanxi.html"
+  },
+  {
+    "code": "CGouW",
+    "province": "四川省",
+    "city": "宁南",
+    "url": "/publish/forecast/ASC/ningnan.html"
+  },
+  {
+    "code": "sMDUa",
+    "province": "四川省",
+    "city": "彭山",
+    "url": "/publish/forecast/ASC/pengshan.html"
+  },
+  {
+    "code": "KKktC",
+    "province": "四川省",
+    "city": "彭州",
+    "url": "/publish/forecast/ASC/pengzhou.html"
+  },
+  {
+    "code": "CYTUn",
+    "province": "四川省",
+    "city": "蓬安",
+    "url": "/publish/forecast/ASC/pengan.html"
+  },
+  {
+    "code": "KxrUp",
+    "province": "四川省",
+    "city": "蓬溪",
+    "url": "/publish/forecast/ASC/pengxi.html"
+  },
+  {
+    "code": "VdEKs",
+    "province": "四川省",
+    "city": "平昌",
+    "url": "/publish/forecast/ASC/pingchang.html"
+  },
+  {
+    "code": "jWFfG",
+    "province": "四川省",
+    "city": "平武",
+    "url": "/publish/forecast/ASC/pingwu.html"
+  },
+  {
+    "code": "AVDkL",
+    "province": "四川省",
+    "city": "屏山",
+    "url": "/publish/forecast/ASC/pingshan.html"
+  },
+  {
+    "code": "VpUpp",
+    "province": "四川省",
+    "city": "蒲江",
+    "url": "/publish/forecast/ASC/pujiang.html"
+  },
+  {
+    "code": "uERMU",
+    "province": "四川省",
+    "city": "普格",
+    "url": "/publish/forecast/ASC/puge.html"
+  },
+  {
+    "code": "cRHwZ",
+    "province": "四川省",
+    "city": "前锋",
+    "url": "/publish/forecast/ASC/qianfeng.html"
+  },
+  {
+    "code": "SzgvK",
+    "province": "四川省",
+    "city": "青川",
+    "url": "/publish/forecast/ASC/qingchuan.html"
+  },
+  {
+    "code": "eUOGX",
+    "province": "四川省",
+    "city": "青神",
+    "url": "/publish/forecast/ASC/qingshen.html"
+  },
+  {
+    "code": "rTRMZ",
+    "province": "四川省",
+    "city": "渠县",
+    "url": "/publish/forecast/ASC/quxian.html"
+  },
+  {
+    "code": "zXmXb",
+    "province": "四川省",
+    "city": "壤塘",
+    "url": "/publish/forecast/ASC/rangtang.html"
+  },
+  {
+    "code": "gmXtJ",
+    "province": "四川省",
+    "city": "仁和",
+    "url": "/publish/forecast/ASC/renhe.html"
+  },
+  {
+    "code": "PEnFX",
+    "province": "四川省",
+    "city": "仁寿",
+    "url": "/publish/forecast/ASC/renshou.html"
+  },
+  {
+    "code": "JizVy",
+    "province": "四川省",
+    "city": "荣县",
+    "url": "/publish/forecast/ASC/rongxian.html"
+  },
+  {
+    "code": "PwnmG",
+    "province": "四川省",
+    "city": "若尔盖",
+    "url": "/publish/forecast/ASC/ruoergai.html"
+  },
+  {
+    "code": "pqcSL",
+    "province": "四川省",
+    "city": "三台",
+    "url": "/publish/forecast/ASC/santai.html"
+  },
+  {
+    "code": "jWXIj",
+    "province": "四川省",
+    "city": "色达",
+    "url": "/publish/forecast/ASC/seda.html"
+  },
+  {
+    "code": "eURTs",
+    "province": "四川省",
+    "city": "射洪",
+    "url": "/publish/forecast/ASC/shehong.html"
+  },
+  {
+    "code": "wbIrX",
+    "province": "四川省",
+    "city": "石棉",
+    "url": "/publish/forecast/ASC/shimian.html"
+  },
+  {
+    "code": "ylJwh",
+    "province": "四川省",
+    "city": "石渠",
+    "url": "/publish/forecast/ASC/shiqu.html"
+  },
+  {
+    "code": "AKEUu",
+    "province": "四川省",
+    "city": "什邡",
+    "url": "/publish/forecast/ASC/shizuo.html"
+  },
+  {
+    "code": "grFhZ",
+    "province": "四川省",
+    "city": "双流",
+    "url": "/publish/forecast/ASC/shuangliu.html"
+  },
+  {
+    "code": "niBgS",
+    "province": "四川省",
+    "city": "松潘",
+    "url": "/publish/forecast/ASC/songpan.html"
+  },
+  {
+    "code": "hcVXJ",
+    "province": "四川省",
+    "city": "天全",
+    "url": "/publish/forecast/ASC/tianquan.html"
+  },
+  {
+    "code": "NcACM",
+    "province": "四川省",
+    "city": "通江",
+    "url": "/publish/forecast/ASC/tongjiang.html"
+  },
+  {
+    "code": "CitjR",
+    "province": "四川省",
+    "city": "万源",
+    "url": "/publish/forecast/ASC/wanyuan.html"
+  },
+  {
+    "code": "yxsyn",
+    "province": "四川省",
+    "city": "旺苍",
+    "url": "/publish/forecast/ASC/wangcang.html"
+  },
+  {
+    "code": "YCPlK",
+    "province": "四川省",
+    "city": "威远",
+    "url": "/publish/forecast/ASC/weiyuan.html"
+  },
+  {
+    "code": "xrRlZ",
+    "province": "四川省",
+    "city": "温江",
+    "url": "/publish/forecast/ASC/wenjiang.html"
+  },
+  {
+    "code": "eqeFJ",
+    "province": "四川省",
+    "city": "武胜",
+    "url": "/publish/forecast/ASC/wusheng.html"
+  },
+  {
+    "code": "TEvfR",
+    "province": "四川省",
+    "city": "五通桥",
+    "url": "/publish/forecast/ASC/wutongqiao.html"
+  },
+  {
+    "code": "PtFdY",
+    "province": "四川省",
+    "city": "西充",
+    "url": "/publish/forecast/ASC/xichong.html"
+  },
+  {
+    "code": "eMFmS",
+    "province": "四川省",
+    "city": "喜德",
+    "url": "/publish/forecast/ASC/xide.html"
+  },
+  {
+    "code": "ccAzh",
+    "province": "四川省",
+    "city": "乡城",
+    "url": "/publish/forecast/ASC/xiangcheng.html"
+  },
+  {
+    "code": "ofevQ",
+    "province": "四川省",
+    "city": "小金",
+    "url": "/publish/forecast/ASC/xiaojin.html"
+  },
+  {
+    "code": "XxQIS",
+    "province": "四川省",
+    "city": "新都",
+    "url": "/publish/forecast/ASC/xindu.html"
+  },
+  {
+    "code": "NZCjp",
+    "province": "四川省",
+    "city": "新津",
+    "url": "/publish/forecast/ASC/xinjin.html"
+  },
+  {
+    "code": "wbJUU",
+    "province": "四川省",
+    "city": "新龙",
+    "url": "/publish/forecast/ASC/xinlong.html"
+  },
+  {
+    "code": "ETYKD",
+    "province": "四川省",
+    "city": "兴文",
+    "url": "/publish/forecast/ASC/xingwen.html"
+  },
+  {
+    "code": "HGSgX",
+    "province": "四川省",
+    "city": "叙永",
+    "url": "/publish/forecast/ASC/xuyong.html"
+  },
+  {
+    "code": "harPc",
+    "province": "四川省",
+    "city": "叙州",
+    "url": "/publish/forecast/ASC/xuzhou.html"
+  },
+  {
+    "code": "HVNiO",
+    "province": "四川省",
+    "city": "宣汉",
+    "url": "/publish/forecast/ASC/xuanhan.html"
+  },
+  {
+    "code": "ifYYN",
+    "province": "四川省",
+    "city": "雅江",
+    "url": "/publish/forecast/ASC/yajiang.html"
+  },
+  {
+    "code": "BXVJQ",
+    "province": "四川省",
+    "city": "盐边",
+    "url": "/publish/forecast/ASC/yanbian.html"
+  },
+  {
+    "code": "WvCVx",
+    "province": "四川省",
+    "city": "盐亭",
+    "url": "/publish/forecast/ASC/yanting.html"
+  },
+  {
+    "code": "eXzMT",
+    "province": "四川省",
+    "city": "盐源",
+    "url": "/publish/forecast/ASC/yanyuan.html"
+  },
+  {
+    "code": "hvews",
+    "province": "四川省",
+    "city": "仪陇新政",
+    "url": "/publish/forecast/ASC/yilongxinzheng.html"
+  },
+  {
+    "code": "wfNOD",
+    "province": "四川省",
+    "city": "宜宾",
+    "url": "/publish/forecast/ASC/yibin.html"
+  },
+  {
+    "code": "zzseP",
+    "province": "四川省",
+    "city": "营山",
+    "url": "/publish/forecast/ASC/yingshan.html"
+  },
+  {
+    "code": "mfrlx",
+    "province": "四川省",
+    "city": "越西",
+    "url": "/publish/forecast/ASC/yuexi.html"
+  },
+  {
+    "code": "yFOsJ",
+    "province": "四川省",
+    "city": "岳池",
+    "url": "/publish/forecast/ASC/yuechi.html"
+  },
+  {
+    "code": "keZZE",
+    "province": "四川省",
+    "city": "昭觉",
+    "url": "/publish/forecast/ASC/zhaojue.html"
+  },
+  {
+    "code": "QjPxI",
+    "province": "四川省",
+    "city": "中江",
+    "url": "/publish/forecast/ASC/zhongjiang.html"
+  },
+  {
+    "code": "Ctawc",
+    "province": "四川省",
+    "city": "资中",
+    "url": "/publish/forecast/ASC/zizhong.html"
+  },
+  {
+    "code": "EVoup",
+    "province": "四川省",
+    "city": "邛崃",
+    "url": "/publish/forecast/ASC/zuozuo1.html"
+  },
+  {
+    "code": "NUxad",
+    "province": "四川省",
+    "city": "郫都",
+    "url": "/publish/forecast/ASC/zuodu.html"
+  },
+  {
+    "code": "PQOEg",
+    "province": "四川省",
+    "city": "荥经",
+    "url": "/publish/forecast/ASC/zuojing.html"
+  },
+  {
+    "code": "rEyHe",
+    "province": "四川省",
+    "city": "阆中",
+    "url": "/publish/forecast/ASC/zuozhong.html"
+  },
+  {
+    "code": "SHcpz",
+    "province": "四川省",
+    "city": "沐川",
+    "url": "/publish/forecast/ASC/zuochuan2.html"
+  },
+  {
+    "code": "TSnaG",
+    "province": "四川省",
+    "city": "汶川",
+    "url": "/publish/forecast/ASC/zuochuan1.html"
+  },
+  {
+    "code": "wipjP",
+    "province": "四川省",
+    "city": "泸定",
+    "url": "/publish/forecast/ASC/zuoding.html"
+  },
+  {
+    "code": "nLWnl",
+    "province": "四川省",
+    "city": "泸州",
+    "url": "/publish/forecast/ASC/zuozhou.html"
+  },
+  {
+    "code": "ptXbB",
+    "province": "四川省",
+    "city": "珙县",
+    "url": "/publish/forecast/ASC/zuoxian1.html"
+  },
+  {
+    "code": "ZNNOo",
+    "province": "四川省",
+    "city": "梓潼",
+    "url": "/publish/forecast/ASC/zuozuo2.html"
+  },
+  {
+    "code": "LxiRJ",
+    "province": "四川省",
+    "city": "犍为",
+    "url": "/publish/forecast/ASC/zuowei.html"
+  },
+  {
+    "code": "mfPnS",
+    "province": "四川省",
+    "city": "筠连",
+    "url": "/publish/forecast/ASC/zuolian.html"
+  }
+]

@@ -1,0 +1,506 @@
+[
+  {
+    "code": "ARkZA",
+    "province": "甘肃省",
+    "city": "兰州",
+    "url": "/publish/forecast/AGS/lanzhou.html"
+  },
+  {
+    "code": "KrLRa",
+    "province": "甘肃省",
+    "city": "安定",
+    "url": "/publish/forecast/AGS/anding.html"
+  },
+  {
+    "code": "soZAZ",
+    "province": "甘肃省",
+    "city": "白银",
+    "url": "/publish/forecast/AGS/baiyin.html"
+  },
+  {
+    "code": "rsMQP",
+    "province": "甘肃省",
+    "city": "定西",
+    "url": "/publish/forecast/AGS/dingxi.html"
+  },
+  {
+    "code": "WVCbx",
+    "province": "甘肃省",
+    "city": "嘉峪关",
+    "url": "/publish/forecast/AGS/jiayuguan.html"
+  },
+  {
+    "code": "chtaw",
+    "province": "甘肃省",
+    "city": "金昌",
+    "url": "/publish/forecast/AGS/jinchang.html"
+  },
+  {
+    "code": "vDJSl",
+    "province": "甘肃省",
+    "city": "酒泉",
+    "url": "/publish/forecast/AGS/jiuquan.html"
+  },
+  {
+    "code": "orIIe",
+    "province": "甘肃省",
+    "city": "临夏",
+    "url": "/publish/forecast/AGS/linxia.html"
+  },
+  {
+    "code": "mdYJa",
+    "province": "甘肃省",
+    "city": "陇南",
+    "url": "/publish/forecast/AGS/longnan.html"
+  },
+  {
+    "code": "Yekjp",
+    "province": "甘肃省",
+    "city": "平凉",
+    "url": "/publish/forecast/AGS/pingliang.html"
+  },
+  {
+    "code": "eWgYP",
+    "province": "甘肃省",
+    "city": "庆城",
+    "url": "/publish/forecast/AGS/qingcheng.html"
+  },
+  {
+    "code": "tiBhu",
+    "province": "甘肃省",
+    "city": "天水",
+    "url": "/publish/forecast/AGS/tianshui.html"
+  },
+  {
+    "code": "MyfIx",
+    "province": "甘肃省",
+    "city": "武都",
+    "url": "/publish/forecast/AGS/wudu.html"
+  },
+  {
+    "code": "RfbKS",
+    "province": "甘肃省",
+    "city": "崆峒",
+    "url": "/publish/forecast/AGS/zuozuo.html"
+  },
+  {
+    "code": "fKNTS",
+    "province": "甘肃省",
+    "city": "成县",
+    "url": "/publish/forecast/AGS/chengxian.html"
+  },
+  {
+    "code": "UGwYi",
+    "province": "甘肃省",
+    "city": "崇信",
+    "url": "/publish/forecast/AGS/chongxin.html"
+  },
+  {
+    "code": "ieEXg",
+    "province": "甘肃省",
+    "city": "迭部",
+    "url": "/publish/forecast/AGS/diebu.html"
+  },
+  {
+    "code": "XmAHB",
+    "province": "甘肃省",
+    "city": "东乡",
+    "url": "/publish/forecast/AGS/dongxiang.html"
+  },
+  {
+    "code": "iGqZd",
+    "province": "甘肃省",
+    "city": "敦煌",
+    "url": "/publish/forecast/AGS/dunhuang.html"
+  },
+  {
+    "code": "dUFbz",
+    "province": "甘肃省",
+    "city": "甘谷",
+    "url": "/publish/forecast/AGS/gangu.html"
+  },
+  {
+    "code": "QyZJe",
+    "province": "甘肃省",
+    "city": "甘南",
+    "url": "/publish/forecast/AGS/gannan.html"
+  },
+  {
+    "code": "RBGMm",
+    "province": "甘肃省",
+    "city": "皋兰",
+    "url": "/publish/forecast/AGS/gaolan.html"
+  },
+  {
+    "code": "DRGcR",
+    "province": "甘肃省",
+    "city": "高台",
+    "url": "/publish/forecast/AGS/gaotai.html"
+  },
+  {
+    "code": "NGpEn",
+    "province": "甘肃省",
+    "city": "古浪",
+    "url": "/publish/forecast/AGS/gulang.html"
+  },
+  {
+    "code": "aYAhW",
+    "province": "甘肃省",
+    "city": "瓜州",
+    "url": "/publish/forecast/AGS/guazhou.html"
+  },
+  {
+    "code": "twInP",
+    "province": "甘肃省",
+    "city": "广河",
+    "url": "/publish/forecast/AGS/guanghe.html"
+  },
+  {
+    "code": "jIOPb",
+    "province": "甘肃省",
+    "city": "和政",
+    "url": "/publish/forecast/AGS/hezheng.html"
+  },
+  {
+    "code": "HSTdx",
+    "province": "甘肃省",
+    "city": "合水",
+    "url": "/publish/forecast/AGS/heshui.html"
+  },
+  {
+    "code": "eLDNl",
+    "province": "甘肃省",
+    "city": "合作",
+    "url": "/publish/forecast/AGS/hezuo.html"
+  },
+  {
+    "code": "IqwuL",
+    "province": "甘肃省",
+    "city": "华池",
+    "url": "/publish/forecast/AGS/huachi.html"
+  },
+  {
+    "code": "CUyDL",
+    "province": "甘肃省",
+    "city": "华亭",
+    "url": "/publish/forecast/AGS/huating.html"
+  },
+  {
+    "code": "tpwqY",
+    "province": "甘肃省",
+    "city": "环县",
+    "url": "/publish/forecast/AGS/huanxian.html"
+  },
+  {
+    "code": "GGjbv",
+    "province": "甘肃省",
+    "city": "徽县",
+    "url": "/publish/forecast/AGS/huixian.html"
+  },
+  {
+    "code": "QucKY",
+    "province": "甘肃省",
+    "city": "会宁",
+    "url": "/publish/forecast/AGS/huining.html"
+  },
+  {
+    "code": "DpOZG",
+    "province": "甘肃省",
+    "city": "金塔",
+    "url": "/publish/forecast/AGS/jinta.html"
+  },
+  {
+    "code": "RJphY",
+    "province": "甘肃省",
+    "city": "景泰",
+    "url": "/publish/forecast/AGS/jingtai.html"
+  },
+  {
+    "code": "UFAUV",
+    "province": "甘肃省",
+    "city": "静宁",
+    "url": "/publish/forecast/AGS/jingning.html"
+  },
+  {
+    "code": "rrWtb",
+    "province": "甘肃省",
+    "city": "靖远",
+    "url": "/publish/forecast/AGS/jingyuan.html"
+  },
+  {
+    "code": "ntUYN",
+    "province": "甘肃省",
+    "city": "康乐",
+    "url": "/publish/forecast/AGS/kangle.html"
+  },
+  {
+    "code": "plSyY",
+    "province": "甘肃省",
+    "city": "康县",
+    "url": "/publish/forecast/AGS/kangxian.html"
+  },
+  {
+    "code": "pEuMT",
+    "province": "甘肃省",
+    "city": "礼县",
+    "url": "/publish/forecast/AGS/lixian.html"
+  },
+  {
+    "code": "XmucV",
+    "province": "甘肃省",
+    "city": "两当",
+    "url": "/publish/forecast/AGS/liangdang.html"
+  },
+  {
+    "code": "mRFLX",
+    "province": "甘肃省",
+    "city": "临潭",
+    "url": "/publish/forecast/AGS/lintan.html"
+  },
+  {
+    "code": "xVSVN",
+    "province": "甘肃省",
+    "city": "临泽",
+    "url": "/publish/forecast/AGS/linze.html"
+  },
+  {
+    "code": "DtldQ",
+    "province": "甘肃省",
+    "city": "临洮",
+    "url": "/publish/forecast/AGS/linzuo.html"
+  },
+  {
+    "code": "jxyvf",
+    "province": "甘肃省",
+    "city": "灵台",
+    "url": "/publish/forecast/AGS/lingtai.html"
+  },
+  {
+    "code": "IcnHv",
+    "province": "甘肃省",
+    "city": "陇西",
+    "url": "/publish/forecast/AGS/longxi.html"
+  },
+  {
+    "code": "sUmbw",
+    "province": "甘肃省",
+    "city": "碌曲",
+    "url": "/publish/forecast/AGS/luqu.html"
+  },
+  {
+    "code": "CouTD",
+    "province": "甘肃省",
+    "city": "玛曲",
+    "url": "/publish/forecast/AGS/maqu.html"
+  },
+  {
+    "code": "jbIhR",
+    "province": "甘肃省",
+    "city": "麦积",
+    "url": "/publish/forecast/AGS/maiji.html"
+  },
+  {
+    "code": "rebjh",
+    "province": "甘肃省",
+    "city": "民乐",
+    "url": "/publish/forecast/AGS/minle.html"
+  },
+  {
+    "code": "PWOxb",
+    "province": "甘肃省",
+    "city": "民勤",
+    "url": "/publish/forecast/AGS/minqin.html"
+  },
+  {
+    "code": "lAmjf",
+    "province": "甘肃省",
+    "city": "宁县",
+    "url": "/publish/forecast/AGS/ningxian.html"
+  },
+  {
+    "code": "sSjzn",
+    "province": "甘肃省",
+    "city": "秦安",
+    "url": "/publish/forecast/AGS/qinan.html"
+  },
+  {
+    "code": "RXjrm",
+    "province": "甘肃省",
+    "city": "清水",
+    "url": "/publish/forecast/AGS/qingshui.html"
+  },
+  {
+    "code": "Nvedf",
+    "province": "甘肃省",
+    "city": "庆阳",
+    "url": "/publish/forecast/AGS/qingyang.html"
+  },
+  {
+    "code": "rpbil",
+    "province": "甘肃省",
+    "city": "山丹",
+    "url": "/publish/forecast/AGS/shandan.html"
+  },
+  {
+    "code": "sSFnE",
+    "province": "甘肃省",
+    "city": "肃北",
+    "url": "/publish/forecast/AGS/subei.html"
+  },
+  {
+    "code": "GGFUG",
+    "province": "甘肃省",
+    "city": "肃南",
+    "url": "/publish/forecast/AGS/sunan.html"
+  },
+  {
+    "code": "OWolv",
+    "province": "甘肃省",
+    "city": "天祝",
+    "url": "/publish/forecast/AGS/tianzhu.html"
+  },
+  {
+    "code": "YKHoa",
+    "province": "甘肃省",
+    "city": "通渭",
+    "url": "/publish/forecast/AGS/tongwei.html"
+  },
+  {
+    "code": "tIClD",
+    "province": "甘肃省",
+    "city": "渭源",
+    "url": "/publish/forecast/AGS/weiyuan.html"
+  },
+  {
+    "code": "bPRTE",
+    "province": "甘肃省",
+    "city": "文县",
+    "url": "/publish/forecast/AGS/wenxian.html"
+  },
+  {
+    "code": "BjJyr",
+    "province": "甘肃省",
+    "city": "武山",
+    "url": "/publish/forecast/AGS/wushan.html"
+  },
+  {
+    "code": "LAPGD",
+    "province": "甘肃省",
+    "city": "武威",
+    "url": "/publish/forecast/AGS/wuwei.html"
+  },
+  {
+    "code": "sXwtL",
+    "province": "甘肃省",
+    "city": "西峰",
+    "url": "/publish/forecast/AGS/xifeng.html"
+  },
+  {
+    "code": "sqsLp",
+    "province": "甘肃省",
+    "city": "西和",
+    "url": "/publish/forecast/AGS/xihe.html"
+  },
+  {
+    "code": "SDGOR",
+    "province": "甘肃省",
+    "city": "夏河",
+    "url": "/publish/forecast/AGS/xiahe.html"
+  },
+  {
+    "code": "kQQJv",
+    "province": "甘肃省",
+    "city": "永昌",
+    "url": "/publish/forecast/AGS/yongchang.html"
+  },
+  {
+    "code": "SRPTQ",
+    "province": "甘肃省",
+    "city": "永登",
+    "url": "/publish/forecast/AGS/yongdeng.html"
+  },
+  {
+    "code": "BjkVk",
+    "province": "甘肃省",
+    "city": "永靖",
+    "url": "/publish/forecast/AGS/yongjing.html"
+  },
+  {
+    "code": "FXosK",
+    "province": "甘肃省",
+    "city": "榆中",
+    "url": "/publish/forecast/AGS/yuzhong.html"
+  },
+  {
+    "code": "EydtH",
+    "province": "甘肃省",
+    "city": "玉门",
+    "url": "/publish/forecast/AGS/yumen.html"
+  },
+  {
+    "code": "oMLOo",
+    "province": "甘肃省",
+    "city": "漳县",
+    "url": "/publish/forecast/AGS/zhangxian.html"
+  },
+  {
+    "code": "IZvdZ",
+    "province": "甘肃省",
+    "city": "张家川",
+    "url": "/publish/forecast/AGS/zhangjiachuan.html"
+  },
+  {
+    "code": "nvQbo",
+    "province": "甘肃省",
+    "city": "张掖",
+    "url": "/publish/forecast/AGS/zhangye.html"
+  },
+  {
+    "code": "iBsYQ",
+    "province": "甘肃省",
+    "city": "镇原",
+    "url": "/publish/forecast/AGS/zhenyuan.html"
+  },
+  {
+    "code": "impSE",
+    "province": "甘肃省",
+    "city": "正宁",
+    "url": "/publish/forecast/AGS/zhengning.html"
+  },
+  {
+    "code": "vfKZw",
+    "province": "甘肃省",
+    "city": "舟曲",
+    "url": "/publish/forecast/AGS/zhouqu.html"
+  },
+  {
+    "code": "xClnb",
+    "province": "甘肃省",
+    "city": "庄浪",
+    "url": "/publish/forecast/AGS/zhuanglang.html"
+  },
+  {
+    "code": "SSAdx",
+    "province": "甘肃省",
+    "city": "卓尼",
+    "url": "/publish/forecast/AGS/zhuoni.html"
+  },
+  {
+    "code": "KKIqy",
+    "province": "甘肃省",
+    "city": "岷县",
+    "url": "/publish/forecast/AGS/zuoxian.html"
+  },
+  {
+    "code": "gtMsI",
+    "province": "甘肃省",
+    "city": "泾川",
+    "url": "/publish/forecast/AGS/zuochuan.html"
+  },
+  {
+    "code": "HoerP",
+    "province": "甘肃省",
+    "city": "宕昌",
+    "url": "/publish/forecast/AGS/zuochang.html"
+  }
+]

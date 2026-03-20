@@ -1,0 +1,530 @@
+[
+  {
+    "code": "SKMHP",
+    "province": "贵州省",
+    "city": "贵阳",
+    "url": "/publish/forecast/AGZ/guiyang.html"
+  },
+  {
+    "code": "QJFow",
+    "province": "贵州省",
+    "city": "毕节",
+    "url": "/publish/forecast/AGZ/bijie.html"
+  },
+  {
+    "code": "EHGgf",
+    "province": "贵州省",
+    "city": "都匀",
+    "url": "/publish/forecast/AGZ/duyun.html"
+  },
+  {
+    "code": "NSsev",
+    "province": "贵州省",
+    "city": "凯里",
+    "url": "/publish/forecast/AGZ/kaili.html"
+  },
+  {
+    "code": "neXJx",
+    "province": "贵州省",
+    "city": "六盘水",
+    "url": "/publish/forecast/AGZ/liupanshui.html"
+  },
+  {
+    "code": "NwqhO",
+    "province": "贵州省",
+    "city": "黔东南",
+    "url": "/publish/forecast/AGZ/qiandongnan.html"
+  },
+  {
+    "code": "ikFVR",
+    "province": "贵州省",
+    "city": "黔南",
+    "url": "/publish/forecast/AGZ/qiannan.html"
+  },
+  {
+    "code": "xfRzH",
+    "province": "贵州省",
+    "city": "黔西",
+    "url": "/publish/forecast/AGZ/qianxi.html"
+  },
+  {
+    "code": "pYfUO",
+    "province": "贵州省",
+    "city": "黔西南",
+    "url": "/publish/forecast/AGZ/qianxinan.html"
+  },
+  {
+    "code": "fntCE",
+    "province": "贵州省",
+    "city": "水城",
+    "url": "/publish/forecast/AGZ/shuicheng.html"
+  },
+  {
+    "code": "EaOOy",
+    "province": "贵州省",
+    "city": "铜仁",
+    "url": "/publish/forecast/AGZ/tongren.html"
+  },
+  {
+    "code": "bUbyg",
+    "province": "贵州省",
+    "city": "兴义",
+    "url": "/publish/forecast/AGZ/xingyi.html"
+  },
+  {
+    "code": "mKDbo",
+    "province": "贵州省",
+    "city": "遵义",
+    "url": "/publish/forecast/AGZ/zunyi.html"
+  },
+  {
+    "code": "fBdei",
+    "province": "贵州省",
+    "city": "安龙",
+    "url": "/publish/forecast/AGZ/anlong.html"
+  },
+  {
+    "code": "zYxtY",
+    "province": "贵州省",
+    "city": "安顺",
+    "url": "/publish/forecast/AGZ/anshun.html"
+  },
+  {
+    "code": "SOHSv",
+    "province": "贵州省",
+    "city": "白云",
+    "url": "/publish/forecast/AGZ/baiyun.html"
+  },
+  {
+    "code": "ImmpI",
+    "province": "贵州省",
+    "city": "播州",
+    "url": "/publish/forecast/AGZ/bozhou.html"
+  },
+  {
+    "code": "YkFXJ",
+    "province": "贵州省",
+    "city": "册亨",
+    "url": "/publish/forecast/AGZ/ceheng.html"
+  },
+  {
+    "code": "fuXUe",
+    "province": "贵州省",
+    "city": "长顺",
+    "url": "/publish/forecast/AGZ/changshun.html"
+  },
+  {
+    "code": "Fyafg",
+    "province": "贵州省",
+    "city": "赤水",
+    "url": "/publish/forecast/AGZ/chishui.html"
+  },
+  {
+    "code": "inRGg",
+    "province": "贵州省",
+    "city": "从江",
+    "url": "/publish/forecast/AGZ/congjiang.html"
+  },
+  {
+    "code": "YDxxS",
+    "province": "贵州省",
+    "city": "大方",
+    "url": "/publish/forecast/AGZ/dafang.html"
+  },
+  {
+    "code": "QfiGH",
+    "province": "贵州省",
+    "city": "丹寨",
+    "url": "/publish/forecast/AGZ/danzhai.html"
+  },
+  {
+    "code": "efBXm",
+    "province": "贵州省",
+    "city": "道真",
+    "url": "/publish/forecast/AGZ/daozhen.html"
+  },
+  {
+    "code": "WmIeA",
+    "province": "贵州省",
+    "city": "德江",
+    "url": "/publish/forecast/AGZ/dejiang.html"
+  },
+  {
+    "code": "zqguN",
+    "province": "贵州省",
+    "city": "独山",
+    "url": "/publish/forecast/AGZ/dushan.html"
+  },
+  {
+    "code": "FfkVU",
+    "province": "贵州省",
+    "city": "凤冈",
+    "url": "/publish/forecast/AGZ/fenggang.html"
+  },
+  {
+    "code": "Bgdxr",
+    "province": "贵州省",
+    "city": "福泉",
+    "url": "/publish/forecast/AGZ/fuquan.html"
+  },
+  {
+    "code": "KqlOa",
+    "province": "贵州省",
+    "city": "关岭",
+    "url": "/publish/forecast/AGZ/guanling.html"
+  },
+  {
+    "code": "SzwqB",
+    "province": "贵州省",
+    "city": "贵定",
+    "url": "/publish/forecast/AGZ/guiding.html"
+  },
+  {
+    "code": "CpxKp",
+    "province": "贵州省",
+    "city": "赫章",
+    "url": "/publish/forecast/AGZ/hezhang.html"
+  },
+  {
+    "code": "wWoHD",
+    "province": "贵州省",
+    "city": "花溪",
+    "url": "/publish/forecast/AGZ/huaxi.html"
+  },
+  {
+    "code": "HGQkl",
+    "province": "贵州省",
+    "city": "黄平",
+    "url": "/publish/forecast/AGZ/huangping.html"
+  },
+  {
+    "code": "OOPMd",
+    "province": "贵州省",
+    "city": "惠水",
+    "url": "/publish/forecast/AGZ/huishui.html"
+  },
+  {
+    "code": "WXmQk",
+    "province": "贵州省",
+    "city": "剑河",
+    "url": "/publish/forecast/AGZ/jianhe.html"
+  },
+  {
+    "code": "vHiWQ",
+    "province": "贵州省",
+    "city": "江口",
+    "url": "/publish/forecast/AGZ/jiangkou.html"
+  },
+  {
+    "code": "foFkP",
+    "province": "贵州省",
+    "city": "金沙",
+    "url": "/publish/forecast/AGZ/jinsha.html"
+  },
+  {
+    "code": "zFHzB",
+    "province": "贵州省",
+    "city": "锦屏",
+    "url": "/publish/forecast/AGZ/jinping.html"
+  },
+  {
+    "code": "nhvQy",
+    "province": "贵州省",
+    "city": "开阳",
+    "url": "/publish/forecast/AGZ/kaiyang.html"
+  },
+  {
+    "code": "XFsWa",
+    "province": "贵州省",
+    "city": "雷山",
+    "url": "/publish/forecast/AGZ/leishan.html"
+  },
+  {
+    "code": "DrHHS",
+    "province": "贵州省",
+    "city": "黎平",
+    "url": "/publish/forecast/AGZ/liping.html"
+  },
+  {
+    "code": "QiOmA",
+    "province": "贵州省",
+    "city": "荔波",
+    "url": "/publish/forecast/AGZ/libo.html"
+  },
+  {
+    "code": "XTKOc",
+    "province": "贵州省",
+    "city": "六枝",
+    "url": "/publish/forecast/AGZ/liuzhi.html"
+  },
+  {
+    "code": "oSrTE",
+    "province": "贵州省",
+    "city": "龙里",
+    "url": "/publish/forecast/AGZ/longli.html"
+  },
+  {
+    "code": "ddcVF",
+    "province": "贵州省",
+    "city": "罗甸",
+    "url": "/publish/forecast/AGZ/luodian.html"
+  },
+  {
+    "code": "ZERcU",
+    "province": "贵州省",
+    "city": "麻江",
+    "url": "/publish/forecast/AGZ/majiang.html"
+  },
+  {
+    "code": "hJPOj",
+    "province": "贵州省",
+    "city": "纳雍",
+    "url": "/publish/forecast/AGZ/nayong.html"
+  },
+  {
+    "code": "QGSkq",
+    "province": "贵州省",
+    "city": "盘州",
+    "url": "/publish/forecast/AGZ/panzhou.html"
+  },
+  {
+    "code": "UYZaj",
+    "province": "贵州省",
+    "city": "平坝",
+    "url": "/publish/forecast/AGZ/pingba.html"
+  },
+  {
+    "code": "OpPQk",
+    "province": "贵州省",
+    "city": "平塘",
+    "url": "/publish/forecast/AGZ/pingtang.html"
+  },
+  {
+    "code": "RYLXT",
+    "province": "贵州省",
+    "city": "普安",
+    "url": "/publish/forecast/AGZ/puan.html"
+  },
+  {
+    "code": "xJRLN",
+    "province": "贵州省",
+    "city": "普定",
+    "url": "/publish/forecast/AGZ/puding.html"
+  },
+  {
+    "code": "xCoEZ",
+    "province": "贵州省",
+    "city": "清镇",
+    "url": "/publish/forecast/AGZ/qingzhen.html"
+  },
+  {
+    "code": "rKyfM",
+    "province": "贵州省",
+    "city": "晴隆",
+    "url": "/publish/forecast/AGZ/qinglong.html"
+  },
+  {
+    "code": "avkLt",
+    "province": "贵州省",
+    "city": "仁怀",
+    "url": "/publish/forecast/AGZ/renhuai.html"
+  },
+  {
+    "code": "WfTTa",
+    "province": "贵州省",
+    "city": "三都",
+    "url": "/publish/forecast/AGZ/sandu.html"
+  },
+  {
+    "code": "RMivb",
+    "province": "贵州省",
+    "city": "三穗",
+    "url": "/publish/forecast/AGZ/sansui.html"
+  },
+  {
+    "code": "REBUD",
+    "province": "贵州省",
+    "city": "施秉",
+    "url": "/publish/forecast/AGZ/shibing.html"
+  },
+  {
+    "code": "vHFrl",
+    "province": "贵州省",
+    "city": "石阡",
+    "url": "/publish/forecast/AGZ/shizuo.html"
+  },
+  {
+    "code": "MyiYN",
+    "province": "贵州省",
+    "city": "思南",
+    "url": "/publish/forecast/AGZ/sinan.html"
+  },
+  {
+    "code": "uhZzm",
+    "province": "贵州省",
+    "city": "松桃",
+    "url": "/publish/forecast/AGZ/songtao.html"
+  },
+  {
+    "code": "obmwT",
+    "province": "贵州省",
+    "city": "绥阳",
+    "url": "/publish/forecast/AGZ/suiyang.html"
+  },
+  {
+    "code": "wTTZD",
+    "province": "贵州省",
+    "city": "台江",
+    "url": "/publish/forecast/AGZ/taijiang.html"
+  },
+  {
+    "code": "bFWLw",
+    "province": "贵州省",
+    "city": "天柱",
+    "url": "/publish/forecast/AGZ/tianzhu.html"
+  },
+  {
+    "code": "WQYWd",
+    "province": "贵州省",
+    "city": "桐梓",
+    "url": "/publish/forecast/AGZ/tongzuo.html"
+  },
+  {
+    "code": "pQUcc",
+    "province": "贵州省",
+    "city": "万山",
+    "url": "/publish/forecast/AGZ/wanshan.html"
+  },
+  {
+    "code": "hsyBU",
+    "province": "贵州省",
+    "city": "望谟",
+    "url": "/publish/forecast/AGZ/wangzuo.html"
+  },
+  {
+    "code": "ZCKHS",
+    "province": "贵州省",
+    "city": "威宁",
+    "url": "/publish/forecast/AGZ/weining.html"
+  },
+  {
+    "code": "DdMaA",
+    "province": "贵州省",
+    "city": "瓮安",
+    "url": "/publish/forecast/AGZ/wengan.html"
+  },
+  {
+    "code": "vDKTW",
+    "province": "贵州省",
+    "city": "乌当",
+    "url": "/publish/forecast/AGZ/wudang.html"
+  },
+  {
+    "code": "hlBSz",
+    "province": "贵州省",
+    "city": "务川",
+    "url": "/publish/forecast/AGZ/wuchuan.html"
+  },
+  {
+    "code": "VBttY",
+    "province": "贵州省",
+    "city": "息烽",
+    "url": "/publish/forecast/AGZ/xifeng.html"
+  },
+  {
+    "code": "shhLy",
+    "province": "贵州省",
+    "city": "习水",
+    "url": "/publish/forecast/AGZ/xishui.html"
+  },
+  {
+    "code": "PYXIV",
+    "province": "贵州省",
+    "city": "兴仁",
+    "url": "/publish/forecast/AGZ/xingren.html"
+  },
+  {
+    "code": "qYDqu",
+    "province": "贵州省",
+    "city": "修文",
+    "url": "/publish/forecast/AGZ/xiuwen.html"
+  },
+  {
+    "code": "ERvME",
+    "province": "贵州省",
+    "city": "沿河",
+    "url": "/publish/forecast/AGZ/yanhe.html"
+  },
+  {
+    "code": "XCIcC",
+    "province": "贵州省",
+    "city": "印江",
+    "url": "/publish/forecast/AGZ/yinjiang.html"
+  },
+  {
+    "code": "gtqrp",
+    "province": "贵州省",
+    "city": "余庆",
+    "url": "/publish/forecast/AGZ/yuqing.html"
+  },
+  {
+    "code": "ZgWUE",
+    "province": "贵州省",
+    "city": "玉屏",
+    "url": "/publish/forecast/AGZ/yuping.html"
+  },
+  {
+    "code": "SYwsx",
+    "province": "贵州省",
+    "city": "贞丰",
+    "url": "/publish/forecast/AGZ/zhenfeng.html"
+  },
+  {
+    "code": "wgmRr",
+    "province": "贵州省",
+    "city": "镇宁",
+    "url": "/publish/forecast/AGZ/zhenning.html"
+  },
+  {
+    "code": "FqHqg",
+    "province": "贵州省",
+    "city": "镇远",
+    "url": "/publish/forecast/AGZ/zhenyuan.html"
+  },
+  {
+    "code": "awLJW",
+    "province": "贵州省",
+    "city": "正安",
+    "url": "/publish/forecast/AGZ/zhengan.html"
+  },
+  {
+    "code": "AMmvw",
+    "province": "贵州省",
+    "city": "织金",
+    "url": "/publish/forecast/AGZ/zhijin.html"
+  },
+  {
+    "code": "aMPck",
+    "province": "贵州省",
+    "city": "紫云",
+    "url": "/publish/forecast/AGZ/ziyun.html"
+  },
+  {
+    "code": "PjZmd",
+    "province": "贵州省",
+    "city": "岑巩",
+    "url": "/publish/forecast/AGZ/zuogong.html"
+  },
+  {
+    "code": "xUANG",
+    "province": "贵州省",
+    "city": "湄潭",
+    "url": "/publish/forecast/AGZ/zuotan.html"
+  },
+  {
+    "code": "tpXDH",
+    "province": "贵州省",
+    "city": "榕江",
+    "url": "/publish/forecast/AGZ/zuojiang.html"
+  }
+]

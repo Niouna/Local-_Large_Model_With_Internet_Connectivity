@@ -1,0 +1,74 @@
+[
+  {
+    "code": "eAfAu",
+    "province": "天津市",
+    "city": "黑牛城",
+    "url": "/publish/forecast/ATJ/heiniucheng.html"
+  },
+  {
+    "code": "yqSjH",
+    "province": "天津市",
+    "city": "天津",
+    "url": "/publish/forecast/ATJ/tianjin.html"
+  },
+  {
+    "code": "gxHKu",
+    "province": "天津市",
+    "city": "宝坻",
+    "url": "/publish/forecast/ATJ/baozuo.html"
+  },
+  {
+    "code": "FeuUa",
+    "province": "天津市",
+    "city": "北辰",
+    "url": "/publish/forecast/ATJ/beichen.html"
+  },
+  {
+    "code": "GiGuJ",
+    "province": "天津市",
+    "city": "东丽",
+    "url": "/publish/forecast/ATJ/dongli.html"
+  },
+  {
+    "code": "eiGrT",
+    "province": "天津市",
+    "city": "蓟州",
+    "url": "/publish/forecast/ATJ/jizhou.html"
+  },
+  {
+    "code": "luSKF",
+    "province": "天津市",
+    "city": "津南",
+    "url": "/publish/forecast/ATJ/jinnan.html"
+  },
+  {
+    "code": "RvNCI",
+    "province": "天津市",
+    "city": "静海",
+    "url": "/publish/forecast/ATJ/jinghai.html"
+  },
+  {
+    "code": "mfQUa",
+    "province": "天津市",
+    "city": "宁河",
+    "url": "/publish/forecast/ATJ/ninghe.html"
+  },
+  {
+    "code": "KKlDi",
+    "province": "天津市",
+    "city": "塘沽",
+    "url": "/publish/forecast/ATJ/tanggu.html"
+  },
+  {
+    "code": "AAHhS",
+    "province": "天津市",
+    "city": "武清",
+    "url": "/publish/forecast/ATJ/wuqing.html"
+  },
+  {
+    "code": "rerpc",
+    "province": "天津市",
+    "city": "西青",
+    "url": "/publish/forecast/ATJ/xiqing.html"
+  }
+]

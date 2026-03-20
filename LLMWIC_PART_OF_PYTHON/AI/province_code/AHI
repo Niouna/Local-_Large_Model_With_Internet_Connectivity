@@ -1,0 +1,140 @@
+[
+  {
+    "code": "vmEKa",
+    "province": "海南省",
+    "city": "海口",
+    "url": "/publish/forecast/AHI/haikou.html"
+  },
+  {
+    "code": "AXpuY",
+    "province": "海南省",
+    "city": "白沙",
+    "url": "/publish/forecast/AHI/baisha.html"
+  },
+  {
+    "code": "YoUoQ",
+    "province": "海南省",
+    "city": "保亭",
+    "url": "/publish/forecast/AHI/baoting.html"
+  },
+  {
+    "code": "tjGqH",
+    "province": "海南省",
+    "city": "澄迈",
+    "url": "/publish/forecast/AHI/chengmai.html"
+  },
+  {
+    "code": "yartD",
+    "province": "海南省",
+    "city": "定安",
+    "url": "/publish/forecast/AHI/dingan.html"
+  },
+  {
+    "code": "wAOgT",
+    "province": "海南省",
+    "city": "东方",
+    "url": "/publish/forecast/AHI/dongfang.html"
+  },
+  {
+    "code": "JereN",
+    "province": "海南省",
+    "city": "黄岩岛",
+    "url": "/publish/forecast/AHI/huangyandao.html"
+  },
+  {
+    "code": "joRTe",
+    "province": "海南省",
+    "city": "乐东",
+    "url": "/publish/forecast/AHI/ledong.html"
+  },
+  {
+    "code": "nqaYV",
+    "province": "海南省",
+    "city": "临高",
+    "url": "/publish/forecast/AHI/lingao.html"
+  },
+  {
+    "code": "IDWIl",
+    "province": "海南省",
+    "city": "陵水",
+    "url": "/publish/forecast/AHI/lingshui.html"
+  },
+  {
+    "code": "tOlIq",
+    "province": "海南省",
+    "city": "琼海",
+    "url": "/publish/forecast/AHI/qionghai.html"
+  },
+  {
+    "code": "HgARP",
+    "province": "海南省",
+    "city": "琼中",
+    "url": "/publish/forecast/AHI/qiongzhong.html"
+  },
+  {
+    "code": "iIkAm",
+    "province": "海南省",
+    "city": "三沙",
+    "url": "/publish/forecast/AHI/sansha.html"
+  },
+  {
+    "code": "PtnWb",
+    "province": "海南省",
+    "city": "三亚",
+    "url": "/publish/forecast/AHI/sanya.html"
+  },
+  {
+    "code": "VXTVN",
+    "province": "海南省",
+    "city": "屯昌",
+    "url": "/publish/forecast/AHI/tunchang.html"
+  },
+  {
+    "code": "TtrxS",
+    "province": "海南省",
+    "city": "万宁",
+    "url": "/publish/forecast/AHI/wanning.html"
+  },
+  {
+    "code": "YdxTG",
+    "province": "海南省",
+    "city": "文昌",
+    "url": "/publish/forecast/AHI/wenchang.html"
+  },
+  {
+    "code": "vepbp",
+    "province": "海南省",
+    "city": "西沙",
+    "url": "/publish/forecast/AHI/xisha.html"
+  },
+  {
+    "code": "pFFlS",
+    "province": "海南省",
+    "city": "儋州",
+    "url": "/publish/forecast/AHI/zuozhou.html"
+  },
+  {
+    "code": "vHJCh",
+    "province": "海南省",
+    "city": "昌江",
+    "url": "/publish/forecast/AHI/changjiang.html"
+  },
+  {
+    "code": "QUjbu",
+    "province": "海南省",
+    "city": "南沙",
+    "url": "/publish/forecast/AHI/nansha.html"
+  },
+  {
+    "code": "jtadI",
+    "province": "海南省",
+    "city": "五指山",
+    "url": "/publish/forecast/AHI/wuzhishan.html"
+  },
+  {
+    "code": "LwZAm",
+    "province": "海南省",
+    "city": "中沙",
+    "url": "/publish/forecast/AHI/zhongsha.html"
+  }
+]

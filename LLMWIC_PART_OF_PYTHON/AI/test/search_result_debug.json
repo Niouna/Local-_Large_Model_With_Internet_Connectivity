@@ -1,0 +1,157 @@
+{
+  "query": "目前性价比最高的 ios 移动设备",
+  "search_engine": "bing",
+  "search_time": "2026-02-19T21:32:15.071315",
+  "elapsed_seconds": 111.21,
+  "result_count": 3,
+  "results": [
+    {
+      "title": "2025最建议买的5款苹果iPhone手机！高性价比TOP5苹果 ...",
+      "link": "https://zhuanlan.zhihu.com/p/32703116862",
+      "snippet": "2025年9月4日 · 大家好，我是帅小果，在选购苹果iPhone手机时，我们常会面临许多选择，那么如何从中挑选出最适合自己的那一款呢？ 在这篇攻略中，我将帮助大家找到性价比最高、最符合需求 …",
+      "quality_score": 1.0,
+      "trust_level": "high",
+      "key_facts": {
+        "products": [],
+        "prices": [],
+        "dates": [
+          "2025年9月",
+          "9月4日",
+          "2025年9月4日"
+        ],
+        "data": [],
+        "recommendations": [
+          "2025年9月4日 · 大家好，我是帅小果，在选购苹果iPhone手机时，我们常会面临许多选择，那么如何从中挑选出最适合自己的那一款呢",
+          "在这篇攻略中，我将帮助大家找到性价比最高、最符合需求 …"
+        ]
+      },
+      "info_fragments": [
+        {
+          "type": "date",
+          "content": "2025年9月"
+        },
+        {
+          "type": "date",
+          "content": "9月4日"
+        },
+        {
+          "type": "date",
+          "content": "2025年9月4日"
+        },
+        {
+          "type": "recommendation",
+          "content": "2025年9月4日 · 大家好，我是帅小果，在选购苹果iPhone手机时，我们常会面临许多选择，那么如何从中挑选出最适合自己的那一款呢"
+        },
+        {
+          "type": "recommendation",
+          "content": "在这篇攻略中，我将帮助大家找到性价比最高、最符合需求 …"
+        }
+      ],
+      "info_type": {
+        "is_fact": true,
+        "is_opinion": false,
+        "is_recommendation": true,
+        "has_data": false,
+        "uncertainty_level": "low"
+      }
+    },
+    {
+      "title": "苹果目前性价比最高的一款手机，价格亲民体验极佳，是哪款 ...",
+      "link": "https://post.smzdm.com/p/a507o97k/",
+      "snippet": "2025年9月12日 · 要说目前苹果性价比最高的手机，我毫不犹豫会把票投给 iPhone 17。 它到底香在哪？ 咱们往下看。 显示屏：苹果终于不“抠”了 先说屏幕，这次 iPhone 17 配备的 6.3 英寸超视网膜 XDR …",
+      "quality_score": 0.997,
+      "trust_level": "medium",
+      "key_facts": {
+        "products": [
+          "iPhone 17"
+        ],
+        "prices": [],
+        "dates": [
+          "2025年9月12日",
+          "9月12日",
+          "2025年9月"
+        ],
+        "data": [],
+        "recommendations": [
+          "苹果目前性价比最高的一款手机，价格亲民体验极佳，是哪款",
+          "2025年9月12日 · 要说目前苹果性价比最高的手机，我毫不犹豫会把票投给 iPhone 17"
+        ]
+      },
+      "info_fragments": [
+        {
+          "type": "product",
+          "content": "iPhone 17"
+        },
+        {
+          "type": "date",
+          "content": "2025年9月12日"
+        },
+        {
+          "type": "date",
+          "content": "9月12日"
+        },
+        {
+          "type": "date",
+          "content": "2025年9月"
+        },
+        {
+          "type": "recommendation",
+          "content": "苹果目前性价比最高的一款手机，价格亲民体验极佳，是哪款"
+        },
+        {
+          "type": "recommendation",
+          "content": "2025年9月12日 · 要说目前苹果性价比最高的手机，我毫不犹豫会把票投给 iPhone 17"
+        }
+      ],
+      "info_type": {
+        "is_fact": true,
+        "is_opinion": false,
+        "is_recommendation": false,
+        "has_data": false,
+        "uncertainty_level": "low"
+      }
+    },
+    {
+      "title": "苹果手机别乱买！2025“最值得买”的4款苹果手机，流 …",
+      "link": "https://news.qq.com/rain/a/20250609A09K5E00",
+      "snippet": "",
+      "quality_score": 0.855,
+      "trust_level": "medium",
+      "key_facts": {
+        "products": [],
+        "prices": [],
+        "dates": [],
+        "data": [],
+        "recommendations": [
+          "2025“最值得买”的4款苹果手机，流 …"
+        ]
+      },
+      "info_fragments": [
+        {
+          "type": "recommendation",
+          "content": "2025“最值得买”的4款苹果手机，流 …"
+        }
+      ],
+      "info_type": {
+        "is_fact": false,
+        "is_opinion": false,
+        "is_recommendation": true,
+        "has_data": false,
+        "uncertainty_level": "low"
+      }
+    }
+  ],
+  "cross_validation": {
+    "consistent_facts": [
+      "多来源确认日期：2025年9月"
+    ],
+    "conflicting_facts": [
+      "单一来源：iPhone 17"
+    ],
+    "confidence": "medium",
+    "source_count": 3
+  },
+  "summary_for_llm": "【核心产品】iPhone 17\n【推荐观点】2025年9月4日 · 大家好，我是帅小果，在选购苹果iPhone手机时，我们常会面临许多选择，那么如何从中挑选出最适合...\n\n【搜索来源】共3个\n  1. [high] 2025最建议买的5款苹果iPhone手机！高性价比TOP5苹果 ... (质量分：1.00)\n  2. [medium] 苹果目前性价比最高的一款手机，价格亲民体验极佳，是哪款 ... (质量分：1.00)\n  3. [medium] 苹果手机别乱买！2025“最值得买”的4款苹果手机，流 … (质量分：0.85)\n\n【一致信息】\n  • 多来源确认日期：2025年9月",
+  "note_for_llm": "搜索时间：2026年02月 | 信息来源：3个网页 | 信息置信度：medium",
+  "status": "success"
+}

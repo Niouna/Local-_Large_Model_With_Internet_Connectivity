@@ -1,0 +1,314 @@
+[
+  {
+    "code": "mxFBj",
+    "province": "吉林省",
+    "city": "长春",
+    "url": "/publish/forecast/AJL/changchun.html"
+  },
+  {
+    "code": "ktvDN",
+    "province": "吉林省",
+    "city": "白城",
+    "url": "/publish/forecast/AJL/baicheng.html"
+  },
+  {
+    "code": "nFNOH",
+    "province": "吉林省",
+    "city": "白山",
+    "url": "/publish/forecast/AJL/baishan.html"
+  },
+  {
+    "code": "bQxQX",
+    "province": "吉林省",
+    "city": "吉林城郊",
+    "url": "/publish/forecast/AJL/jilinchengjiao.html"
+  },
+  {
+    "code": "oQKCU",
+    "province": "吉林省",
+    "city": "吉林乌拉",
+    "url": "/publish/forecast/AJL/jilin.html"
+  },
+  {
+    "code": "qTfcE",
+    "province": "吉林省",
+    "city": "集安",
+    "url": "/publish/forecast/AJL/jian.html"
+  },
+  {
+    "code": "pSYcD",
+    "province": "吉林省",
+    "city": "辽源",
+    "url": "/publish/forecast/AJL/liaoyuan.html"
+  },
+  {
+    "code": "aEizR",
+    "province": "吉林省",
+    "city": "梅河口",
+    "url": "/publish/forecast/AJL/meihekou.html"
+  },
+  {
+    "code": "UIlgs",
+    "province": "吉林省",
+    "city": "四平",
+    "url": "/publish/forecast/AJL/siping.html"
+  },
+  {
+    "code": "jJpzl",
+    "province": "吉林省",
+    "city": "松原",
+    "url": "/publish/forecast/AJL/songyuan.html"
+  },
+  {
+    "code": "LaBrf",
+    "province": "吉林省",
+    "city": "通化",
+    "url": "/publish/forecast/AJL/tonghua.html"
+  },
+  {
+    "code": "QHZhm",
+    "province": "吉林省",
+    "city": "延边",
+    "url": "/publish/forecast/AJL/yanbian.html"
+  },
+  {
+    "code": "SgNIn",
+    "province": "吉林省",
+    "city": "延吉",
+    "url": "/publish/forecast/AJL/yanji.html"
+  },
+  {
+    "code": "svLkX",
+    "province": "吉林省",
+    "city": "珲春",
+    "url": "/publish/forecast/AJL/zuochun.html"
+  },
+  {
+    "code": "Eanln",
+    "province": "吉林省",
+    "city": "桦甸",
+    "url": "/publish/forecast/AJL/zuodian.html"
+  },
+  {
+    "code": "sKOvI",
+    "province": "吉林省",
+    "city": "安图",
+    "url": "/publish/forecast/AJL/antu.html"
+  },
+  {
+    "code": "rZsMv",
+    "province": "吉林省",
+    "city": "长白",
+    "url": "/publish/forecast/AJL/changbai.html"
+  },
+  {
+    "code": "oLJTA",
+    "province": "吉林省",
+    "city": "长岭",
+    "url": "/publish/forecast/AJL/changling.html"
+  },
+  {
+    "code": "yHPvq",
+    "province": "吉林省",
+    "city": "大安",
+    "url": "/publish/forecast/AJL/daan.html"
+  },
+  {
+    "code": "biKXr",
+    "province": "吉林省",
+    "city": "德惠",
+    "url": "/publish/forecast/AJL/dehui.html"
+  },
+  {
+    "code": "yGbVo",
+    "province": "吉林省",
+    "city": "东丰",
+    "url": "/publish/forecast/AJL/dongfeng.html"
+  },
+  {
+    "code": "VVKCO",
+    "province": "吉林省",
+    "city": "东岗",
+    "url": "/publish/forecast/AJL/donggang.html"
+  },
+  {
+    "code": "ZgUQB",
+    "province": "吉林省",
+    "city": "敦化",
+    "url": "/publish/forecast/AJL/dunhua.html"
+  },
+  {
+    "code": "jeQFa",
+    "province": "吉林省",
+    "city": "二道",
+    "url": "/publish/forecast/AJL/erdao.html"
+  },
+  {
+    "code": "PHfqQ",
+    "province": "吉林省",
+    "city": "扶余",
+    "url": "/publish/forecast/AJL/fuyu.html"
+  },
+  {
+    "code": "HRRIh",
+    "province": "吉林省",
+    "city": "抚松",
+    "url": "/publish/forecast/AJL/fusong.html"
+  },
+  {
+    "code": "OHlxo",
+    "province": "吉林省",
+    "city": "公主岭",
+    "url": "/publish/forecast/AJL/gongzhuling.html"
+  },
+  {
+    "code": "VEYqP",
+    "province": "吉林省",
+    "city": "和龙",
+    "url": "/publish/forecast/AJL/helong.html"
+  },
+  {
+    "code": "pzlTe",
+    "province": "吉林省",
+    "city": "辉南",
+    "url": "/publish/forecast/AJL/huinan.html"
+  },
+  {
+    "code": "MZJvo",
+    "province": "吉林省",
+    "city": "靖宇",
+    "url": "/publish/forecast/AJL/jingyu.html"
+  },
+  {
+    "code": "NSawy",
+    "province": "吉林省",
+    "city": "九台",
+    "url": "/publish/forecast/AJL/jiutai.html"
+  },
+  {
+    "code": "rtLqz",
+    "province": "吉林省",
+    "city": "梨树",
+    "url": "/publish/forecast/AJL/lishu.html"
+  },
+  {
+    "code": "YSNnc",
+    "province": "吉林省",
+    "city": "临江",
+    "url": "/publish/forecast/AJL/linjiang.html"
+  },
+  {
+    "code": "nBBbT",
+    "province": "吉林省",
+    "city": "柳河",
+    "url": "/publish/forecast/AJL/liuhe.html"
+  },
+  {
+    "code": "YIufU",
+    "province": "吉林省",
+    "city": "龙井",
+    "url": "/publish/forecast/AJL/longjing.html"
+  },
+  {
+    "code": "wTAnf",
+    "province": "吉林省",
+    "city": "农安",
+    "url": "/publish/forecast/AJL/nongan.html"
+  },
+  {
+    "code": "vIHTg",
+    "province": "吉林省",
+    "city": "磐石",
+    "url": "/publish/forecast/AJL/panshi.html"
+  },
+  {
+    "code": "xUMET",
+    "province": "吉林省",
+    "city": "乾安",
+    "url": "/publish/forecast/AJL/qianan.html"
+  },
+  {
+    "code": "JWcDH",
+    "province": "吉林省",
+    "city": "前郭",
+    "url": "/publish/forecast/AJL/qianguo.html"
+  },
+  {
+    "code": "vGcsn",
+    "province": "吉林省",
+    "city": "舒兰",
+    "url": "/publish/forecast/AJL/shulan.html"
+  },
+  {
+    "code": "ZAyGR",
+    "province": "吉林省",
+    "city": "双辽",
+    "url": "/publish/forecast/AJL/shuangliao.html"
+  },
+  {
+    "code": "DPsgS",
+    "province": "吉林省",
+    "city": "双阳",
+    "url": "/publish/forecast/AJL/shuangyang.html"
+  },
+  {
+    "code": "bVSUm",
+    "province": "吉林省",
+    "city": "通化县",
+    "url": "/publish/forecast/AJL/tonghuaxian.html"
+  },
+  {
+    "code": "cdzFO",
+    "province": "吉林省",
+    "city": "通榆",
+    "url": "/publish/forecast/AJL/tongyu.html"
+  },
+  {
+    "code": "hulhW",
+    "province": "吉林省",
+    "city": "图们",
+    "url": "/publish/forecast/AJL/tumen.html"
+  },
+  {
+    "code": "DuMLb",
+    "province": "吉林省",
+    "city": "汪清",
+    "url": "/publish/forecast/AJL/wangqing.html"
+  },
+  {
+    "code": "HHeks",
+    "province": "吉林省",
+    "city": "伊通",
+    "url": "/publish/forecast/AJL/yitong.html"
+  },
+  {
+    "code": "ysQUB",
+    "province": "吉林省",
+    "city": "永吉",
+    "url": "/publish/forecast/AJL/yongji.html"
+  },
+  {
+    "code": "pOntg",
+    "province": "吉林省",
+    "city": "榆树",
+    "url": "/publish/forecast/AJL/yushu.html"
+  },
+  {
+    "code": "fboAj",
+    "province": "吉林省",
+    "city": "镇赉",
+    "url": "/publish/forecast/AJL/zhenzuo.html"
+  },
+  {
+    "code": "YWjdQ",
+    "province": "吉林省",
+    "city": "洮南",
+    "url": "/publish/forecast/AJL/zuonan.html"
+  },
+  {
+    "code": "BneiY",
+    "province": "吉林省",
+    "city": "蛟河",
+    "url": "/publish/forecast/AJL/zuohe.html"
+  }
+]

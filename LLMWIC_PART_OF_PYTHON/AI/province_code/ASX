@@ -1,0 +1,680 @@
+[
+  {
+    "code": "jmHMK",
+    "province": "山西省",
+    "city": "太原",
+    "url": "/publish/forecast/ASX/taiyuan.html"
+  },
+  {
+    "code": "dwSMC",
+    "province": "山西省",
+    "city": "长治",
+    "url": "/publish/forecast/ASX/changzhi.html"
+  },
+  {
+    "code": "VZgct",
+    "province": "山西省",
+    "city": "大同",
+    "url": "/publish/forecast/ASX/datong.html"
+  },
+  {
+    "code": "VKljS",
+    "province": "山西省",
+    "city": "晋城",
+    "url": "/publish/forecast/ASX/jincheng.html"
+  },
+  {
+    "code": "rDABI",
+    "province": "山西省",
+    "city": "黎城",
+    "url": "/publish/forecast/ASX/licheng.html"
+  },
+  {
+    "code": "lOfKI",
+    "province": "山西省",
+    "city": "离石",
+    "url": "/publish/forecast/ASX/lishi.html"
+  },
+  {
+    "code": "nhsiM",
+    "province": "山西省",
+    "city": "临汾",
+    "url": "/publish/forecast/ASX/linfen.html"
+  },
+  {
+    "code": "EQQRH",
+    "province": "山西省",
+    "city": "吕梁",
+    "url": "/publish/forecast/ASX/lvliang.html"
+  },
+  {
+    "code": "ShbMD",
+    "province": "山西省",
+    "city": "平遥",
+    "url": "/publish/forecast/ASX/pingyao.html"
+  },
+  {
+    "code": "FkfwN",
+    "province": "山西省",
+    "city": "上党",
+    "url": "/publish/forecast/ASX/shangdang.html"
+  },
+  {
+    "code": "OtlfP",
+    "province": "山西省",
+    "city": "朔州",
+    "url": "/publish/forecast/ASX/shuozhou.html"
+  },
+  {
+    "code": "NFJlP",
+    "province": "山西省",
+    "city": "文水",
+    "url": "/publish/forecast/ASX/wenshui.html"
+  },
+  {
+    "code": "sxucp",
+    "province": "山西省",
+    "city": "五台山",
+    "url": "/publish/forecast/ASX/wutaishan.html"
+  },
+  {
+    "code": "lkWYa",
+    "province": "山西省",
+    "city": "忻府",
+    "url": "/publish/forecast/ASX/xinfu.html"
+  },
+  {
+    "code": "twMEQ",
+    "province": "山西省",
+    "city": "忻州",
+    "url": "/publish/forecast/ASX/xinzhou.html"
+  },
+  {
+    "code": "rwUnO",
+    "province": "山西省",
+    "city": "阳泉",
+    "url": "/publish/forecast/ASX/yangquan.html"
+  },
+  {
+    "code": "AupnI",
+    "province": "山西省",
+    "city": "运城",
+    "url": "/publish/forecast/ASX/yuncheng.html"
+  },
+  {
+    "code": "KSSLi",
+    "province": "山西省",
+    "city": "安泽",
+    "url": "/publish/forecast/ASX/anze.html"
+  },
+  {
+    "code": "JXVvw",
+    "province": "山西省",
+    "city": "保德",
+    "url": "/publish/forecast/ASX/baode.html"
+  },
+  {
+    "code": "Siujx",
+    "province": "山西省",
+    "city": "长子",
+    "url": "/publish/forecast/ASX/changzi.html"
+  },
+  {
+    "code": "ekOlr",
+    "province": "山西省",
+    "city": "大宁",
+    "url": "/publish/forecast/ASX/daning.html"
+  },
+  {
+    "code": "atrjZ",
+    "province": "山西省",
+    "city": "代县",
+    "url": "/publish/forecast/ASX/daixian.html"
+  },
+  {
+    "code": "NkWQP",
+    "province": "山西省",
+    "city": "定襄",
+    "url": "/publish/forecast/ASX/dingxiang.html"
+  },
+  {
+    "code": "OTNAe",
+    "province": "山西省",
+    "city": "繁峙",
+    "url": "/publish/forecast/ASX/fanzhi.html"
+  },
+  {
+    "code": "zAYzL",
+    "province": "山西省",
+    "city": "方山",
+    "url": "/publish/forecast/ASX/fangshan.html"
+  },
+  {
+    "code": "ZqAPc",
+    "province": "山西省",
+    "city": "汾西",
+    "url": "/publish/forecast/ASX/fenxi.html"
+  },
+  {
+    "code": "SsPhi",
+    "province": "山西省",
+    "city": "汾阳",
+    "url": "/publish/forecast/ASX/fenyang.html"
+  },
+  {
+    "code": "MYXsS",
+    "province": "山西省",
+    "city": "浮山",
+    "url": "/publish/forecast/ASX/fushan.html"
+  },
+  {
+    "code": "RJOci",
+    "province": "山西省",
+    "city": "高平",
+    "url": "/publish/forecast/ASX/gaoping.html"
+  },
+  {
+    "code": "ZCnNp",
+    "province": "山西省",
+    "city": "古交",
+    "url": "/publish/forecast/ASX/gujiao.html"
+  },
+  {
+    "code": "FCrZy",
+    "province": "山西省",
+    "city": "古县",
+    "url": "/publish/forecast/ASX/guxian.html"
+  },
+  {
+    "code": "pbxDH",
+    "province": "山西省",
+    "city": "广灵",
+    "url": "/publish/forecast/ASX/guangling.html"
+  },
+  {
+    "code": "tOgRV",
+    "province": "山西省",
+    "city": "和顺",
+    "url": "/publish/forecast/ASX/heshun.html"
+  },
+  {
+    "code": "oblOm",
+    "province": "山西省",
+    "city": "河津",
+    "url": "/publish/forecast/ASX/hejin.html"
+  },
+  {
+    "code": "HvYyw",
+    "province": "山西省",
+    "city": "河曲",
+    "url": "/publish/forecast/ASX/hequ.html"
+  },
+  {
+    "code": "mwSUY",
+    "province": "山西省",
+    "city": "洪洞",
+    "url": "/publish/forecast/ASX/hongdong.html"
+  },
+  {
+    "code": "ZGhqJ",
+    "province": "山西省",
+    "city": "侯马",
+    "url": "/publish/forecast/ASX/houma.html"
+  },
+  {
+    "code": "kCXTL",
+    "province": "山西省",
+    "city": "壶关",
+    "url": "/publish/forecast/ASX/huguan.html"
+  },
+  {
+    "code": "Ggdzs",
+    "province": "山西省",
+    "city": "怀仁",
+    "url": "/publish/forecast/ASX/huairen.html"
+  },
+  {
+    "code": "uWhuB",
+    "province": "山西省",
+    "city": "浑源",
+    "url": "/publish/forecast/ASX/hunyuan.html"
+  },
+  {
+    "code": "DiJSX",
+    "province": "山西省",
+    "city": "霍州",
+    "url": "/publish/forecast/ASX/huozhou.html"
+  },
+  {
+    "code": "AFVkU",
+    "province": "山西省",
+    "city": "吉县",
+    "url": "/publish/forecast/ASX/jixian.html"
+  },
+  {
+    "code": "ANMfd",
+    "province": "山西省",
+    "city": "尖草坪",
+    "url": "/publish/forecast/ASX/jiancaoping.html"
+  },
+  {
+    "code": "HHUAJ",
+    "province": "山西省",
+    "city": "交城",
+    "url": "/publish/forecast/ASX/jiaocheng.html"
+  },
+  {
+    "code": "RAxFj",
+    "province": "山西省",
+    "city": "交口",
+    "url": "/publish/forecast/ASX/jiaokou.html"
+  },
+  {
+    "code": "KqHyx",
+    "province": "山西省",
+    "city": "介休",
+    "url": "/publish/forecast/ASX/jiexiu.html"
+  },
+  {
+    "code": "ovSsu",
+    "province": "山西省",
+    "city": "晋中",
+    "url": "/publish/forecast/ASX/jinzhong.html"
+  },
+  {
+    "code": "KcsUl",
+    "province": "山西省",
+    "city": "静乐",
+    "url": "/publish/forecast/ASX/jingle.html"
+  },
+  {
+    "code": "bAyTQ",
+    "province": "山西省",
+    "city": "临县",
+    "url": "/publish/forecast/ASX/linxian.html"
+  },
+  {
+    "code": "hGfmL",
+    "province": "山西省",
+    "city": "临猗",
+    "url": "/publish/forecast/ASX/linzuo.html"
+  },
+  {
+    "code": "cyeJN",
+    "province": "山西省",
+    "city": "灵丘",
+    "url": "/publish/forecast/ASX/lingqiu.html"
+  },
+  {
+    "code": "sGCZR",
+    "province": "山西省",
+    "city": "灵石",
+    "url": "/publish/forecast/ASX/lingshi.html"
+  },
+  {
+    "code": "EeGzR",
+    "province": "山西省",
+    "city": "陵川",
+    "url": "/publish/forecast/ASX/lingchuan.html"
+  },
+  {
+    "code": "aKlRm",
+    "province": "山西省",
+    "city": "柳林",
+    "url": "/publish/forecast/ASX/liulin.html"
+  },
+  {
+    "code": "TxZCB",
+    "province": "山西省",
+    "city": "娄烦",
+    "url": "/publish/forecast/ASX/loufan.html"
+  },
+  {
+    "code": "yGPnj",
+    "province": "山西省",
+    "city": "潞城",
+    "url": "/publish/forecast/ASX/lucheng.html"
+  },
+  {
+    "code": "CRNDj",
+    "province": "山西省",
+    "city": "宁武",
+    "url": "/publish/forecast/ASX/ningwu.html"
+  },
+  {
+    "code": "ygqJc",
+    "province": "山西省",
+    "city": "偏关",
+    "url": "/publish/forecast/ASX/pianguan.html"
+  },
+  {
+    "code": "DFvwn",
+    "province": "山西省",
+    "city": "平定",
+    "url": "/publish/forecast/ASX/pingding.html"
+  },
+  {
+    "code": "oJway",
+    "province": "山西省",
+    "city": "平鲁",
+    "url": "/publish/forecast/ASX/pinglu1.html"
+  },
+  {
+    "code": "PFPpH",
+    "province": "山西省",
+    "city": "平陆",
+    "url": "/publish/forecast/ASX/pinglu2.html"
+  },
+  {
+    "code": "jWYMB",
+    "province": "山西省",
+    "city": "平顺",
+    "url": "/publish/forecast/ASX/pingshun.html"
+  },
+  {
+    "code": "mxfxi",
+    "province": "山西省",
+    "city": "蒲县",
+    "url": "/publish/forecast/ASX/puxian.html"
+  },
+  {
+    "code": "gBnmM",
+    "province": "山西省",
+    "city": "祁县",
+    "url": "/publish/forecast/ASX/qixian.html"
+  },
+  {
+    "code": "hvopq",
+    "province": "山西省",
+    "city": "沁水",
+    "url": "/publish/forecast/ASX/qinshui.html"
+  },
+  {
+    "code": "MizAK",
+    "province": "山西省",
+    "city": "沁县",
+    "url": "/publish/forecast/ASX/qinxian.html"
+  },
+  {
+    "code": "UEqUT",
+    "province": "山西省",
+    "city": "沁源",
+    "url": "/publish/forecast/ASX/qinyuan.html"
+  },
+  {
+    "code": "tIwCB",
+    "province": "山西省",
+    "city": "清徐",
+    "url": "/publish/forecast/ASX/qingxu.html"
+  },
+  {
+    "code": "OYMED",
+    "province": "山西省",
+    "city": "曲沃",
+    "url": "/publish/forecast/ASX/quwo.html"
+  },
+  {
+    "code": "KXQMd",
+    "province": "山西省",
+    "city": "山阴",
+    "url": "/publish/forecast/ASX/shanyin.html"
+  },
+  {
+    "code": "tBsIw",
+    "province": "山西省",
+    "city": "神池",
+    "url": "/publish/forecast/ASX/shenchi.html"
+  },
+  {
+    "code": "CEGWS",
+    "province": "山西省",
+    "city": "石楼",
+    "url": "/publish/forecast/ASX/shilou.html"
+  },
+  {
+    "code": "FlXtf",
+    "province": "山西省",
+    "city": "寿阳",
+    "url": "/publish/forecast/ASX/shouyang.html"
+  },
+  {
+    "code": "kfLqv",
+    "province": "山西省",
+    "city": "太谷",
+    "url": "/publish/forecast/ASX/taigu.html"
+  },
+  {
+    "code": "qtSfk",
+    "province": "山西省",
+    "city": "天镇",
+    "url": "/publish/forecast/ASX/tianzhen.html"
+  },
+  {
+    "code": "IUDAF",
+    "province": "山西省",
+    "city": "屯留",
+    "url": "/publish/forecast/ASX/tunliu.html"
+  },
+  {
+    "code": "lSPZr",
+    "province": "山西省",
+    "city": "万荣",
+    "url": "/publish/forecast/ASX/wanrong.html"
+  },
+  {
+    "code": "lWKfw",
+    "province": "山西省",
+    "city": "闻喜",
+    "url": "/publish/forecast/ASX/wenxi.html"
+  },
+  {
+    "code": "zJdqY",
+    "province": "山西省",
+    "city": "武乡",
+    "url": "/publish/forecast/ASX/wuxiang.html"
+  },
+  {
+    "code": "AMKDZ",
+    "province": "山西省",
+    "city": "五台",
+    "url": "/publish/forecast/ASX/wutai.html"
+  },
+  {
+    "code": "vMDNU",
+    "province": "山西省",
+    "city": "五寨",
+    "url": "/publish/forecast/ASX/wuzhai.html"
+  },
+  {
+    "code": "ThJbh",
+    "province": "山西省",
+    "city": "昔阳",
+    "url": "/publish/forecast/ASX/xiyang.html"
+  },
+  {
+    "code": "LetlZ",
+    "province": "山西省",
+    "city": "夏县",
+    "url": "/publish/forecast/ASX/xiaxian.html"
+  },
+  {
+    "code": "ZlvFx",
+    "province": "山西省",
+    "city": "襄汾",
+    "url": "/publish/forecast/ASX/xiangfen.html"
+  },
+  {
+    "code": "WDsDq",
+    "province": "山西省",
+    "city": "襄垣",
+    "url": "/publish/forecast/ASX/xiangyuan.html"
+  },
+  {
+    "code": "fwMED",
+    "province": "山西省",
+    "city": "乡宁",
+    "url": "/publish/forecast/ASX/xiangning.html"
+  },
+  {
+    "code": "hGDQB",
+    "province": "山西省",
+    "city": "小店",
+    "url": "/publish/forecast/ASX/xiaodian2.html"
+  },
+  {
+    "code": "VtRVI",
+    "province": "山西省",
+    "city": "孝义",
+    "url": "/publish/forecast/ASX/xiaoyi.html"
+  },
+  {
+    "code": "wHrOw",
+    "province": "山西省",
+    "city": "新绛",
+    "url": "/publish/forecast/ASX/xinzuo.html"
+  },
+  {
+    "code": "RBGVZ",
+    "province": "山西省",
+    "city": "兴县",
+    "url": "/publish/forecast/ASX/xingxian.html"
+  },
+  {
+    "code": "twIgf",
+    "province": "山西省",
+    "city": "阳城",
+    "url": "/publish/forecast/ASX/yangcheng.html"
+  },
+  {
+    "code": "jLWui",
+    "province": "山西省",
+    "city": "阳高",
+    "url": "/publish/forecast/ASX/yanggao.html"
+  },
+  {
+    "code": "JOoEL",
+    "province": "山西省",
+    "city": "阳曲",
+    "url": "/publish/forecast/ASX/yangqu.html"
+  },
+  {
+    "code": "VXrqE",
+    "province": "山西省",
+    "city": "翼城",
+    "url": "/publish/forecast/ASX/yicheng.html"
+  },
+  {
+    "code": "LVEDc",
+    "province": "山西省",
+    "city": "应县",
+    "url": "/publish/forecast/ASX/yingxian.html"
+  },
+  {
+    "code": "Xmsxf",
+    "province": "山西省",
+    "city": "永和",
+    "url": "/publish/forecast/ASX/yonghe.html"
+  },
+  {
+    "code": "QGpNZ",
+    "province": "山西省",
+    "city": "永济",
+    "url": "/publish/forecast/ASX/yongji.html"
+  },
+  {
+    "code": "cXBlU",
+    "province": "山西省",
+    "city": "右玉",
+    "url": "/publish/forecast/ASX/youyu.html"
+  },
+  {
+    "code": "YZvdq",
+    "province": "山西省",
+    "city": "盂县",
+    "url": "/publish/forecast/ASX/yuxian.html"
+  },
+  {
+    "code": "CKjmA",
+    "province": "山西省",
+    "city": "榆次",
+    "url": "/publish/forecast/ASX/yuci.html"
+  },
+  {
+    "code": "mQwJl",
+    "province": "山西省",
+    "city": "榆社",
+    "url": "/publish/forecast/ASX/yushe.html"
+  },
+  {
+    "code": "HbPQe",
+    "province": "山西省",
+    "city": "垣曲",
+    "url": "/publish/forecast/ASX/yuanqu.html"
+  },
+  {
+    "code": "ENVfK",
+    "province": "山西省",
+    "city": "原平",
+    "url": "/publish/forecast/ASX/yuanping.html"
+  },
+  {
+    "code": "eLCyB",
+    "province": "山西省",
+    "city": "云州",
+    "url": "/publish/forecast/ASX/yunzhou.html"
+  },
+  {
+    "code": "QOTQG",
+    "province": "山西省",
+    "city": "中阳",
+    "url": "/publish/forecast/ASX/zhongyang.html"
+  },
+  {
+    "code": "VFmuE",
+    "province": "山西省",
+    "city": "左权",
+    "url": "/publish/forecast/ASX/zuoquan.html"
+  },
+  {
+    "code": "bkbPS",
+    "province": "山西省",
+    "city": "左云",
+    "url": "/publish/forecast/ASX/zuoyun.html"
+  },
+  {
+    "code": "WVCsi",
+    "province": "山西省",
+    "city": "隰县",
+    "url": "/publish/forecast/ASX/zuoxian2.html"
+  },
+  {
+    "code": "reeTF",
+    "province": "山西省",
+    "city": "芮城",
+    "url": "/publish/forecast/ASX/zuocheng.html"
+  },
+  {
+    "code": "Prpqh",
+    "province": "山西省",
+    "city": "岚县",
+    "url": "/publish/forecast/ASX/zuoxian1.html"
+  },
+  {
+    "code": "ucItd",
+    "province": "山西省",
+    "city": "岢岚",
+    "url": "/publish/forecast/ASX/zuozuo.html"
+  },
+  {
+    "code": "JpoNT",
+    "province": "山西省",
+    "city": "绛县",
+    "url": "/publish/forecast/ASX/zuoxian3.html"
+  },
+  {
+    "code": "FJUIg",
+    "province": "山西省",
+    "city": "稷山",
+    "url": "/publish/forecast/ASX/zuoshan.html"
+  }
+]

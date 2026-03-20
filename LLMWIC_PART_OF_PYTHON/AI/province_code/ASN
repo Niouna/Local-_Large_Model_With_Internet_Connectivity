@@ -1,0 +1,608 @@
+[
+  {
+    "code": "RfjCI",
+    "province": "陕西省",
+    "city": "西安",
+    "url": "/publish/forecast/ASN/xian.html"
+  },
+  {
+    "code": "RprEI",
+    "province": "陕西省",
+    "city": "安康",
+    "url": "/publish/forecast/ASN/ankang.html"
+  },
+  {
+    "code": "jrjXm",
+    "province": "陕西省",
+    "city": "宝鸡",
+    "url": "/publish/forecast/ASN/baoji.html"
+  },
+  {
+    "code": "cASRq",
+    "province": "陕西省",
+    "city": "汉中",
+    "url": "/publish/forecast/ASN/hanzhong.html"
+  },
+  {
+    "code": "IVixd",
+    "province": "陕西省",
+    "city": "秦都",
+    "url": "/publish/forecast/ASN/qindu.html"
+  },
+  {
+    "code": "qbDbK",
+    "province": "陕西省",
+    "city": "商洛",
+    "url": "/publish/forecast/ASN/shangluo.html"
+  },
+  {
+    "code": "bwUtG",
+    "province": "陕西省",
+    "city": "商州",
+    "url": "/publish/forecast/ASN/shangzhou.html"
+  },
+  {
+    "code": "lZvra",
+    "province": "陕西省",
+    "city": "铜川",
+    "url": "/publish/forecast/ASN/tongchuan.html"
+  },
+  {
+    "code": "FXoMd",
+    "province": "陕西省",
+    "city": "咸阳",
+    "url": "/publish/forecast/ASN/xianyang.html"
+  },
+  {
+    "code": "gtpZu",
+    "province": "陕西省",
+    "city": "延安",
+    "url": "/publish/forecast/ASN/yanan.html"
+  },
+  {
+    "code": "eEPbq",
+    "province": "陕西省",
+    "city": "榆林",
+    "url": "/publish/forecast/ASN/yulin.html"
+  },
+  {
+    "code": "XKqRX",
+    "province": "陕西省",
+    "city": "安塞",
+    "url": "/publish/forecast/ASN/ansai.html"
+  },
+  {
+    "code": "eIovq",
+    "province": "陕西省",
+    "city": "白河",
+    "url": "/publish/forecast/ASN/baihe.html"
+  },
+  {
+    "code": "lrIpm",
+    "province": "陕西省",
+    "city": "白水",
+    "url": "/publish/forecast/ASN/baishui.html"
+  },
+  {
+    "code": "oodKU",
+    "province": "陕西省",
+    "city": "彬州",
+    "url": "/publish/forecast/ASN/binzhou.html"
+  },
+  {
+    "code": "NnPsM",
+    "province": "陕西省",
+    "city": "长安",
+    "url": "/publish/forecast/ASN/changan.html"
+  },
+  {
+    "code": "RRVoo",
+    "province": "陕西省",
+    "city": "长武",
+    "url": "/publish/forecast/ASN/changwu.html"
+  },
+  {
+    "code": "XBggT",
+    "province": "陕西省",
+    "city": "陈仓",
+    "url": "/publish/forecast/ASN/chencang.html"
+  },
+  {
+    "code": "aKKWU",
+    "province": "陕西省",
+    "city": "城固",
+    "url": "/publish/forecast/ASN/chenggu.html"
+  },
+  {
+    "code": "QobKK",
+    "province": "陕西省",
+    "city": "澄城",
+    "url": "/publish/forecast/ASN/chengcheng.html"
+  },
+  {
+    "code": "jeBQU",
+    "province": "陕西省",
+    "city": "淳化",
+    "url": "/publish/forecast/ASN/chunhua.html"
+  },
+  {
+    "code": "FvzNQ",
+    "province": "陕西省",
+    "city": "大荔",
+    "url": "/publish/forecast/ASN/dali.html"
+  },
+  {
+    "code": "HrPSf",
+    "province": "陕西省",
+    "city": "丹凤",
+    "url": "/publish/forecast/ASN/danfeng.html"
+  },
+  {
+    "code": "sNYlv",
+    "province": "陕西省",
+    "city": "定边",
+    "url": "/publish/forecast/ASN/dingbian.html"
+  },
+  {
+    "code": "KZHTq",
+    "province": "陕西省",
+    "city": "凤县",
+    "url": "/publish/forecast/ASN/fengxian.html"
+  },
+  {
+    "code": "vNkSA",
+    "province": "陕西省",
+    "city": "凤翔",
+    "url": "/publish/forecast/ASN/fengxiang.html"
+  },
+  {
+    "code": "nXDqS",
+    "province": "陕西省",
+    "city": "佛坪",
+    "url": "/publish/forecast/ASN/foping.html"
+  },
+  {
+    "code": "tcQyi",
+    "province": "陕西省",
+    "city": "扶风",
+    "url": "/publish/forecast/ASN/fufeng.html"
+  },
+  {
+    "code": "Nudny",
+    "province": "陕西省",
+    "city": "府谷",
+    "url": "/publish/forecast/ASN/fugu.html"
+  },
+  {
+    "code": "BpoKt",
+    "province": "陕西省",
+    "city": "富平",
+    "url": "/publish/forecast/ASN/fuping.html"
+  },
+  {
+    "code": "QfWPS",
+    "province": "陕西省",
+    "city": "富县",
+    "url": "/publish/forecast/ASN/fuxian.html"
+  },
+  {
+    "code": "PWPqX",
+    "province": "陕西省",
+    "city": "甘泉",
+    "url": "/publish/forecast/ASN/ganquan.html"
+  },
+  {
+    "code": "FJzCX",
+    "province": "陕西省",
+    "city": "高陵",
+    "url": "/publish/forecast/ASN/gaoling.html"
+  },
+  {
+    "code": "cozJM",
+    "province": "陕西省",
+    "city": "韩城",
+    "url": "/publish/forecast/ASN/hancheng.html"
+  },
+  {
+    "code": "TwYEu",
+    "province": "陕西省",
+    "city": "汉阴",
+    "url": "/publish/forecast/ASN/hanyin.html"
+  },
+  {
+    "code": "GQDFM",
+    "province": "陕西省",
+    "city": "合阳",
+    "url": "/publish/forecast/ASN/heyang.html"
+  },
+  {
+    "code": "cKPRS",
+    "province": "陕西省",
+    "city": "华山",
+    "url": "/publish/forecast/ASN/huashan.html"
+  },
+  {
+    "code": "XMEaY",
+    "province": "陕西省",
+    "city": "华阴",
+    "url": "/publish/forecast/ASN/huayin.html"
+  },
+  {
+    "code": "zVYfc",
+    "province": "陕西省",
+    "city": "华州",
+    "url": "/publish/forecast/ASN/huazhou.html"
+  },
+  {
+    "code": "Iwyeu",
+    "province": "陕西省",
+    "city": "黄陵",
+    "url": "/publish/forecast/ASN/huangling.html"
+  },
+  {
+    "code": "uHJpt",
+    "province": "陕西省",
+    "city": "黄龙",
+    "url": "/publish/forecast/ASN/huanglong.html"
+  },
+  {
+    "code": "kNHLa",
+    "province": "陕西省",
+    "city": "佳县",
+    "url": "/publish/forecast/ASN/jiaxian.html"
+  },
+  {
+    "code": "WyIjX",
+    "province": "陕西省",
+    "city": "靖边",
+    "url": "/publish/forecast/ASN/jingbian.html"
+  },
+  {
+    "code": "lTwwB",
+    "province": "陕西省",
+    "city": "蓝田",
+    "url": "/publish/forecast/ASN/lantian.html"
+  },
+  {
+    "code": "xZaaP",
+    "province": "陕西省",
+    "city": "礼泉",
+    "url": "/publish/forecast/ASN/liquan.html"
+  },
+  {
+    "code": "zRMYD",
+    "province": "陕西省",
+    "city": "临潼",
+    "url": "/publish/forecast/ASN/linzuo.html"
+  },
+  {
+    "code": "tejPC",
+    "province": "陕西省",
+    "city": "留坝",
+    "url": "/publish/forecast/ASN/liuba.html"
+  },
+  {
+    "code": "fpJEY",
+    "province": "陕西省",
+    "city": "陇县",
+    "url": "/publish/forecast/ASN/longxian.html"
+  },
+  {
+    "code": "tKMDB",
+    "province": "陕西省",
+    "city": "略阳",
+    "url": "/publish/forecast/ASN/lueyang.html"
+  },
+  {
+    "code": "RrumW",
+    "province": "陕西省",
+    "city": "洛川",
+    "url": "/publish/forecast/ASN/luochuan.html"
+  },
+  {
+    "code": "hmDhb",
+    "province": "陕西省",
+    "city": "洛南",
+    "url": "/publish/forecast/ASN/luonan.html"
+  },
+  {
+    "code": "sczdz",
+    "province": "陕西省",
+    "city": "眉县",
+    "url": "/publish/forecast/ASN/meixian.html"
+  },
+  {
+    "code": "bLFjW",
+    "province": "陕西省",
+    "city": "米脂",
+    "url": "/publish/forecast/ASN/mizhi.html"
+  },
+  {
+    "code": "ahPQB",
+    "province": "陕西省",
+    "city": "勉县",
+    "url": "/publish/forecast/ASN/mianxian.html"
+  },
+  {
+    "code": "FNBBc",
+    "province": "陕西省",
+    "city": "南郑",
+    "url": "/publish/forecast/ASN/nanzheng.html"
+  },
+  {
+    "code": "bjqkU",
+    "province": "陕西省",
+    "city": "宁强",
+    "url": "/publish/forecast/ASN/ningqiang.html"
+  },
+  {
+    "code": "XbvFE",
+    "province": "陕西省",
+    "city": "宁陕",
+    "url": "/publish/forecast/ASN/ningshan.html"
+  },
+  {
+    "code": "yQbHi",
+    "province": "陕西省",
+    "city": "平利",
+    "url": "/publish/forecast/ASN/pingli.html"
+  },
+  {
+    "code": "tOfoG",
+    "province": "陕西省",
+    "city": "蒲城",
+    "url": "/publish/forecast/ASN/pucheng.html"
+  },
+  {
+    "code": "lQoKf",
+    "province": "陕西省",
+    "city": "千阳",
+    "url": "/publish/forecast/ASN/qianyang.html"
+  },
+  {
+    "code": "CqlHa",
+    "province": "陕西省",
+    "city": "乾县",
+    "url": "/publish/forecast/ASN/qianxian.html"
+  },
+  {
+    "code": "prSPO",
+    "province": "陕西省",
+    "city": "清涧",
+    "url": "/publish/forecast/ASN/qingjian.html"
+  },
+  {
+    "code": "ycvtU",
+    "province": "陕西省",
+    "city": "三原",
+    "url": "/publish/forecast/ASN/sanyuan.html"
+  },
+  {
+    "code": "EGeZr",
+    "province": "陕西省",
+    "city": "山阳",
+    "url": "/publish/forecast/ASN/shanyang.html"
+  },
+  {
+    "code": "nkmKX",
+    "province": "陕西省",
+    "city": "陕西横山",
+    "url": "/publish/forecast/ASN/shanxihengshan.html"
+  },
+  {
+    "code": "EbthY",
+    "province": "陕西省",
+    "city": "商南",
+    "url": "/publish/forecast/ASN/shangnan.html"
+  },
+  {
+    "code": "wgIob",
+    "province": "陕西省",
+    "city": "神木",
+    "url": "/publish/forecast/ASN/shenmu.html"
+  },
+  {
+    "code": "TlXfd",
+    "province": "陕西省",
+    "city": "石泉",
+    "url": "/publish/forecast/ASN/shiquan.html"
+  },
+  {
+    "code": "AsHiS",
+    "province": "陕西省",
+    "city": "绥德",
+    "url": "/publish/forecast/ASN/suide.html"
+  },
+  {
+    "code": "IztCW",
+    "province": "陕西省",
+    "city": "太白",
+    "url": "/publish/forecast/ASN/taibai.html"
+  },
+  {
+    "code": "fXkRh",
+    "province": "陕西省",
+    "city": "渭南",
+    "url": "/publish/forecast/ASN/weinan.html"
+  },
+  {
+    "code": "GVBLs",
+    "province": "陕西省",
+    "city": "吴堡",
+    "url": "/publish/forecast/ASN/wubao.html"
+  },
+  {
+    "code": "cdFMC",
+    "province": "陕西省",
+    "city": "吴起",
+    "url": "/publish/forecast/ASN/wuqi.html"
+  },
+  {
+    "code": "dOgXs",
+    "province": "陕西省",
+    "city": "武功",
+    "url": "/publish/forecast/ASN/wugong.html"
+  },
+  {
+    "code": "tWrIf",
+    "province": "陕西省",
+    "city": "西乡",
+    "url": "/publish/forecast/ASN/xixiang.html"
+  },
+  {
+    "code": "exydQ",
+    "province": "陕西省",
+    "city": "兴平",
+    "url": "/publish/forecast/ASN/xingping.html"
+  },
+  {
+    "code": "uEVEn",
+    "province": "陕西省",
+    "city": "旬阳",
+    "url": "/publish/forecast/ASN/xunyang.html"
+  },
+  {
+    "code": "HWqri",
+    "province": "陕西省",
+    "city": "旬邑",
+    "url": "/publish/forecast/ASN/xunyi.html"
+  },
+  {
+    "code": "zGmNC",
+    "province": "陕西省",
+    "city": "延长",
+    "url": "/publish/forecast/ASN/yanchang.html"
+  },
+  {
+    "code": "HDzyP",
+    "province": "陕西省",
+    "city": "延川",
+    "url": "/publish/forecast/ASN/yanchuan.html"
+  },
+  {
+    "code": "EiWZj",
+    "province": "陕西省",
+    "city": "杨凌",
+    "url": "/publish/forecast/ASN/yangling.html"
+  },
+  {
+    "code": "lDiMR",
+    "province": "陕西省",
+    "city": "洋县",
+    "url": "/publish/forecast/ASN/yangxian.html"
+  },
+  {
+    "code": "tfmFL",
+    "province": "陕西省",
+    "city": "耀州",
+    "url": "/publish/forecast/ASN/yaozhou.html"
+  },
+  {
+    "code": "wVXnP",
+    "province": "陕西省",
+    "city": "宜川",
+    "url": "/publish/forecast/ASN/yichuan.html"
+  },
+  {
+    "code": "rURnf",
+    "province": "陕西省",
+    "city": "宜君",
+    "url": "/publish/forecast/ASN/yijun.html"
+  },
+  {
+    "code": "MqOdV",
+    "province": "陕西省",
+    "city": "永寿",
+    "url": "/publish/forecast/ASN/yongshou.html"
+  },
+  {
+    "code": "tXRiV",
+    "province": "陕西省",
+    "city": "镇安",
+    "url": "/publish/forecast/ASN/zhenan.html"
+  },
+  {
+    "code": "RjpPA",
+    "province": "陕西省",
+    "city": "镇巴",
+    "url": "/publish/forecast/ASN/zhenba.html"
+  },
+  {
+    "code": "AsKPA",
+    "province": "陕西省",
+    "city": "镇坪",
+    "url": "/publish/forecast/ASN/zhenping.html"
+  },
+  {
+    "code": "kTYbH",
+    "province": "陕西省",
+    "city": "志丹",
+    "url": "/publish/forecast/ASN/zhidan.html"
+  },
+  {
+    "code": "YGOXn",
+    "province": "陕西省",
+    "city": "周至",
+    "url": "/publish/forecast/ASN/zhouzhi.html"
+  },
+  {
+    "code": "qujSt",
+    "province": "陕西省",
+    "city": "紫阳",
+    "url": "/publish/forecast/ASN/ziyang.html"
+  },
+  {
+    "code": "zgGer",
+    "province": "陕西省",
+    "city": "子长",
+    "url": "/publish/forecast/ASN/zichang.html"
+  },
+  {
+    "code": "kMChi",
+    "province": "陕西省",
+    "city": "子洲",
+    "url": "/publish/forecast/ASN/zizhou.html"
+  },
+  {
+    "code": "SifiE",
+    "province": "陕西省",
+    "city": "柞水",
+    "url": "/publish/forecast/ASN/zuoshui.html"
+  },
+  {
+    "code": "WJups",
+    "province": "陕西省",
+    "city": "鄠邑",
+    "url": "/publish/forecast/ASN/zuoyi.html"
+  },
+  {
+    "code": "qmPpg",
+    "province": "陕西省",
+    "city": "岐山",
+    "url": "/publish/forecast/ASN/zuoshan.html"
+  },
+  {
+    "code": "lpGJm",
+    "province": "陕西省",
+    "city": "岚皋",
+    "url": "/publish/forecast/ASN/zuogao.html"
+  },
+  {
+    "code": "UuKku",
+    "province": "陕西省",
+    "city": "泾阳",
+    "url": "/publish/forecast/ASN/zuoyang.html"
+  },
+  {
+    "code": "ddBPj",
+    "province": "陕西省",
+    "city": "潼关",
+    "url": "/publish/forecast/ASN/zuoguan.html"
+  },
+  {
+    "code": "oxLal",
+    "province": "陕西省",
+    "city": "麟游",
+    "url": "/publish/forecast/ASN/zuoyou.html"
+  }
+]

@@ -1,0 +1,728 @@
+[
+  {
+    "code": "YVItN",
+    "province": "河南省",
+    "city": "郑州",
+    "url": "/publish/forecast/AHA/zhengzhou.html"
+  },
+  {
+    "code": "hNkdK",
+    "province": "河南省",
+    "city": "安阳",
+    "url": "/publish/forecast/AHA/anyang.html"
+  },
+  {
+    "code": "lZXKF",
+    "province": "河南省",
+    "city": "川汇区（周口）",
+    "url": "/publish/forecast/AHA/chuanhuiqu.html"
+  },
+  {
+    "code": "NYclC",
+    "province": "河南省",
+    "city": "鹤壁",
+    "url": "/publish/forecast/AHA/hebi.html"
+  },
+  {
+    "code": "TJdvk",
+    "province": "河南省",
+    "city": "济源",
+    "url": "/publish/forecast/AHA/jiyuan.html"
+  },
+  {
+    "code": "ubXHV",
+    "province": "河南省",
+    "city": "焦作",
+    "url": "/publish/forecast/AHA/jiaozuo.html"
+  },
+  {
+    "code": "swtij",
+    "province": "河南省",
+    "city": "开封",
+    "url": "/publish/forecast/AHA/kaifeng.html"
+  },
+  {
+    "code": "vRweN",
+    "province": "河南省",
+    "city": "南阳",
+    "url": "/publish/forecast/AHA/nanyang.html"
+  },
+  {
+    "code": "nRecJ",
+    "province": "河南省",
+    "city": "平顶山",
+    "url": "/publish/forecast/AHA/pingdingshan.html"
+  },
+  {
+    "code": "TjcXC",
+    "province": "河南省",
+    "city": "三门峡",
+    "url": "/publish/forecast/AHA/sanmenxia.html"
+  },
+  {
+    "code": "aMsMR",
+    "province": "河南省",
+    "city": "商丘",
+    "url": "/publish/forecast/AHA/shangqiu.html"
+  },
+  {
+    "code": "VLpOH",
+    "province": "河南省",
+    "city": "新乡",
+    "url": "/publish/forecast/AHA/xinxiang.html"
+  },
+  {
+    "code": "hdKHW",
+    "province": "河南省",
+    "city": "信阳",
+    "url": "/publish/forecast/AHA/xinyang.html"
+  },
+  {
+    "code": "ZzMTA",
+    "province": "河南省",
+    "city": "许昌",
+    "url": "/publish/forecast/AHA/xuchang.html"
+  },
+  {
+    "code": "URskB",
+    "province": "河南省",
+    "city": "周口",
+    "url": "/publish/forecast/AHA/zhoukou.html"
+  },
+  {
+    "code": "ZmGSj",
+    "province": "河南省",
+    "city": "驻马店",
+    "url": "/publish/forecast/AHA/zhumadian.html"
+  },
+  {
+    "code": "wTUBX",
+    "province": "河南省",
+    "city": "潢川",
+    "url": "/publish/forecast/AHA/zuochuan3.html"
+  },
+  {
+    "code": "lncFZ",
+    "province": "河南省",
+    "city": "漯河",
+    "url": "/publish/forecast/AHA/zuohe.html"
+  },
+  {
+    "code": "XbbBI",
+    "province": "河南省",
+    "city": "濮阳",
+    "url": "/publish/forecast/AHA/zuoyang1.html"
+  },
+  {
+    "code": "nAcuJ",
+    "province": "河南省",
+    "city": "宝丰",
+    "url": "/publish/forecast/AHA/baofeng.html"
+  },
+  {
+    "code": "DInuO",
+    "province": "河南省",
+    "city": "博爱",
+    "url": "/publish/forecast/AHA/boai.html"
+  },
+  {
+    "code": "sHlBF",
+    "province": "河南省",
+    "city": "长葛",
+    "url": "/publish/forecast/AHA/changge.html"
+  },
+  {
+    "code": "tvhjZ",
+    "province": "河南省",
+    "city": "长垣",
+    "url": "/publish/forecast/AHA/changyuan.html"
+  },
+  {
+    "code": "uRklp",
+    "province": "河南省",
+    "city": "郸城",
+    "url": "/publish/forecast/AHA/dancheng.html"
+  },
+  {
+    "code": "QjeZO",
+    "province": "河南省",
+    "city": "登封",
+    "url": "/publish/forecast/AHA/dengfeng.html"
+  },
+  {
+    "code": "ALlGb",
+    "province": "河南省",
+    "city": "邓州",
+    "url": "/publish/forecast/AHA/dengzhou.html"
+  },
+  {
+    "code": "pGxSD",
+    "province": "河南省",
+    "city": "范县",
+    "url": "/publish/forecast/AHA/fanxian.html"
+  },
+  {
+    "code": "NPIhR",
+    "province": "河南省",
+    "city": "方城",
+    "url": "/publish/forecast/AHA/fangcheng.html"
+  },
+  {
+    "code": "OdLdM",
+    "province": "河南省",
+    "city": "封丘",
+    "url": "/publish/forecast/AHA/fengqiu.html"
+  },
+  {
+    "code": "Emcgf",
+    "province": "河南省",
+    "city": "扶沟",
+    "url": "/publish/forecast/AHA/fugou.html"
+  },
+  {
+    "code": "yrsPS",
+    "province": "河南省",
+    "city": "巩义",
+    "url": "/publish/forecast/AHA/gongyi.html"
+  },
+  {
+    "code": "liQnS",
+    "province": "河南省",
+    "city": "固始",
+    "url": "/publish/forecast/AHA/gushi.html"
+  },
+  {
+    "code": "sPsZI",
+    "province": "河南省",
+    "city": "光山",
+    "url": "/publish/forecast/AHA/guangshan.html"
+  },
+  {
+    "code": "RMGln",
+    "province": "河南省",
+    "city": "滑县",
+    "url": "/publish/forecast/AHA/huaxian.html"
+  },
+  {
+    "code": "pQUOE",
+    "province": "河南省",
+    "city": "淮滨",
+    "url": "/publish/forecast/AHA/huaibin.html"
+  },
+  {
+    "code": "QHPrZ",
+    "province": "河南省",
+    "city": "淮阳",
+    "url": "/publish/forecast/AHA/huaiyang.html"
+  },
+  {
+    "code": "cXwCS",
+    "province": "河南省",
+    "city": "辉县",
+    "url": "/publish/forecast/AHA/huixian.html"
+  },
+  {
+    "code": "ipyYK",
+    "province": "河南省",
+    "city": "获嘉",
+    "url": "/publish/forecast/AHA/huojia.html"
+  },
+  {
+    "code": "mlucC",
+    "province": "河南省",
+    "city": "浚县",
+    "url": "/publish/forecast/AHA/junxian.html"
+  },
+  {
+    "code": "yCGbN",
+    "province": "河南省",
+    "city": "兰考",
+    "url": "/publish/forecast/AHA/lankao.html"
+  },
+  {
+    "code": "LvRhA",
+    "province": "河南省",
+    "city": "林州",
+    "url": "/publish/forecast/AHA/linzhou.html"
+  },
+  {
+    "code": "iTyXp",
+    "province": "河南省",
+    "city": "临颍",
+    "url": "/publish/forecast/AHA/linzuo.html"
+  },
+  {
+    "code": "mAGsj",
+    "province": "河南省",
+    "city": "灵宝",
+    "url": "/publish/forecast/AHA/lingbao.html"
+  },
+  {
+    "code": "HzXJK",
+    "province": "河南省",
+    "city": "卢氏",
+    "url": "/publish/forecast/AHA/lushi.html"
+  },
+  {
+    "code": "HcTiH",
+    "province": "河南省",
+    "city": "鲁山",
+    "url": "/publish/forecast/AHA/lushan.html"
+  },
+  {
+    "code": "BNljK",
+    "province": "河南省",
+    "city": "鹿邑",
+    "url": "/publish/forecast/AHA/luyi.html"
+  },
+  {
+    "code": "rhndw",
+    "province": "河南省",
+    "city": "罗山",
+    "url": "/publish/forecast/AHA/luoshan.html"
+  },
+  {
+    "code": "HaOBO",
+    "province": "河南省",
+    "city": "洛宁",
+    "url": "/publish/forecast/AHA/luoning.html"
+  },
+  {
+    "code": "rYaxY",
+    "province": "河南省",
+    "city": "洛阳",
+    "url": "/publish/forecast/AHA/luoyang2.html"
+  },
+  {
+    "code": "lIgVp",
+    "province": "河南省",
+    "city": "孟津（洛阳）",
+    "url": "/publish/forecast/AHA/luoyang1.html"
+  },
+  {
+    "code": "aeWfC",
+    "province": "河南省",
+    "city": "孟州",
+    "url": "/publish/forecast/AHA/mengzhou.html"
+  },
+  {
+    "code": "ftgII",
+    "province": "河南省",
+    "city": "泌阳",
+    "url": "/publish/forecast/AHA/miyang.html"
+  },
+  {
+    "code": "UtHHs",
+    "province": "河南省",
+    "city": "民权",
+    "url": "/publish/forecast/AHA/minquan.html"
+  },
+  {
+    "code": "iJyTs",
+    "province": "河南省",
+    "city": "南乐",
+    "url": "/publish/forecast/AHA/nanle.html"
+  },
+  {
+    "code": "XQbzt",
+    "province": "河南省",
+    "city": "南召",
+    "url": "/publish/forecast/AHA/nanzhao.html"
+  },
+  {
+    "code": "XHxri",
+    "province": "河南省",
+    "city": "内黄",
+    "url": "/publish/forecast/AHA/neihuang.html"
+  },
+  {
+    "code": "RWzAc",
+    "province": "河南省",
+    "city": "内乡",
+    "url": "/publish/forecast/AHA/neixiang.html"
+  },
+  {
+    "code": "lAMXm",
+    "province": "河南省",
+    "city": "宁陵",
+    "url": "/publish/forecast/AHA/ningling.html"
+  },
+  {
+    "code": "XdjmX",
+    "province": "河南省",
+    "city": "平舆",
+    "url": "/publish/forecast/AHA/pingyu.html"
+  },
+  {
+    "code": "OAiAk",
+    "province": "河南省",
+    "city": "沁阳",
+    "url": "/publish/forecast/AHA/qinyang.html"
+  },
+  {
+    "code": "pRxQj",
+    "province": "河南省",
+    "city": "清丰",
+    "url": "/publish/forecast/AHA/qingfeng.html"
+  },
+  {
+    "code": "UCliM",
+    "province": "河南省",
+    "city": "确山",
+    "url": "/publish/forecast/AHA/queshan.html"
+  },
+  {
+    "code": "vvNHi",
+    "province": "河南省",
+    "city": "汝南",
+    "url": "/publish/forecast/AHA/runan.html"
+  },
+  {
+    "code": "onqmI",
+    "province": "河南省",
+    "city": "汝阳",
+    "url": "/publish/forecast/AHA/ruyang.html"
+  },
+  {
+    "code": "hIncZ",
+    "province": "河南省",
+    "city": "汝州",
+    "url": "/publish/forecast/AHA/ruzhou.html"
+  },
+  {
+    "code": "iDXIG",
+    "province": "河南省",
+    "city": "商城",
+    "url": "/publish/forecast/AHA/shangcheng.html"
+  },
+  {
+    "code": "PojMH",
+    "province": "河南省",
+    "city": "商水",
+    "url": "/publish/forecast/AHA/shangshui.html"
+  },
+  {
+    "code": "aBcFs",
+    "province": "河南省",
+    "city": "上蔡",
+    "url": "/publish/forecast/AHA/shangcai.html"
+  },
+  {
+    "code": "oOUuS",
+    "province": "河南省",
+    "city": "社旗",
+    "url": "/publish/forecast/AHA/sheqi.html"
+  },
+  {
+    "code": "AWlje",
+    "province": "河南省",
+    "city": "沈丘",
+    "url": "/publish/forecast/AHA/shenqiu.html"
+  },
+  {
+    "code": "hsyZH",
+    "province": "河南省",
+    "city": "遂平",
+    "url": "/publish/forecast/AHA/suiping.html"
+  },
+  {
+    "code": "gpsQp",
+    "province": "河南省",
+    "city": "台前",
+    "url": "/publish/forecast/AHA/taiqian.html"
+  },
+  {
+    "code": "zEzeT",
+    "province": "河南省",
+    "city": "太康",
+    "url": "/publish/forecast/AHA/taikang.html"
+  },
+  {
+    "code": "mBYhC",
+    "province": "河南省",
+    "city": "汤阴",
+    "url": "/publish/forecast/AHA/tangyin.html"
+  },
+  {
+    "code": "jQYDK",
+    "province": "河南省",
+    "city": "唐河",
+    "url": "/publish/forecast/AHA/tanghe.html"
+  },
+  {
+    "code": "iSvVf",
+    "province": "河南省",
+    "city": "通许",
+    "url": "/publish/forecast/AHA/tongxu.html"
+  },
+  {
+    "code": "WbHnL",
+    "province": "河南省",
+    "city": "桐柏",
+    "url": "/publish/forecast/AHA/tongbai.html"
+  },
+  {
+    "code": "VUIVN",
+    "province": "河南省",
+    "city": "尉氏",
+    "url": "/publish/forecast/AHA/weishi.html"
+  },
+  {
+    "code": "JrcpD",
+    "province": "河南省",
+    "city": "卫辉",
+    "url": "/publish/forecast/AHA/weihui.html"
+  },
+  {
+    "code": "xfBpE",
+    "province": "河南省",
+    "city": "温县",
+    "url": "/publish/forecast/AHA/wenxian.html"
+  },
+  {
+    "code": "koXUe",
+    "province": "河南省",
+    "city": "武陟",
+    "url": "/publish/forecast/AHA/wuzuo.html"
+  },
+  {
+    "code": "tIiAe",
+    "province": "河南省",
+    "city": "舞钢",
+    "url": "/publish/forecast/AHA/wugang.html"
+  },
+  {
+    "code": "aRquF",
+    "province": "河南省",
+    "city": "舞阳",
+    "url": "/publish/forecast/AHA/wuyang.html"
+  },
+  {
+    "code": "GBJUE",
+    "province": "河南省",
+    "city": "西华",
+    "url": "/publish/forecast/AHA/xihua.html"
+  },
+  {
+    "code": "cAtmW",
+    "province": "河南省",
+    "city": "西平",
+    "url": "/publish/forecast/AHA/xiping.html"
+  },
+  {
+    "code": "rzsUT",
+    "province": "河南省",
+    "city": "西峡",
+    "url": "/publish/forecast/AHA/xixia.html"
+  },
+  {
+    "code": "tSCUn",
+    "province": "河南省",
+    "city": "息县",
+    "url": "/publish/forecast/AHA/xixian.html"
+  },
+  {
+    "code": "LoNcn",
+    "province": "河南省",
+    "city": "夏邑",
+    "url": "/publish/forecast/AHA/xiayi.html"
+  },
+  {
+    "code": "MyGEg",
+    "province": "河南省",
+    "city": "襄城",
+    "url": "/publish/forecast/AHA/xiangcheng1.html"
+  },
+  {
+    "code": "VjWQe",
+    "province": "河南省",
+    "city": "项城",
+    "url": "/publish/forecast/AHA/xiangcheng2.html"
+  },
+  {
+    "code": "vMxzb",
+    "province": "河南省",
+    "city": "新安",
+    "url": "/publish/forecast/AHA/xinan.html"
+  },
+  {
+    "code": "ORIbm",
+    "province": "河南省",
+    "city": "新蔡",
+    "url": "/publish/forecast/AHA/xincai.html"
+  },
+  {
+    "code": "LoaLx",
+    "province": "河南省",
+    "city": "新密",
+    "url": "/publish/forecast/AHA/xinmi.html"
+  },
+  {
+    "code": "BpKzd",
+    "province": "河南省",
+    "city": "新县",
+    "url": "/publish/forecast/AHA/xinxian.html"
+  },
+  {
+    "code": "UcjEf",
+    "province": "河南省",
+    "city": "新野",
+    "url": "/publish/forecast/AHA/xinye.html"
+  },
+  {
+    "code": "kpoPZ",
+    "province": "河南省",
+    "city": "新郑",
+    "url": "/publish/forecast/AHA/xinzheng.html"
+  },
+  {
+    "code": "zOAjR",
+    "province": "河南省",
+    "city": "修武",
+    "url": "/publish/forecast/AHA/xiuwu.html"
+  },
+  {
+    "code": "sthkk",
+    "province": "河南省",
+    "city": "延津",
+    "url": "/publish/forecast/AHA/yanjin.html"
+  },
+  {
+    "code": "wJjGK",
+    "province": "河南省",
+    "city": "叶县",
+    "url": "/publish/forecast/AHA/yexian.html"
+  },
+  {
+    "code": "HbtHa",
+    "province": "河南省",
+    "city": "伊川",
+    "url": "/publish/forecast/AHA/yichuan.html"
+  },
+  {
+    "code": "zNQnV",
+    "province": "河南省",
+    "city": "宜阳",
+    "url": "/publish/forecast/AHA/yiyang.html"
+  },
+  {
+    "code": "XCMPM",
+    "province": "河南省",
+    "city": "义马",
+    "url": "/publish/forecast/AHA/yima.html"
+  },
+  {
+    "code": "SMuXc",
+    "province": "河南省",
+    "city": "永城",
+    "url": "/publish/forecast/AHA/yongcheng.html"
+  },
+  {
+    "code": "wUEuZ",
+    "province": "河南省",
+    "city": "虞城",
+    "url": "/publish/forecast/AHA/yucheng.html"
+  },
+  {
+    "code": "HFqwM",
+    "province": "河南省",
+    "city": "禹州",
+    "url": "/publish/forecast/AHA/yuzhou.html"
+  },
+  {
+    "code": "ccwBF",
+    "province": "河南省",
+    "city": "原阳",
+    "url": "/publish/forecast/AHA/yuanyang.html"
+  },
+  {
+    "code": "MqOfh",
+    "province": "河南省",
+    "city": "镇平",
+    "url": "/publish/forecast/AHA/zhenping.html"
+  },
+  {
+    "code": "uiooJ",
+    "province": "河南省",
+    "city": "正阳",
+    "url": "/publish/forecast/AHA/zhengyang.html"
+  },
+  {
+    "code": "KMtvV",
+    "province": "河南省",
+    "city": "中牟",
+    "url": "/publish/forecast/AHA/zhongmou.html"
+  },
+  {
+    "code": "CwmVv",
+    "province": "河南省",
+    "city": "偃师",
+    "url": "/publish/forecast/AHA/zuoshi.html"
+  },
+  {
+    "code": "hAfgu",
+    "province": "河南省",
+    "city": "郏县",
+    "url": "/publish/forecast/AHA/zuoxian4.html"
+  },
+  {
+    "code": "NbMuX",
+    "province": "河南省",
+    "city": "鄢陵",
+    "url": "/publish/forecast/AHA/zuoling.html"
+  },
+  {
+    "code": "JAxZP",
+    "province": "河南省",
+    "city": "荥阳",
+    "url": "/publish/forecast/AHA/zuoyang2.html"
+  },
+  {
+    "code": "WKgrt",
+    "province": "河南省",
+    "city": "嵩县",
+    "url": "/publish/forecast/AHA/zuoxian3.html"
+  },
+  {
+    "code": "TbHws",
+    "province": "河南省",
+    "city": "淇县",
+    "url": "/publish/forecast/AHA/zuoxian1.html"
+  },
+  {
+    "code": "iamyl",
+    "province": "河南省",
+    "city": "淅川",
+    "url": "/publish/forecast/AHA/zuochuan2.html"
+  },
+  {
+    "code": "XfOYq",
+    "province": "河南省",
+    "city": "渑池",
+    "url": "/publish/forecast/AHA/zuochi.html"
+  },
+  {
+    "code": "tCUkl",
+    "province": "河南省",
+    "city": "杞县",
+    "url": "/publish/forecast/AHA/zuoxian2.html"
+  },
+  {
+    "code": "VvHGN",
+    "province": "河南省",
+    "city": "柘城",
+    "url": "/publish/forecast/AHA/zuocheng.html"
+  },
+  {
+    "code": "mcJvP",
+    "province": "河南省",
+    "city": "栾川",
+    "url": "/publish/forecast/AHA/zuochuan1.html"
+  },
+  {
+    "code": "XMgFC",
+    "province": "河南省",
+    "city": "睢县",
+    "url": "/publish/forecast/AHA/zuoxian5.html"
+  }
+]

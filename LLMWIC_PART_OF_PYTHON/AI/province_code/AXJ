@@ -1,0 +1,656 @@
+[
+  {
+    "code": "lIPam",
+    "province": "新疆维吾尔自治区",
+    "city": "乌鲁木齐",
+    "url": "/publish/forecast/AXJ/wulumuqi.html"
+  },
+  {
+    "code": "hkZNG",
+    "province": "新疆维吾尔自治区",
+    "city": "五家渠",
+    "url": "/publish/forecast/AXJ/wujiaqu.html"
+  },
+  {
+    "code": "uWWmy",
+    "province": "新疆维吾尔自治区",
+    "city": "阿拉尔",
+    "url": "/publish/forecast/AXJ/alaer.html"
+  },
+  {
+    "code": "SnOYy",
+    "province": "新疆维吾尔自治区",
+    "city": "阿勒泰",
+    "url": "/publish/forecast/AXJ/aletai.html"
+  },
+  {
+    "code": "SzKmL",
+    "province": "新疆维吾尔自治区",
+    "city": "阿图什",
+    "url": "/publish/forecast/AXJ/atushi.html"
+  },
+  {
+    "code": "FDOdh",
+    "province": "新疆维吾尔自治区",
+    "city": "北屯",
+    "url": "/publish/forecast/AXJ/beitun.html"
+  },
+  {
+    "code": "UnvYB",
+    "province": "新疆维吾尔自治区",
+    "city": "博尔塔拉",
+    "url": "/publish/forecast/AXJ/boertala.html"
+  },
+  {
+    "code": "hSwcs",
+    "province": "新疆维吾尔自治区",
+    "city": "博乐",
+    "url": "/publish/forecast/AXJ/bole.html"
+  },
+  {
+    "code": "LFhJu",
+    "province": "新疆维吾尔自治区",
+    "city": "哈密",
+    "url": "/publish/forecast/AXJ/hami.html"
+  },
+  {
+    "code": "HDzeq",
+    "province": "新疆维吾尔自治区",
+    "city": "和田",
+    "url": "/publish/forecast/AXJ/hetian.html"
+  },
+  {
+    "code": "RHxwy",
+    "province": "新疆维吾尔自治区",
+    "city": "克拉玛依",
+    "url": "/publish/forecast/AXJ/kelamayi.html"
+  },
+  {
+    "code": "QCRTj",
+    "province": "新疆维吾尔自治区",
+    "city": "克州",
+    "url": "/publish/forecast/AXJ/kezhou.html"
+  },
+  {
+    "code": "AWxpU",
+    "province": "新疆维吾尔自治区",
+    "city": "奇台",
+    "url": "/publish/forecast/AXJ/qitai.html"
+  },
+  {
+    "code": "NcLcb",
+    "province": "新疆维吾尔自治区",
+    "city": "沙湾",
+    "url": "/publish/forecast/AXJ/shawan.html"
+  },
+  {
+    "code": "JGBUK",
+    "province": "新疆维吾尔自治区",
+    "city": "石河子",
+    "url": "/publish/forecast/AXJ/shihezi.html"
+  },
+  {
+    "code": "qHPXG",
+    "province": "新疆维吾尔自治区",
+    "city": "塔城",
+    "url": "/publish/forecast/AXJ/tacheng.html"
+  },
+  {
+    "code": "DGEdf",
+    "province": "新疆维吾尔自治区",
+    "city": "吐鲁番",
+    "url": "/publish/forecast/AXJ/tulufan.html"
+  },
+  {
+    "code": "kAFDB",
+    "province": "新疆维吾尔自治区",
+    "city": "伊犁",
+    "url": "/publish/forecast/AXJ/yili.html"
+  },
+  {
+    "code": "Zfpil",
+    "province": "新疆维吾尔自治区",
+    "city": "伊宁",
+    "url": "/publish/forecast/AXJ/yining.html"
+  },
+  {
+    "code": "yPnAd",
+    "province": "新疆维吾尔自治区",
+    "city": "阿合奇",
+    "url": "/publish/forecast/AXJ/aheqi.html"
+  },
+  {
+    "code": "wPpQt",
+    "province": "新疆维吾尔自治区",
+    "city": "阿克苏",
+    "url": "/publish/forecast/AXJ/akesu.html"
+  },
+  {
+    "code": "LEeJY",
+    "province": "新疆维吾尔自治区",
+    "city": "阿克陶",
+    "url": "/publish/forecast/AXJ/aketao.html"
+  },
+  {
+    "code": "LrfAz",
+    "province": "新疆维吾尔自治区",
+    "city": "阿拉山口",
+    "url": "/publish/forecast/AXJ/alashankou.html"
+  },
+  {
+    "code": "EvmKC",
+    "province": "新疆维吾尔自治区",
+    "city": "阿瓦提",
+    "url": "/publish/forecast/AXJ/awati.html"
+  },
+  {
+    "code": "maCEn",
+    "province": "新疆维吾尔自治区",
+    "city": "巴楚",
+    "url": "/publish/forecast/AXJ/bachu.html"
+  },
+  {
+    "code": "ELQMW",
+    "province": "新疆维吾尔自治区",
+    "city": "巴里坤",
+    "url": "/publish/forecast/AXJ/balikun.html"
+  },
+  {
+    "code": "Tbgnv",
+    "province": "新疆维吾尔自治区",
+    "city": "巴仑台",
+    "url": "/publish/forecast/AXJ/baluntai.html"
+  },
+  {
+    "code": "BNxlq",
+    "province": "新疆维吾尔自治区",
+    "city": "巴音布鲁克",
+    "url": "/publish/forecast/AXJ/bayinbuluke.html"
+  },
+  {
+    "code": "QAgHw",
+    "province": "新疆维吾尔自治区",
+    "city": "巴音郭楞",
+    "url": "/publish/forecast/AXJ/bayinguoleng.html"
+  },
+  {
+    "code": "jcFzJ",
+    "province": "新疆维吾尔自治区",
+    "city": "拜城",
+    "url": "/publish/forecast/AXJ/baicheng.html"
+  },
+  {
+    "code": "GPrnI",
+    "province": "新疆维吾尔自治区",
+    "city": "博湖",
+    "url": "/publish/forecast/AXJ/bohu.html"
+  },
+  {
+    "code": "OCkda",
+    "province": "新疆维吾尔自治区",
+    "city": "布尔津",
+    "url": "/publish/forecast/AXJ/buerjin.html"
+  },
+  {
+    "code": "WRyLq",
+    "province": "新疆维吾尔自治区",
+    "city": "蔡家湖",
+    "url": "/publish/forecast/AXJ/caijiahu.html"
+  },
+  {
+    "code": "LqeGf",
+    "province": "新疆维吾尔自治区",
+    "city": "策勒",
+    "url": "/publish/forecast/AXJ/cele.html"
+  },
+  {
+    "code": "qqWkF",
+    "province": "新疆维吾尔自治区",
+    "city": "察布查尔",
+    "url": "/publish/forecast/AXJ/chabuchaer.html"
+  },
+  {
+    "code": "bIfiH",
+    "province": "新疆维吾尔自治区",
+    "city": "昌吉",
+    "url": "/publish/forecast/AXJ/changji.html"
+  },
+  {
+    "code": "wmimk",
+    "province": "新疆维吾尔自治区",
+    "city": "达坂城",
+    "url": "/publish/forecast/AXJ/dazuocheng.html"
+  },
+  {
+    "code": "BFpxB",
+    "province": "新疆维吾尔自治区",
+    "city": "额敏",
+    "url": "/publish/forecast/AXJ/emin.html"
+  },
+  {
+    "code": "dzMlI",
+    "province": "新疆维吾尔自治区",
+    "city": "福海",
+    "url": "/publish/forecast/AXJ/fuhai.html"
+  },
+  {
+    "code": "FoOEx",
+    "province": "新疆维吾尔自治区",
+    "city": "阜康",
+    "url": "/publish/forecast/AXJ/fukang.html"
+  },
+  {
+    "code": "JUKYd",
+    "province": "新疆维吾尔自治区",
+    "city": "富蕴",
+    "url": "/publish/forecast/AXJ/fuyun.html"
+  },
+  {
+    "code": "FsktL",
+    "province": "新疆维吾尔自治区",
+    "city": "巩留",
+    "url": "/publish/forecast/AXJ/gongliu.html"
+  },
+  {
+    "code": "vuVKP",
+    "province": "新疆维吾尔自治区",
+    "city": "哈巴河",
+    "url": "/publish/forecast/AXJ/habahe.html"
+  },
+  {
+    "code": "UXCKY",
+    "province": "新疆维吾尔自治区",
+    "city": "和布克赛尔",
+    "url": "/publish/forecast/AXJ/hebukesaier.html"
+  },
+  {
+    "code": "ZsUMo",
+    "province": "新疆维吾尔自治区",
+    "city": "和静",
+    "url": "/publish/forecast/AXJ/hejing.html"
+  },
+  {
+    "code": "XpzXk",
+    "province": "新疆维吾尔自治区",
+    "city": "和硕",
+    "url": "/publish/forecast/AXJ/heshuo.html"
+  },
+  {
+    "code": "RYXfs",
+    "province": "新疆维吾尔自治区",
+    "city": "呼图壁",
+    "url": "/publish/forecast/AXJ/hutubi.html"
+  },
+  {
+    "code": "cuwlP",
+    "province": "新疆维吾尔自治区",
+    "city": "霍城",
+    "url": "/publish/forecast/AXJ/huocheng.html"
+  },
+  {
+    "code": "QEpMD",
+    "province": "新疆维吾尔自治区",
+    "city": "霍尔果斯",
+    "url": "/publish/forecast/AXJ/huoerguosi.html"
+  },
+  {
+    "code": "Evjap",
+    "province": "新疆维吾尔自治区",
+    "city": "吉木乃",
+    "url": "/publish/forecast/AXJ/jimunai.html"
+  },
+  {
+    "code": "IaCfC",
+    "province": "新疆维吾尔自治区",
+    "city": "吉木萨尔",
+    "url": "/publish/forecast/AXJ/jimusaer.html"
+  },
+  {
+    "code": "bpMAs",
+    "province": "新疆维吾尔自治区",
+    "city": "精河",
+    "url": "/publish/forecast/AXJ/jinghe.html"
+  },
+  {
+    "code": "aHjQA",
+    "province": "新疆维吾尔自治区",
+    "city": "喀什",
+    "url": "/publish/forecast/AXJ/kashi.html"
+  },
+  {
+    "code": "SkZBu",
+    "province": "新疆维吾尔自治区",
+    "city": "柯坪",
+    "url": "/publish/forecast/AXJ/keping.html"
+  },
+  {
+    "code": "ACUGo",
+    "province": "新疆维吾尔自治区",
+    "city": "可克达拉",
+    "url": "/publish/forecast/AXJ/kekedala.html"
+  },
+  {
+    "code": "BVaDD",
+    "province": "新疆维吾尔自治区",
+    "city": "库车",
+    "url": "/publish/forecast/AXJ/kuche.html"
+  },
+  {
+    "code": "qQedw",
+    "province": "新疆维吾尔自治区",
+    "city": "库尔勒",
+    "url": "/publish/forecast/AXJ/kuerle.html"
+  },
+  {
+    "code": "ZUhSh",
+    "province": "新疆维吾尔自治区",
+    "city": "奎屯",
+    "url": "/publish/forecast/AXJ/kuitun.html"
+  },
+  {
+    "code": "XiaDH",
+    "province": "新疆维吾尔自治区",
+    "city": "昆玉",
+    "url": "/publish/forecast/AXJ/kunyu.html"
+  },
+  {
+    "code": "QMLyD",
+    "province": "新疆维吾尔自治区",
+    "city": "轮台",
+    "url": "/publish/forecast/AXJ/luntai.html"
+  },
+  {
+    "code": "HQoif",
+    "province": "新疆维吾尔自治区",
+    "city": "洛浦",
+    "url": "/publish/forecast/AXJ/luopu.html"
+  },
+  {
+    "code": "YQXUS",
+    "province": "新疆维吾尔自治区",
+    "city": "玛纳斯",
+    "url": "/publish/forecast/AXJ/manasi.html"
+  },
+  {
+    "code": "BCzpJ",
+    "province": "新疆维吾尔自治区",
+    "city": "麦盖提",
+    "url": "/publish/forecast/AXJ/maigaiti.html"
+  },
+  {
+    "code": "gIolY",
+    "province": "新疆维吾尔自治区",
+    "city": "米东区",
+    "url": "/publish/forecast/AXJ/midongqu.html"
+  },
+  {
+    "code": "zxIeh",
+    "province": "新疆维吾尔自治区",
+    "city": "民丰",
+    "url": "/publish/forecast/AXJ/minfeng.html"
+  },
+  {
+    "code": "YslWW",
+    "province": "新疆维吾尔自治区",
+    "city": "莫索湾",
+    "url": "/publish/forecast/AXJ/mosuowan.html"
+  },
+  {
+    "code": "nbFjx",
+    "province": "新疆维吾尔自治区",
+    "city": "墨玉",
+    "url": "/publish/forecast/AXJ/moyu.html"
+  },
+  {
+    "code": "HvGJL",
+    "province": "新疆维吾尔自治区",
+    "city": "木垒",
+    "url": "/publish/forecast/AXJ/mulei.html"
+  },
+  {
+    "code": "eGeWh",
+    "province": "新疆维吾尔自治区",
+    "city": "尼勒克",
+    "url": "/publish/forecast/AXJ/nileke.html"
+  },
+  {
+    "code": "CZSbw",
+    "province": "新疆维吾尔自治区",
+    "city": "炮台",
+    "url": "/publish/forecast/AXJ/paotai.html"
+  },
+  {
+    "code": "WupeJ",
+    "province": "新疆维吾尔自治区",
+    "city": "皮山",
+    "url": "/publish/forecast/AXJ/pishan.html"
+  },
+  {
+    "code": "vsSYw",
+    "province": "新疆维吾尔自治区",
+    "city": "且末",
+    "url": "/publish/forecast/AXJ/qiemo.html"
+  },
+  {
+    "code": "KUgXP",
+    "province": "新疆维吾尔自治区",
+    "city": "青河",
+    "url": "/publish/forecast/AXJ/qinghe.html"
+  },
+  {
+    "code": "ropjq",
+    "province": "新疆维吾尔自治区",
+    "city": "若羌",
+    "url": "/publish/forecast/AXJ/ruoqiang.html"
+  },
+  {
+    "code": "fhaom",
+    "province": "新疆维吾尔自治区",
+    "city": "莎车",
+    "url": "/publish/forecast/AXJ/shache.html"
+  },
+  {
+    "code": "lHafw",
+    "province": "新疆维吾尔自治区",
+    "city": "沙雅",
+    "url": "/publish/forecast/AXJ/shaya.html"
+  },
+  {
+    "code": "Wupea",
+    "province": "新疆维吾尔自治区",
+    "city": "疏附",
+    "url": "/publish/forecast/AXJ/shufu.html"
+  },
+  {
+    "code": "Wupeb",
+    "province": "新疆维吾尔自治区",
+    "city": "疏勒",
+    "url": "/publish/forecast/AXJ/shule.html"
+  },
+  {
+    "code": "jhHpN",
+    "province": "新疆维吾尔自治区",
+    "city": "塔什库尔干",
+    "url": "/publish/forecast/AXJ/tashikuergan.html"
+  },
+  {
+    "code": "tlkso",
+    "province": "新疆维吾尔自治区",
+    "city": "塔中",
+    "url": "/publish/forecast/AXJ/tazhong.html"
+  },
+  {
+    "code": "piUzn",
+    "province": "新疆维吾尔自治区",
+    "city": "特克斯",
+    "url": "/publish/forecast/AXJ/tekesi.html"
+  },
+  {
+    "code": "WiYil",
+    "province": "新疆维吾尔自治区",
+    "city": "天池",
+    "url": "/publish/forecast/AXJ/tianchi.html"
+  },
+  {
+    "code": "jaCzk",
+    "province": "新疆维吾尔自治区",
+    "city": "铁干里克",
+    "url": "/publish/forecast/AXJ/tieganlike.html"
+  },
+  {
+    "code": "GXsRg",
+    "province": "新疆维吾尔自治区",
+    "city": "铁门关",
+    "url": "/publish/forecast/AXJ/tiemenguan.html"
+  },
+  {
+    "code": "FmuYb",
+    "province": "新疆维吾尔自治区",
+    "city": "图木舒克",
+    "url": "/publish/forecast/AXJ/tumushuke.html"
+  },
+  {
+    "code": "xKqfo",
+    "province": "新疆维吾尔自治区",
+    "city": "托克逊",
+    "url": "/publish/forecast/AXJ/tuokexun.html"
+  },
+  {
+    "code": "eseSA",
+    "province": "新疆维吾尔自治区",
+    "city": "托里",
+    "url": "/publish/forecast/AXJ/tuoli.html"
+  },
+  {
+    "code": "RpLvF",
+    "province": "新疆维吾尔自治区",
+    "city": "尉犁",
+    "url": "/publish/forecast/AXJ/weili.html"
+  },
+  {
+    "code": "QGHxV",
+    "province": "新疆维吾尔自治区",
+    "city": "温泉",
+    "url": "/publish/forecast/AXJ/wenquan.html"
+  },
+  {
+    "code": "oVenj",
+    "province": "新疆维吾尔自治区",
+    "city": "温宿",
+    "url": "/publish/forecast/AXJ/wensu.html"
+  },
+  {
+    "code": "OQSHg",
+    "province": "新疆维吾尔自治区",
+    "city": "乌鲁木齐牧试站",
+    "url": "/publish/forecast/AXJ/wulumuqimushizhan.html"
+  },
+  {
+    "code": "fNxHG",
+    "province": "新疆维吾尔自治区",
+    "city": "乌恰",
+    "url": "/publish/forecast/AXJ/wuqia.html"
+  },
+  {
+    "code": "CUUUw",
+    "province": "新疆维吾尔自治区",
+    "city": "乌什",
+    "url": "/publish/forecast/AXJ/wushi.html"
+  },
+  {
+    "code": "VDvKy",
+    "province": "新疆维吾尔自治区",
+    "city": "乌苏",
+    "url": "/publish/forecast/AXJ/wusu.html"
+  },
+  {
+    "code": "GSWoG",
+    "province": "新疆维吾尔自治区",
+    "city": "小渠子",
+    "url": "/publish/forecast/AXJ/xiaoquzi.html"
+  },
+  {
+    "code": "QGLHi",
+    "province": "新疆维吾尔自治区",
+    "city": "新和",
+    "url": "/publish/forecast/AXJ/xinhe.html"
+  },
+  {
+    "code": "hrqYY",
+    "province": "新疆维吾尔自治区",
+    "city": "新源",
+    "url": "/publish/forecast/AXJ/xinyuan.html"
+  },
+  {
+    "code": "QiKzF",
+    "province": "新疆维吾尔自治区",
+    "city": "焉耆",
+    "url": "/publish/forecast/AXJ/yanzuo.html"
+  },
+  {
+    "code": "baeXx",
+    "province": "新疆维吾尔自治区",
+    "city": "叶城",
+    "url": "/publish/forecast/AXJ/yecheng.html"
+  },
+  {
+    "code": "ZuktQ",
+    "province": "新疆维吾尔自治区",
+    "city": "伊宁县",
+    "url": "/publish/forecast/AXJ/yiningxian.html"
+  },
+  {
+    "code": "fvHql",
+    "province": "新疆维吾尔自治区",
+    "city": "伊吾",
+    "url": "/publish/forecast/AXJ/yiwu.html"
+  },
+  {
+    "code": "zXMMB",
+    "province": "新疆维吾尔自治区",
+    "city": "英吉沙",
+    "url": "/publish/forecast/AXJ/yingjisha.html"
+  },
+  {
+    "code": "eKceY",
+    "province": "新疆维吾尔自治区",
+    "city": "于田",
+    "url": "/publish/forecast/AXJ/yutian.html"
+  },
+  {
+    "code": "EDyyx",
+    "province": "新疆维吾尔自治区",
+    "city": "裕民",
+    "url": "/publish/forecast/AXJ/yumin.html"
+  },
+  {
+    "code": "zEUul",
+    "province": "新疆维吾尔自治区",
+    "city": "岳普湖",
+    "url": "/publish/forecast/AXJ/yuepuhu.html"
+  },
+  {
+    "code": "aFKNj",
+    "province": "新疆维吾尔自治区",
+    "city": "泽普",
+    "url": "/publish/forecast/AXJ/zepu.html"
+  },
+  {
+    "code": "SQKGX",
+    "province": "新疆维吾尔自治区",
+    "city": "昭苏",
+    "url": "/publish/forecast/AXJ/zhaosu.html"
+  },
+  {
+    "code": "lTSgf",
+    "province": "新疆维吾尔自治区",
+    "city": "伽师",
+    "url": "/publish/forecast/AXJ/zuoshi.html"
+  },
+  {
+    "code": "zVdtO",
+    "province": "新疆维吾尔自治区",
+    "city": "鄯善",
+    "url": "/publish/forecast/AXJ/zuoshan.html"
+  }
+]

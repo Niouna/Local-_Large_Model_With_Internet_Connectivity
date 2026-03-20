@@ -1,0 +1,92 @@
+[
+  {
+    "code": "Wqsps",
+    "province": "北京市",
+    "city": "北京",
+    "url": "/publish/forecast/ABJ/beijing.html"
+  },
+  {
+    "code": "niStC",
+    "province": "北京市",
+    "city": "昌平",
+    "url": "/publish/forecast/ABJ/changping.html"
+  },
+  {
+    "code": "MjXfi",
+    "province": "北京市",
+    "city": "朝阳",
+    "url": "/publish/forecast/ABJ/chaoyang.html"
+  },
+  {
+    "code": "iEilj",
+    "province": "北京市",
+    "city": "大兴",
+    "url": "/publish/forecast/ABJ/daxing.html"
+  },
+  {
+    "code": "sNifH",
+    "province": "北京市",
+    "city": "房山",
+    "url": "/publish/forecast/ABJ/fangshan.html"
+  },
+  {
+    "code": "WgwUa",
+    "province": "北京市",
+    "city": "丰台",
+    "url": "/publish/forecast/ABJ/fengtai.html"
+  },
+  {
+    "code": "fElIR",
+    "province": "北京市",
+    "city": "海淀",
+    "url": "/publish/forecast/ABJ/haidian.html"
+  },
+  {
+    "code": "zWIHa",
+    "province": "北京市",
+    "city": "怀柔",
+    "url": "/publish/forecast/ABJ/huairou.html"
+  },
+  {
+    "code": "MNFUM",
+    "province": "北京市",
+    "city": "门头沟",
+    "url": "/publish/forecast/ABJ/mentougou.html"
+  },
+  {
+    "code": "SlmGF",
+    "province": "北京市",
+    "city": "密云",
+    "url": "/publish/forecast/ABJ/miyun.html"
+  },
+  {
+    "code": "WKTDr",
+    "province": "北京市",
+    "city": "平谷",
+    "url": "/publish/forecast/ABJ/pinggu.html"
+  },
+  {
+    "code": "TKDWT",
+    "province": "北京市",
+    "city": "石景山",
+    "url": "/publish/forecast/ABJ/shijingshan.html"
+  },
+  {
+    "code": "MKoqG",
+    "province": "北京市",
+    "city": "顺义",
+    "url": "/publish/forecast/ABJ/shunyi.html"
+  },
+  {
+    "code": "UXDVf",
+    "province": "北京市",
+    "city": "通州",
+    "url": "/publish/forecast/ABJ/tongzhou.html"
+  },
+  {
+    "code": "FzrMk",
+    "province": "北京市",
+    "city": "延庆",
+    "url": "/publish/forecast/ABJ/yanqing.html"
+  }
+]

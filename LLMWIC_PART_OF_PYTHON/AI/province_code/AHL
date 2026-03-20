@@ -1,0 +1,518 @@
+[
+  {
+    "code": "pzXOG",
+    "province": "黑龙江省",
+    "city": "哈尔滨",
+    "url": "/publish/forecast/AHL/haerbin.html"
+  },
+  {
+    "code": "pmtBg",
+    "province": "黑龙江省",
+    "city": "爱辉",
+    "url": "/publish/forecast/AHL/aihui.html"
+  },
+  {
+    "code": "gSmNE",
+    "province": "黑龙江省",
+    "city": "北林（绥化）",
+    "url": "/publish/forecast/AHL/beilin.html"
+  },
+  {
+    "code": "HeDuS",
+    "province": "黑龙江省",
+    "city": "勃利",
+    "url": "/publish/forecast/AHL/boli.html"
+  },
+  {
+    "code": "uLCaf",
+    "province": "黑龙江省",
+    "city": "大庆",
+    "url": "/publish/forecast/AHL/daqing.html"
+  },
+  {
+    "code": "HIKCZ",
+    "province": "黑龙江省",
+    "city": "大兴安岭",
+    "url": "/publish/forecast/AHL/daxinganling.html"
+  },
+  {
+    "code": "exRbg",
+    "province": "黑龙江省",
+    "city": "杜尔伯特",
+    "url": "/publish/forecast/AHL/duerbote.html"
+  },
+  {
+    "code": "sjFeU",
+    "province": "黑龙江省",
+    "city": "甘南",
+    "url": "/publish/forecast/AHL/gannan.html"
+  },
+  {
+    "code": "pQrYF",
+    "province": "黑龙江省",
+    "city": "鹤岗",
+    "url": "/publish/forecast/AHL/hegang.html"
+  },
+  {
+    "code": "xggDD",
+    "province": "黑龙江省",
+    "city": "黑河",
+    "url": "/publish/forecast/AHL/heihe.html"
+  },
+  {
+    "code": "tsmWc",
+    "province": "黑龙江省",
+    "city": "鸡西",
+    "url": "/publish/forecast/AHL/jixi.html"
+  },
+  {
+    "code": "IwveF",
+    "province": "黑龙江省",
+    "city": "佳木斯",
+    "url": "/publish/forecast/AHL/jiamusi.html"
+  },
+  {
+    "code": "bzkiu",
+    "province": "黑龙江省",
+    "city": "加格达奇",
+    "url": "/publish/forecast/AHL/jiagedaqi.html"
+  },
+  {
+    "code": "JRtnt",
+    "province": "黑龙江省",
+    "city": "漠河",
+    "url": "/publish/forecast/AHL/mohe.html"
+  },
+  {
+    "code": "WhkSY",
+    "province": "黑龙江省",
+    "city": "牡丹江",
+    "url": "/publish/forecast/AHL/mudanjiang.html"
+  },
+  {
+    "code": "olTln",
+    "province": "黑龙江省",
+    "city": "七台河",
+    "url": "/publish/forecast/AHL/qitaihe.html"
+  },
+  {
+    "code": "pMfJu",
+    "province": "黑龙江省",
+    "city": "齐齐哈尔",
+    "url": "/publish/forecast/AHL/qiqihaer.html"
+  },
+  {
+    "code": "xYzrU",
+    "province": "黑龙江省",
+    "city": "双鸭山",
+    "url": "/publish/forecast/AHL/shuangyashan.html"
+  },
+  {
+    "code": "PtgOS",
+    "province": "黑龙江省",
+    "city": "绥芬河",
+    "url": "/publish/forecast/AHL/suifenhe.html"
+  },
+  {
+    "code": "ccdEO",
+    "province": "黑龙江省",
+    "city": "绥化",
+    "url": "/publish/forecast/AHL/suihua.html"
+  },
+  {
+    "code": "BAQLD",
+    "province": "黑龙江省",
+    "city": "伊春",
+    "url": "/publish/forecast/AHL/yichun.html"
+  },
+  {
+    "code": "xQbWX",
+    "province": "黑龙江省",
+    "city": "阿城",
+    "url": "/publish/forecast/AHL/acheng.html"
+  },
+  {
+    "code": "NNObw",
+    "province": "黑龙江省",
+    "city": "安达",
+    "url": "/publish/forecast/AHL/anda.html"
+  },
+  {
+    "code": "pWcDo",
+    "province": "黑龙江省",
+    "city": "巴彦",
+    "url": "/publish/forecast/AHL/bayan.html"
+  },
+  {
+    "code": "lNOID",
+    "province": "黑龙江省",
+    "city": "拜泉",
+    "url": "/publish/forecast/AHL/baiquan.html"
+  },
+  {
+    "code": "YjqxY",
+    "province": "黑龙江省",
+    "city": "宝清",
+    "url": "/publish/forecast/AHL/baoqing.html"
+  },
+  {
+    "code": "FUBSc",
+    "province": "黑龙江省",
+    "city": "北安",
+    "url": "/publish/forecast/AHL/beian.html"
+  },
+  {
+    "code": "yiPrH",
+    "province": "黑龙江省",
+    "city": "宾县",
+    "url": "/publish/forecast/AHL/binxian.html"
+  },
+  {
+    "code": "tALrP",
+    "province": "黑龙江省",
+    "city": "东宁",
+    "url": "/publish/forecast/AHL/dongning.html"
+  },
+  {
+    "code": "pIYbE",
+    "province": "黑龙江省",
+    "city": "方正",
+    "url": "/publish/forecast/AHL/fangzheng.html"
+  },
+  {
+    "code": "hhuDQ",
+    "province": "黑龙江省",
+    "city": "丰林",
+    "url": "/publish/forecast/AHL/wuying.html"
+  },
+  {
+    "code": "DVtZN",
+    "province": "黑龙江省",
+    "city": "抚远",
+    "url": "/publish/forecast/AHL/fuyuan.html"
+  },
+  {
+    "code": "klLFj",
+    "province": "黑龙江省",
+    "city": "富锦",
+    "url": "/publish/forecast/AHL/fujin.html"
+  },
+  {
+    "code": "dpauo",
+    "province": "黑龙江省",
+    "city": "富裕",
+    "url": "/publish/forecast/AHL/fuyu.html"
+  },
+  {
+    "code": "mbyFX",
+    "province": "黑龙江省",
+    "city": "海林",
+    "url": "/publish/forecast/AHL/hailin.html"
+  },
+  {
+    "code": "NTbXS",
+    "province": "黑龙江省",
+    "city": "海伦",
+    "url": "/publish/forecast/AHL/hailun.html"
+  },
+  {
+    "code": "wqBvY",
+    "province": "黑龙江省",
+    "city": "呼兰",
+    "url": "/publish/forecast/AHL/hulan.html"
+  },
+  {
+    "code": "mgshy",
+    "province": "黑龙江省",
+    "city": "呼玛",
+    "url": "/publish/forecast/AHL/huma.html"
+  },
+  {
+    "code": "UYVbv",
+    "province": "黑龙江省",
+    "city": "呼中",
+    "url": "/publish/forecast/AHL/huzhong.html"
+  },
+  {
+    "code": "rhGIi",
+    "province": "黑龙江省",
+    "city": "虎林",
+    "url": "/publish/forecast/AHL/hulin.html"
+  },
+  {
+    "code": "NFjTg",
+    "province": "黑龙江省",
+    "city": "鸡东",
+    "url": "/publish/forecast/AHL/jidong.html"
+  },
+  {
+    "code": "KwYPC",
+    "province": "黑龙江省",
+    "city": "集贤",
+    "url": "/publish/forecast/AHL/jixian.html"
+  },
+  {
+    "code": "YNpgg",
+    "province": "黑龙江省",
+    "city": "嘉荫",
+    "url": "/publish/forecast/AHL/jiayin.html"
+  },
+  {
+    "code": "itNzm",
+    "province": "黑龙江省",
+    "city": "克东",
+    "url": "/publish/forecast/AHL/kedong.html"
+  },
+  {
+    "code": "CbmDS",
+    "province": "黑龙江省",
+    "city": "克山",
+    "url": "/publish/forecast/AHL/keshan.html"
+  },
+  {
+    "code": "cGaLJ",
+    "province": "黑龙江省",
+    "city": "兰西",
+    "url": "/publish/forecast/AHL/lanxi.html"
+  },
+  {
+    "code": "gleUW",
+    "province": "黑龙江省",
+    "city": "林甸",
+    "url": "/publish/forecast/AHL/lindian.html"
+  },
+  {
+    "code": "CfgiH",
+    "province": "黑龙江省",
+    "city": "林口",
+    "url": "/publish/forecast/AHL/linkou.html"
+  },
+  {
+    "code": "nIDJi",
+    "province": "黑龙江省",
+    "city": "龙江",
+    "url": "/publish/forecast/AHL/longjiang.html"
+  },
+  {
+    "code": "PWpUL",
+    "province": "黑龙江省",
+    "city": "萝北",
+    "url": "/publish/forecast/AHL/luobei.html"
+  },
+  {
+    "code": "yqikp",
+    "province": "黑龙江省",
+    "city": "密山",
+    "url": "/publish/forecast/AHL/mishan.html"
+  },
+  {
+    "code": "KiOjO",
+    "province": "黑龙江省",
+    "city": "明水",
+    "url": "/publish/forecast/AHL/mingshui.html"
+  },
+  {
+    "code": "SZwbc",
+    "province": "黑龙江省",
+    "city": "木兰",
+    "url": "/publish/forecast/AHL/mulan.html"
+  },
+  {
+    "code": "ztosr",
+    "province": "黑龙江省",
+    "city": "穆棱",
+    "url": "/publish/forecast/AHL/muleng.html"
+  },
+  {
+    "code": "vbooM",
+    "province": "黑龙江省",
+    "city": "嫩江",
+    "url": "/publish/forecast/AHL/nenjiang.html"
+  },
+  {
+    "code": "ieErV",
+    "province": "黑龙江省",
+    "city": "宁安",
+    "url": "/publish/forecast/AHL/ningan.html"
+  },
+  {
+    "code": "vIgUg",
+    "province": "黑龙江省",
+    "city": "青冈",
+    "url": "/publish/forecast/AHL/qinggang.html"
+  },
+  {
+    "code": "yTeZo",
+    "province": "黑龙江省",
+    "city": "庆安",
+    "url": "/publish/forecast/AHL/qingan.html"
+  },
+  {
+    "code": "wFzHQ",
+    "province": "黑龙江省",
+    "city": "饶河",
+    "url": "/publish/forecast/AHL/raohe.html"
+  },
+  {
+    "code": "JAcDZ",
+    "province": "黑龙江省",
+    "city": "尚志",
+    "url": "/publish/forecast/AHL/shangzhi.html"
+  },
+  {
+    "code": "eXUdr",
+    "province": "黑龙江省",
+    "city": "双城",
+    "url": "/publish/forecast/AHL/shuangcheng.html"
+  },
+  {
+    "code": "SJgvR",
+    "province": "黑龙江省",
+    "city": "绥滨",
+    "url": "/publish/forecast/AHL/suibin.html"
+  },
+  {
+    "code": "yDfoU",
+    "province": "黑龙江省",
+    "city": "绥棱",
+    "url": "/publish/forecast/AHL/suileng.html"
+  },
+  {
+    "code": "mmcxS",
+    "province": "黑龙江省",
+    "city": "孙吴",
+    "url": "/publish/forecast/AHL/sunwu.html"
+  },
+  {
+    "code": "CDeOK",
+    "province": "黑龙江省",
+    "city": "塔河",
+    "url": "/publish/forecast/AHL/tahe.html"
+  },
+  {
+    "code": "xcfkz",
+    "province": "黑龙江省",
+    "city": "泰来",
+    "url": "/publish/forecast/AHL/tailai.html"
+  },
+  {
+    "code": "ZGvkf",
+    "province": "黑龙江省",
+    "city": "汤旺",
+    "url": "/publish/forecast/AHL/tangwang.html"
+  },
+  {
+    "code": "vroJw",
+    "province": "黑龙江省",
+    "city": "汤原",
+    "url": "/publish/forecast/AHL/tangyuan.html"
+  },
+  {
+    "code": "ADOZr",
+    "province": "黑龙江省",
+    "city": "铁力",
+    "url": "/publish/forecast/AHL/tieli.html"
+  },
+  {
+    "code": "psRwx",
+    "province": "黑龙江省",
+    "city": "通河",
+    "url": "/publish/forecast/AHL/tonghe.html"
+  },
+  {
+    "code": "qrZkO",
+    "province": "黑龙江省",
+    "city": "同江",
+    "url": "/publish/forecast/AHL/tongjiang.html"
+  },
+  {
+    "code": "sLrQJ",
+    "province": "黑龙江省",
+    "city": "望奎",
+    "url": "/publish/forecast/AHL/wangkui.html"
+  },
+  {
+    "code": "wDTbt",
+    "province": "黑龙江省",
+    "city": "五常",
+    "url": "/publish/forecast/AHL/wuchang.html"
+  },
+  {
+    "code": "hkmNX",
+    "province": "黑龙江省",
+    "city": "五大连池",
+    "url": "/publish/forecast/AHL/wudalianchi.html"
+  },
+  {
+    "code": "HbMIl",
+    "province": "黑龙江省",
+    "city": "新林",
+    "url": "/publish/forecast/AHL/xinlin.html"
+  },
+  {
+    "code": "mWSYM",
+    "province": "黑龙江省",
+    "city": "逊克",
+    "url": "/publish/forecast/AHL/xunke.html"
+  },
+  {
+    "code": "pvnEo",
+    "province": "黑龙江省",
+    "city": "延寿",
+    "url": "/publish/forecast/AHL/yanshou.html"
+  },
+  {
+    "code": "bsEJz",
+    "province": "黑龙江省",
+    "city": "依安",
+    "url": "/publish/forecast/AHL/yian.html"
+  },
+  {
+    "code": "dmjQR",
+    "province": "黑龙江省",
+    "city": "依兰",
+    "url": "/publish/forecast/AHL/yilan.html"
+  },
+  {
+    "code": "uxvdb",
+    "province": "黑龙江省",
+    "city": "友谊",
+    "url": "/publish/forecast/AHL/youyi.html"
+  },
+  {
+    "code": "Ksney",
+    "province": "黑龙江省",
+    "city": "肇东",
+    "url": "/publish/forecast/AHL/zhaodong.html"
+  },
+  {
+    "code": "aurwd",
+    "province": "黑龙江省",
+    "city": "肇源",
+    "url": "/publish/forecast/AHL/zhaoyuan.html"
+  },
+  {
+    "code": "Yopij",
+    "province": "黑龙江省",
+    "city": "肇州",
+    "url": "/publish/forecast/AHL/zhaozhou.html"
+  },
+  {
+    "code": "ASmKv",
+    "province": "黑龙江省",
+    "city": "讷河",
+    "url": "/publish/forecast/AHL/zuohe.html"
+  },
+  {
+    "code": "DOodT",
+    "province": "黑龙江省",
+    "city": "桦川",
+    "url": "/publish/forecast/AHL/zuochuan.html"
+  },
+  {
+    "code": "jLgCL",
+    "province": "黑龙江省",
+    "city": "桦南",
+    "url": "/publish/forecast/AHL/zuonan.html"
+  }
+]

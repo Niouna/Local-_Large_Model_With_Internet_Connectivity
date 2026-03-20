@@ -1,0 +1,212 @@
+[
+  {
+    "code": "JHIrC",
+    "province": "重庆市",
+    "city": "奉节",
+    "url": "/publish/forecast/ACQ/fengjie.html"
+  },
+  {
+    "code": "CCvTr",
+    "province": "重庆市",
+    "city": "涪陵",
+    "url": "/publish/forecast/ACQ/fuling.html"
+  },
+  {
+    "code": "iBdYx",
+    "province": "重庆市",
+    "city": "黔江",
+    "url": "/publish/forecast/ACQ/qianjiang.html"
+  },
+  {
+    "code": "AbIWr",
+    "province": "重庆市",
+    "city": "巴南",
+    "url": "/publish/forecast/ACQ/banan.html"
+  },
+  {
+    "code": "FfkQD",
+    "province": "重庆市",
+    "city": "北碚",
+    "url": "/publish/forecast/ACQ/beizuo.html"
+  },
+  {
+    "code": "mDPjt",
+    "province": "重庆市",
+    "city": "长寿",
+    "url": "/publish/forecast/ACQ/changshou.html"
+  },
+  {
+    "code": "eavwd",
+    "province": "重庆市",
+    "city": "城口",
+    "url": "/publish/forecast/ACQ/chengkou.html"
+  },
+  {
+    "code": "RBIeV",
+    "province": "重庆市",
+    "city": "大足",
+    "url": "/publish/forecast/ACQ/dazu.html"
+  },
+  {
+    "code": "OqThL",
+    "province": "重庆市",
+    "city": "垫江",
+    "url": "/publish/forecast/ACQ/dianjiang.html"
+  },
+  {
+    "code": "fVOJL",
+    "province": "重庆市",
+    "city": "丰都",
+    "url": "/publish/forecast/ACQ/fengdu.html"
+  },
+  {
+    "code": "utLqu",
+    "province": "重庆市",
+    "city": "合川",
+    "url": "/publish/forecast/ACQ/hechuan.html"
+  },
+  {
+    "code": "nIjuT",
+    "province": "重庆市",
+    "city": "江津",
+    "url": "/publish/forecast/ACQ/jiangjin.html"
+  },
+  {
+    "code": "DYoqI",
+    "province": "重庆市",
+    "city": "开州",
+    "url": "/publish/forecast/ACQ/kaizhou.html"
+  },
+  {
+    "code": "kWdog",
+    "province": "重庆市",
+    "city": "梁平",
+    "url": "/publish/forecast/ACQ/liangping.html"
+  },
+  {
+    "code": "OIUau",
+    "province": "重庆市",
+    "city": "南川",
+    "url": "/publish/forecast/ACQ/nanchuan.html"
+  },
+  {
+    "code": "mFVrF",
+    "province": "重庆市",
+    "city": "彭水",
+    "url": "/publish/forecast/ACQ/pengshui.html"
+  },
+  {
+    "code": "klPmX",
+    "province": "重庆市",
+    "city": "荣昌",
+    "url": "/publish/forecast/ACQ/rongchang.html"
+  },
+  {
+    "code": "rRKjq",
+    "province": "重庆市",
+    "city": "沙坪坝",
+    "url": "/publish/forecast/ACQ/shapingba.html"
+  },
+  {
+    "code": "bUuhS",
+    "province": "重庆市",
+    "city": "石柱",
+    "url": "/publish/forecast/ACQ/shizhu.html"
+  },
+  {
+    "code": "uymdU",
+    "province": "重庆市",
+    "city": "铜梁",
+    "url": "/publish/forecast/ACQ/tongliang.html"
+  },
+  {
+    "code": "PeJwF",
+    "province": "重庆市",
+    "city": "万盛",
+    "url": "/publish/forecast/ACQ/wansheng.html"
+  },
+  {
+    "code": "bsKAn",
+    "province": "重庆市",
+    "city": "万州",
+    "url": "/publish/forecast/ACQ/wanzhou.html"
+  },
+  {
+    "code": "uSMWc",
+    "province": "重庆市",
+    "city": "巫山",
+    "url": "/publish/forecast/ACQ/wushan.html"
+  },
+  {
+    "code": "QUGEw",
+    "province": "重庆市",
+    "city": "巫溪",
+    "url": "/publish/forecast/ACQ/wuxi.html"
+  },
+  {
+    "code": "LwFjp",
+    "province": "重庆市",
+    "city": "武隆",
+    "url": "/publish/forecast/ACQ/wulong.html"
+  },
+  {
+    "code": "ukeEi",
+    "province": "重庆市",
+    "city": "秀山",
+    "url": "/publish/forecast/ACQ/xiushan.html"
+  },
+  {
+    "code": "XGxHU",
+    "province": "重庆市",
+    "city": "永川",
+    "url": "/publish/forecast/ACQ/yongchuan.html"
+  },
+  {
+    "code": "bghvn",
+    "province": "重庆市",
+    "city": "酉阳",
+    "url": "/publish/forecast/ACQ/youyang.html"
+  },
+  {
+    "code": "xFVYU",
+    "province": "重庆市",
+    "city": "渝北",
+    "url": "/publish/forecast/ACQ/yubei.html"
+  },
+  {
+    "code": "pzmmf",
+    "province": "重庆市",
+    "city": "云阳",
+    "url": "/publish/forecast/ACQ/yunyang.html"
+  },
+  {
+    "code": "QHcEb",
+    "province": "重庆市",
+    "city": "忠县",
+    "url": "/publish/forecast/ACQ/zhongxian.html"
+  },
+  {
+    "code": "UkfaS",
+    "province": "重庆市",
+    "city": "重庆",
+    "url": "/publish/forecast/ACQ/zhongqing.html"
+  },
+  {
+    "code": "kUNHe",
+    "province": "重庆市",
+    "city": "潼南",
+    "url": "/publish/forecast/ACQ/zuonan.html"
+  },
+  {
+    "code": "ruRPA",
+    "province": "重庆市",
+    "city": "璧山",
+    "url": "/publish/forecast/ACQ/zuoshan.html"
+  },
+  {
+    "code": "ivlNL",
+    "province": "重庆市",
+    "city": "綦江",
+    "url": "/publish/forecast/ACQ/zuojiang.html"
+  }
+]

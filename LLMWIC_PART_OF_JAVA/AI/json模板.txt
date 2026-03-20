@@ -1,0 +1,105 @@
+1. 用户 → Java API （/v1/chat/completions）
+这是标准的 OpenAI 格式请求体，你通过 curl 发送的 JSON 示例：
+
+json
+{
+  "model": "qwen2.5:7b",
+  "messages": [
+    {
+      "role": "user",
+      "content": "请联网搜索 2026年性价比最高的显卡"
+    }
+  ]
+}
+2. Java → Python 搜索服务 （/search）
+Java 的 PythonSearchService 会构造如下 JSON 发送给 Python 服务：
+
+json
+{
+  "query": "2026年性价比最高的显卡",
+  "max_results": 5
+}
+3. Python → Java （搜索结果）
+Python 服务返回的 JSON 包含以下核心字段（基于你之前的 enhanced_search_result.json）：
+
+json
+{
+  "query": "2026年性价比最高的显卡",
+  "search_engine": "bing",
+  "search_time": "2026-02-22T12:15:09.594388",
+  "elapsed_seconds": 129.09,
+  "result_count": 3,
+  "results": [ ... ],  // 每个结果的详细信息（标题、链接、摘要、正文等）
+  "cross_validation": {
+    "confidence": "medium",
+    "consistent_facts": ["多来源确认日期：11月4日"],
+    "source_count": 3
+  },
+  "summary_for_llm": "【增强来源】国务院办公厅关于2026年部分节假日安排的通知...",  // 关键字段！
+  "note_for_llm": "搜索时间：2026年02月 | 信息来源：3个网页 | 信息置信度：medium",
+  "status": "success"
+}
+关键字段说明：
+
+summary_for_llm：Java 提取并直接喂给 AI 的摘要文本（就是你看到的“根据提供的信息...”那段话的来源）
+
+results：原始搜索结果数组，包含每个网页的标题、链接、摘要、正文抓取状态等
+
+cross_validation：多源交叉验证结果（一致事实、置信度等）
+
+elapsed_seconds：搜索耗时
+
+4. Java → Ollama （最终发给 AI 的请求）
+Java 的 RAGOrchestrator 将用户问题和搜索结果合并，构造新的 messages 发给 Ollama：
+
+json
+{
+  "model": "qwen2.5:7b",
+  "messages": [
+    {
+      "role": "user",
+      "content": "用户问题：2026年性价比最高的显卡\n\n联网搜索结果：\n【增强来源】国务院办公厅关于2026年部分节假日安排的通知...\n【详细来源】 1. [✓正文|high] 国务院办公厅... 2. [摘要|medium] ..."
+    }
+  ],
+  "stream": false
+}
+这里 content 字段就是 summary_for_llm 加上用户问题的组合。
+
+5. Ollama → Java （AI 回复）
+Ollama 返回的 JSON 符合 OpenAI 格式：
+
+json
+{
+  "model": "qwen2.5:7b",
+  "created_at": "...",
+  "message": {
+    "role": "assistant",
+    "content": "根据2026年的市场预测，性价比最高的显卡推荐如下：\n1. NVIDIA RTX 5060...\n2. AMD RX 9070 XT..."
+  },
+  "done": true
+}
+6. Java → 用户 （最终响应）
+Java 的 OpenAIController 将 Ollama 的回复包装成 OpenAI 兼容格式返回：
+
+json
+{
+  "id": "chatcmpl-xxx",
+  "object": "chat.completion",
+  "created": 1771736966,
+  "model": "qwen2.5:7b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "根据2026年的市场预测，性价比最高的显卡推荐如下：\n1. NVIDIA RTX 5060..."
+      },
+      "finishReason": "stop"
+    }
+  ],
+  "usage": {
+    "promptTokens": 9,
+    "completionTokens": 254,
+    "totalTokens": 263
+  }
+}

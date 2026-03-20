@@ -1,0 +1,794 @@
+[
+  {
+    "code": "IayMy",
+    "province": "云南省",
+    "city": "昆明",
+    "url": "/publish/forecast/AYN/kunming.html"
+  },
+  {
+    "code": "DQgGy",
+    "province": "云南省",
+    "city": "保山",
+    "url": "/publish/forecast/AYN/baoshan.html"
+  },
+  {
+    "code": "xbekN",
+    "province": "云南省",
+    "city": "楚雄",
+    "url": "/publish/forecast/AYN/chuxiong.html"
+  },
+  {
+    "code": "MXvqt",
+    "province": "云南省",
+    "city": "大理",
+    "url": "/publish/forecast/AYN/dali.html"
+  },
+  {
+    "code": "YpfMn",
+    "province": "云南省",
+    "city": "德宏",
+    "url": "/publish/forecast/AYN/dehong.html"
+  },
+  {
+    "code": "dghSe",
+    "province": "云南省",
+    "city": "迪庆",
+    "url": "/publish/forecast/AYN/diqing.html"
+  },
+  {
+    "code": "EIXjp",
+    "province": "云南省",
+    "city": "贡山",
+    "url": "/publish/forecast/AYN/gongshan.html"
+  },
+  {
+    "code": "kLDAL",
+    "province": "云南省",
+    "city": "红河",
+    "url": "/publish/forecast/AYN/honghe.html"
+  },
+  {
+    "code": "mDayj",
+    "province": "云南省",
+    "city": "景洪",
+    "url": "/publish/forecast/AYN/jinghong.html"
+  },
+  {
+    "code": "AwEIF",
+    "province": "云南省",
+    "city": "丽江",
+    "url": "/publish/forecast/AYN/lijiang.html"
+  },
+  {
+    "code": "oiQQr",
+    "province": "云南省",
+    "city": "临沧",
+    "url": "/publish/forecast/AYN/lincang.html"
+  },
+  {
+    "code": "Wjrex",
+    "province": "云南省",
+    "city": "芒市",
+    "url": "/publish/forecast/AYN/mangshi.html"
+  },
+  {
+    "code": "weSDX",
+    "province": "云南省",
+    "city": "普洱",
+    "url": "/publish/forecast/AYN/puer.html"
+  },
+  {
+    "code": "dICew",
+    "province": "云南省",
+    "city": "瑞丽",
+    "url": "/publish/forecast/AYN/ruili.html"
+  },
+  {
+    "code": "qpYuM",
+    "province": "云南省",
+    "city": "思茅",
+    "url": "/publish/forecast/AYN/simao.html"
+  },
+  {
+    "code": "ZQEia",
+    "province": "云南省",
+    "city": "文山",
+    "url": "/publish/forecast/AYN/wenshan.html"
+  },
+  {
+    "code": "IhAco",
+    "province": "云南省",
+    "city": "西双版纳",
+    "url": "/publish/forecast/AYN/xishuangbanna.html"
+  },
+  {
+    "code": "GtYml",
+    "province": "云南省",
+    "city": "香格里拉",
+    "url": "/publish/forecast/AYN/xianggelila.html"
+  },
+  {
+    "code": "eHman",
+    "province": "云南省",
+    "city": "玉溪",
+    "url": "/publish/forecast/AYN/yuxi.html"
+  },
+  {
+    "code": "CMqgr",
+    "province": "云南省",
+    "city": "昭通",
+    "url": "/publish/forecast/AYN/zhaotong.html"
+  },
+  {
+    "code": "bOAGp",
+    "province": "云南省",
+    "city": "安宁",
+    "url": "/publish/forecast/AYN/anning.html"
+  },
+  {
+    "code": "AQzCk",
+    "province": "云南省",
+    "city": "宾川",
+    "url": "/publish/forecast/AYN/binchuan.html"
+  },
+  {
+    "code": "eKeha",
+    "province": "云南省",
+    "city": "沧源",
+    "url": "/publish/forecast/AYN/cangyuan.html"
+  },
+  {
+    "code": "oNSGZ",
+    "province": "云南省",
+    "city": "昌宁",
+    "url": "/publish/forecast/AYN/changning.html"
+  },
+  {
+    "code": "cHXNh",
+    "province": "云南省",
+    "city": "呈贡",
+    "url": "/publish/forecast/AYN/chenggong.html"
+  },
+  {
+    "code": "mNpXo",
+    "province": "云南省",
+    "city": "澄江",
+    "url": "/publish/forecast/AYN/chengjiang.html"
+  },
+  {
+    "code": "sIkPn",
+    "province": "云南省",
+    "city": "大关",
+    "url": "/publish/forecast/AYN/daguan.html"
+  },
+  {
+    "code": "adcMw",
+    "province": "云南省",
+    "city": "大姚",
+    "url": "/publish/forecast/AYN/dayao.html"
+  },
+  {
+    "code": "eOoXM",
+    "province": "云南省",
+    "city": "德钦",
+    "url": "/publish/forecast/AYN/deqin.html"
+  },
+  {
+    "code": "UgaxN",
+    "province": "云南省",
+    "city": "东川",
+    "url": "/publish/forecast/AYN/dongchuan.html"
+  },
+  {
+    "code": "xvRTr",
+    "province": "云南省",
+    "city": "峨山",
+    "url": "/publish/forecast/AYN/eshan.html"
+  },
+  {
+    "code": "jfchA",
+    "province": "云南省",
+    "city": "洱源",
+    "url": "/publish/forecast/AYN/eryuan.html"
+  },
+  {
+    "code": "wpVlw",
+    "province": "云南省",
+    "city": "凤庆",
+    "url": "/publish/forecast/AYN/fengqing.html"
+  },
+  {
+    "code": "ywnBK",
+    "province": "云南省",
+    "city": "福贡",
+    "url": "/publish/forecast/AYN/fugong.html"
+  },
+  {
+    "code": "NYtMq",
+    "province": "云南省",
+    "city": "富民",
+    "url": "/publish/forecast/AYN/fumin.html"
+  },
+  {
+    "code": "vLEOj",
+    "province": "云南省",
+    "city": "富宁",
+    "url": "/publish/forecast/AYN/funing.html"
+  },
+  {
+    "code": "BrRuR",
+    "province": "云南省",
+    "city": "富源",
+    "url": "/publish/forecast/AYN/fuyuan.html"
+  },
+  {
+    "code": "MZnfz",
+    "province": "云南省",
+    "city": "个旧",
+    "url": "/publish/forecast/AYN/gejiu.html"
+  },
+  {
+    "code": "ASpgY",
+    "province": "云南省",
+    "city": "耿马",
+    "url": "/publish/forecast/AYN/gengma.html"
+  },
+  {
+    "code": "WCNhd",
+    "province": "云南省",
+    "city": "广南",
+    "url": "/publish/forecast/AYN/guangnan.html"
+  },
+  {
+    "code": "acADA",
+    "province": "云南省",
+    "city": "河口",
+    "url": "/publish/forecast/AYN/hekou.html"
+  },
+  {
+    "code": "Oepdl",
+    "province": "云南省",
+    "city": "鹤庆",
+    "url": "/publish/forecast/AYN/heqing.html"
+  },
+  {
+    "code": "cCkAx",
+    "province": "云南省",
+    "city": "华宁",
+    "url": "/publish/forecast/AYN/huaning.html"
+  },
+  {
+    "code": "isoyJ",
+    "province": "云南省",
+    "city": "华坪",
+    "url": "/publish/forecast/AYN/huaping.html"
+  },
+  {
+    "code": "NQkus",
+    "province": "云南省",
+    "city": "会泽",
+    "url": "/publish/forecast/AYN/huize.html"
+  },
+  {
+    "code": "btlSx",
+    "province": "云南省",
+    "city": "剑川",
+    "url": "/publish/forecast/AYN/jianchuan.html"
+  },
+  {
+    "code": "PzHAZ",
+    "province": "云南省",
+    "city": "建水",
+    "url": "/publish/forecast/AYN/jianshui.html"
+  },
+  {
+    "code": "yIZKB",
+    "province": "云南省",
+    "city": "江城",
+    "url": "/publish/forecast/AYN/jiangcheng.html"
+  },
+  {
+    "code": "FvhhF",
+    "province": "云南省",
+    "city": "江川",
+    "url": "/publish/forecast/AYN/jiangchuan.html"
+  },
+  {
+    "code": "bhlMI",
+    "province": "云南省",
+    "city": "金平",
+    "url": "/publish/forecast/AYN/jinping.html"
+  },
+  {
+    "code": "lMQXt",
+    "province": "云南省",
+    "city": "晋宁",
+    "url": "/publish/forecast/AYN/jinning.html"
+  },
+  {
+    "code": "KrpXJ",
+    "province": "云南省",
+    "city": "景东",
+    "url": "/publish/forecast/AYN/jingdong.html"
+  },
+  {
+    "code": "wGNvn",
+    "province": "云南省",
+    "city": "景谷",
+    "url": "/publish/forecast/AYN/jinggu.html"
+  },
+  {
+    "code": "YdTJG",
+    "province": "云南省",
+    "city": "开远",
+    "url": "/publish/forecast/AYN/kaiyuan.html"
+  },
+  {
+    "code": "zOAAs",
+    "province": "云南省",
+    "city": "兰坪",
+    "url": "/publish/forecast/AYN/lanping.html"
+  },
+  {
+    "code": "sMzde",
+    "province": "云南省",
+    "city": "澜沧",
+    "url": "/publish/forecast/AYN/lancang.html"
+  },
+  {
+    "code": "zkxjs",
+    "province": "云南省",
+    "city": "梁河",
+    "url": "/publish/forecast/AYN/lianghe.html"
+  },
+  {
+    "code": "LIOMK",
+    "province": "云南省",
+    "city": "六库",
+    "url": "/publish/forecast/AYN/liuku.html"
+  },
+  {
+    "code": "ZVCsS",
+    "province": "云南省",
+    "city": "龙陵",
+    "url": "/publish/forecast/AYN/longling.html"
+  },
+  {
+    "code": "IPydV",
+    "province": "云南省",
+    "city": "陇川",
+    "url": "/publish/forecast/AYN/longchuan.html"
+  },
+  {
+    "code": "SCUAp",
+    "province": "云南省",
+    "city": "鲁甸",
+    "url": "/publish/forecast/AYN/ludian.html"
+  },
+  {
+    "code": "TjOgz",
+    "province": "云南省",
+    "city": "禄丰",
+    "url": "/publish/forecast/AYN/lufeng.html"
+  },
+  {
+    "code": "fPIjF",
+    "province": "云南省",
+    "city": "禄劝",
+    "url": "/publish/forecast/AYN/luquan.html"
+  },
+  {
+    "code": "eqtuY",
+    "province": "云南省",
+    "city": "陆良",
+    "url": "/publish/forecast/AYN/luliang.html"
+  },
+  {
+    "code": "ebFbI",
+    "province": "云南省",
+    "city": "绿春",
+    "url": "/publish/forecast/AYN/lvchun.html"
+  },
+  {
+    "code": "WMKmg",
+    "province": "云南省",
+    "city": "罗平",
+    "url": "/publish/forecast/AYN/luoping.html"
+  },
+  {
+    "code": "KifAk",
+    "province": "云南省",
+    "city": "麻栗坡",
+    "url": "/publish/forecast/AYN/malipo.html"
+  },
+  {
+    "code": "jmZgg",
+    "province": "云南省",
+    "city": "马关",
+    "url": "/publish/forecast/AYN/maguan.html"
+  },
+  {
+    "code": "fyDAe",
+    "province": "云南省",
+    "city": "马龙",
+    "url": "/publish/forecast/AYN/malong.html"
+  },
+  {
+    "code": "kXzHY",
+    "province": "云南省",
+    "city": "蒙自",
+    "url": "/publish/forecast/AYN/mengzi.html"
+  },
+  {
+    "code": "oqzlP",
+    "province": "云南省",
+    "city": "孟连",
+    "url": "/publish/forecast/AYN/menglian.html"
+  },
+  {
+    "code": "saNmx",
+    "province": "云南省",
+    "city": "弥渡",
+    "url": "/publish/forecast/AYN/midu.html"
+  },
+  {
+    "code": "tdwdj",
+    "province": "云南省",
+    "city": "弥勒",
+    "url": "/publish/forecast/AYN/mile.html"
+  },
+  {
+    "code": "AOSYX",
+    "province": "云南省",
+    "city": "墨江",
+    "url": "/publish/forecast/AYN/mojiang.html"
+  },
+  {
+    "code": "BQsYp",
+    "province": "云南省",
+    "city": "牟定",
+    "url": "/publish/forecast/AYN/mouding.html"
+  },
+  {
+    "code": "tJxiW",
+    "province": "云南省",
+    "city": "南华",
+    "url": "/publish/forecast/AYN/nanhua.html"
+  },
+  {
+    "code": "LOAhC",
+    "province": "云南省",
+    "city": "南涧",
+    "url": "/publish/forecast/AYN/nanjian.html"
+  },
+  {
+    "code": "eoMMH",
+    "province": "云南省",
+    "city": "宁洱",
+    "url": "/publish/forecast/AYN/ninger.html"
+  },
+  {
+    "code": "PtTbw",
+    "province": "云南省",
+    "city": "宁蒗",
+    "url": "/publish/forecast/AYN/ningzuo.html"
+  },
+  {
+    "code": "MlVrp",
+    "province": "云南省",
+    "city": "怒江",
+    "url": "/publish/forecast/AYN/nujiang.html"
+  },
+  {
+    "code": "SNyPs",
+    "province": "云南省",
+    "city": "屏边",
+    "url": "/publish/forecast/AYN/pingbian.html"
+  },
+  {
+    "code": "vdyEU",
+    "province": "云南省",
+    "city": "巧家",
+    "url": "/publish/forecast/AYN/qiaojia.html"
+  },
+  {
+    "code": "AFYaW",
+    "province": "云南省",
+    "city": "丘北",
+    "url": "/publish/forecast/AYN/qiubei.html"
+  },
+  {
+    "code": "rYbQI",
+    "province": "云南省",
+    "city": "曲靖",
+    "url": "/publish/forecast/AYN/qujing.html"
+  },
+  {
+    "code": "WZsvt",
+    "province": "云南省",
+    "city": "师宗",
+    "url": "/publish/forecast/AYN/shizong.html"
+  },
+  {
+    "code": "qlNLn",
+    "province": "云南省",
+    "city": "施甸",
+    "url": "/publish/forecast/AYN/shidian.html"
+  },
+  {
+    "code": "ZrWId",
+    "province": "云南省",
+    "city": "石林",
+    "url": "/publish/forecast/AYN/shilin.html"
+  },
+  {
+    "code": "aCCnk",
+    "province": "云南省",
+    "city": "石屏",
+    "url": "/publish/forecast/AYN/shiping.html"
+  },
+  {
+    "code": "dqXxh",
+    "province": "云南省",
+    "city": "双柏",
+    "url": "/publish/forecast/AYN/shuangbai.html"
+  },
+  {
+    "code": "MBVyg",
+    "province": "云南省",
+    "city": "双江",
+    "url": "/publish/forecast/AYN/shuangjiang.html"
+  },
+  {
+    "code": "FGLCR",
+    "province": "云南省",
+    "city": "水富",
+    "url": "/publish/forecast/AYN/shuifu.html"
+  },
+  {
+    "code": "JiGSi",
+    "province": "云南省",
+    "city": "绥江",
+    "url": "/publish/forecast/AYN/suijiang.html"
+  },
+  {
+    "code": "ILlxw",
+    "province": "云南省",
+    "city": "太华山",
+    "url": "/publish/forecast/AYN/taihuashan.html"
+  },
+  {
+    "code": "DrwgP",
+    "province": "云南省",
+    "city": "腾冲",
+    "url": "/publish/forecast/AYN/tengchong.html"
+  },
+  {
+    "code": "YOFIz",
+    "province": "云南省",
+    "city": "通海",
+    "url": "/publish/forecast/AYN/tonghai.html"
+  },
+  {
+    "code": "msgsX",
+    "province": "云南省",
+    "city": "威信",
+    "url": "/publish/forecast/AYN/weixin.html"
+  },
+  {
+    "code": "usiSp",
+    "province": "云南省",
+    "city": "巍山",
+    "url": "/publish/forecast/AYN/weishan.html"
+  },
+  {
+    "code": "sTINS",
+    "province": "云南省",
+    "city": "维西",
+    "url": "/publish/forecast/AYN/weixi.html"
+  },
+  {
+    "code": "HvkQI",
+    "province": "云南省",
+    "city": "武定",
+    "url": "/publish/forecast/AYN/wuding.html"
+  },
+  {
+    "code": "KjiDB",
+    "province": "云南省",
+    "city": "西畴",
+    "url": "/publish/forecast/AYN/xichou.html"
+  },
+  {
+    "code": "dDUzR",
+    "province": "云南省",
+    "city": "西盟",
+    "url": "/publish/forecast/AYN/ximeng.html"
+  },
+  {
+    "code": "PQqEx",
+    "province": "云南省",
+    "city": "祥云",
+    "url": "/publish/forecast/AYN/xiangyun.html"
+  },
+  {
+    "code": "vVaif",
+    "province": "云南省",
+    "city": "新平",
+    "url": "/publish/forecast/AYN/xinping.html"
+  },
+  {
+    "code": "kGSGu",
+    "province": "云南省",
+    "city": "宣威",
+    "url": "/publish/forecast/AYN/xuanwei.html"
+  },
+  {
+    "code": "OfsjD",
+    "province": "云南省",
+    "city": "寻甸",
+    "url": "/publish/forecast/AYN/xundian.html"
+  },
+  {
+    "code": "TJcpS",
+    "province": "云南省",
+    "city": "盐津",
+    "url": "/publish/forecast/AYN/yanjin.html"
+  },
+  {
+    "code": "rOuyU",
+    "province": "云南省",
+    "city": "砚山",
+    "url": "/publish/forecast/AYN/yanshan.html"
+  },
+  {
+    "code": "YeTRa",
+    "province": "云南省",
+    "city": "漾濞",
+    "url": "/publish/forecast/AYN/yangzuo.html"
+  },
+  {
+    "code": "mcYHb",
+    "province": "云南省",
+    "city": "姚安",
+    "url": "/publish/forecast/AYN/yaoan.html"
+  },
+  {
+    "code": "iXuOK",
+    "province": "云南省",
+    "city": "宜良",
+    "url": "/publish/forecast/AYN/yiliang2.html"
+  },
+  {
+    "code": "ifitb",
+    "province": "云南省",
+    "city": "彝良",
+    "url": "/publish/forecast/AYN/yiliang1.html"
+  },
+  {
+    "code": "Oqduj",
+    "province": "云南省",
+    "city": "易门",
+    "url": "/publish/forecast/AYN/yimen.html"
+  },
+  {
+    "code": "NzuxE",
+    "province": "云南省",
+    "city": "盈江",
+    "url": "/publish/forecast/AYN/yingjiang.html"
+  },
+  {
+    "code": "cLAuy",
+    "province": "云南省",
+    "city": "永德",
+    "url": "/publish/forecast/AYN/yongde.html"
+  },
+  {
+    "code": "LwDNZ",
+    "province": "云南省",
+    "city": "永平",
+    "url": "/publish/forecast/AYN/yongping.html"
+  },
+  {
+    "code": "tUEbc",
+    "province": "云南省",
+    "city": "永仁",
+    "url": "/publish/forecast/AYN/yongren.html"
+  },
+  {
+    "code": "PhcCu",
+    "province": "云南省",
+    "city": "永善",
+    "url": "/publish/forecast/AYN/yongshan.html"
+  },
+  {
+    "code": "rJRXL",
+    "province": "云南省",
+    "city": "永胜",
+    "url": "/publish/forecast/AYN/yongsheng.html"
+  },
+  {
+    "code": "noiqK",
+    "province": "云南省",
+    "city": "元江",
+    "url": "/publish/forecast/AYN/yuanjiang.html"
+  },
+  {
+    "code": "pmumb",
+    "province": "云南省",
+    "city": "元谋",
+    "url": "/publish/forecast/AYN/yuanmou.html"
+  },
+  {
+    "code": "cXVUi",
+    "province": "云南省",
+    "city": "元阳",
+    "url": "/publish/forecast/AYN/yuanyang.html"
+  },
+  {
+    "code": "dJvmC",
+    "province": "云南省",
+    "city": "云龙",
+    "url": "/publish/forecast/AYN/yunlong.html"
+  },
+  {
+    "code": "DIrSp",
+    "province": "云南省",
+    "city": "云县",
+    "url": "/publish/forecast/AYN/yunxian.html"
+  },
+  {
+    "code": "FITcL",
+    "province": "云南省",
+    "city": "沾益",
+    "url": "/publish/forecast/AYN/zhanyi.html"
+  },
+  {
+    "code": "ZFgiT",
+    "province": "云南省",
+    "city": "镇康",
+    "url": "/publish/forecast/AYN/zhenkang.html"
+  },
+  {
+    "code": "YcNIl",
+    "province": "云南省",
+    "city": "镇雄",
+    "url": "/publish/forecast/AYN/zhenxiong.html"
+  },
+  {
+    "code": "XcWKq",
+    "province": "云南省",
+    "city": "镇沅",
+    "url": "/publish/forecast/AYN/zhenzuo.html"
+  },
+  {
+    "code": "aqlUk",
+    "province": "云南省",
+    "city": "勐海",
+    "url": "/publish/forecast/AYN/zuohai.html"
+  },
+  {
+    "code": "sGhYv",
+    "province": "云南省",
+    "city": "勐腊",
+    "url": "/publish/forecast/AYN/zuola.html"
+  },
+  {
+    "code": "UYJan",
+    "province": "云南省",
+    "city": "嵩明",
+    "url": "/publish/forecast/AYN/zuoming.html"
+  },
+  {
+    "code": "ZFGIu",
+    "province": "云南省",
+    "city": "泸水",
+    "url": "/publish/forecast/AYN/zuoshui.html"
+  },
+  {
+    "code": "cJoUu",
+    "province": "云南省",
+    "city": "泸西",
+    "url": "/publish/forecast/AYN/zuoxi.html"
+  }
+]
