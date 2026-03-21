@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import cn.edu.wtc.ollama.model.Conversation;
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.concurrent.CompletableFuture;
 
 @Component
@@ -104,11 +106,25 @@ public class RAGOrchestrator {
     }
 
     private boolean needsWebSearch(String query) {
-        String prompt = "判断以下问题是否需要联网搜索最新信息？只需回答'是'或'否'。问题：" + query;
+        // 获取当前系统时间
+        LocalDateTime now = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        String currentTime = now.format(formatter);
+
+        String prompt = String.format(
+                "当前时间是：%s。判断以下问题是否需要获取最新的实时信息或近期事件。" +
+                        "如果问题涉及新闻、事件、实时数据、需要推荐最新的商品，回答“是”；" +
+                        "如果问题属于通用知识、历史、理论、主观分析，回答“否”。问题：%s",
+                currentTime, query
+        );
+
         try {
-            String res = chatService.chat("qwen2.5:3b", prompt);
+            log.info("调用 qwen2.5:3b 判断是否需要联网搜索，当前时间：{}，输入：{}", currentTime, query);
+            String res = chatService.chat("qwen2.5:3b", prompt).trim();
+            log.info("判断结果：{}", res);
             return res != null && res.contains("是");
         } catch (Exception e) {
+            log.error("联网判断失败", e);
             return false;
         }
     }
