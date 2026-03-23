@@ -2,7 +2,9 @@ package cn.edu.wtc.controller;
 
 import cn.edu.wtc.manager.OllamaServiceManager;
 import cn.edu.wtc.memory.entity.ConversationMemory;
+import cn.edu.wtc.memory.entity.RagRequestLog;
 import cn.edu.wtc.memory.repository.ConversationMemoryRepository;
+import cn.edu.wtc.memory.repository.RagRequestLogRepository;
 import cn.edu.wtc.memory.service.MemoryDebugSnapshotService;
 import cn.edu.wtc.memory.service.MemoryService;
 import cn.edu.wtc.ollama.model.Conversation;
@@ -30,6 +32,8 @@ public class AdminController {
     @Autowired
     private ConversationMemoryRepository memoryRepository;
     @Autowired
+    private RagRequestLogRepository ragLogRepository;  // 新增注入
+    @Autowired
     private MemoryService memoryService;
     @Autowired
     private MemoryDebugSnapshotService snapshotService;
@@ -40,14 +44,12 @@ public class AdminController {
     @GetMapping("/status/ollama")
     public Map<String, Object> ollamaStatus() {
         Map<String, Object> result = new HashMap<>();
-        // GPU 实例 (11434)
         boolean gpuRunning = OllamaServiceManager.isServiceRunning(11434);
         result.put("gpu", Map.of(
                 "port", 11434,
                 "running", gpuRunning,
                 "models", gpuRunning ? OllamaServiceManager.getModels(11434) : "服务未运行"
         ));
-        // CPU 实例 (11435)
         boolean cpuRunning = OllamaServiceManager.isServiceRunning(11435);
         result.put("cpu", Map.of(
                 "port", 11435,
@@ -68,9 +70,6 @@ public class AdminController {
     @GetMapping("/status/memories")
     public Map<String, Object> memoryStats() {
         long total = memoryRepository.count();
-        long l1Active = memoryRepository.countBySessionIdAndLevelAndIsActiveTrue("", 1); // 需要按真实session统计？这里可以查所有活跃L1
-        // 更简单的：自定义查询，但这里直接使用 Specification 或原生SQL
-        // 临时：返回总数
         return Map.of("total", total);
     }
 
@@ -108,7 +107,6 @@ public class AdminController {
                 Map.of("role", msg.getRole(), "content", msg.getContent(), "timestamp", msg.getTimestamp())
         ).toList());
 
-        // 获取关联的记忆
         String memoryContext = memoryService.assembleMemoryContext(sessionId);
         detail.put("memoryContext", memoryContext);
 
@@ -155,7 +153,6 @@ public class AdminController {
 
     @DeleteMapping("/memories/{id}")
     public Map<String, String> deleteMemory(@PathVariable Long id) {
-        // 软删除
         memoryRepository.deactivateByIds(List.of(id));
         return Map.of("result", "success");
     }
@@ -168,5 +165,27 @@ public class AdminController {
         memoryRepository.deleteAll();
         jdbcTemplate.execute("ALTER TABLE conversation_memories AUTO_INCREMENT = 1");
         return Map.of("result", "success");
+    }
+
+    // ------------------ 新增：RAG 日志追踪 ------------------
+
+    @GetMapping("/rag-logs")
+    public Page<RagRequestLog> listRagLogs(
+            @RequestParam(required = false) String sessionId,
+            Pageable pageable) {
+
+        Specification<RagRequestLog> spec = (root, query, cb) -> {
+            List<Predicate> predicates = new ArrayList<>();
+            if (sessionId != null && !sessionId.isEmpty()) {
+                predicates.add(cb.like(root.get("sessionId"), "%" + sessionId + "%"));
+            }
+            return cb.and(predicates.toArray(new Predicate[0]));
+        };
+        return ragLogRepository.findAll(spec, pageable);
+    }
+
+    @GetMapping("/rag-logs/{id}")
+    public RagRequestLog getRagLogDetail(@PathVariable Long id) {
+        return ragLogRepository.findById(id).orElse(null);
     }
 }

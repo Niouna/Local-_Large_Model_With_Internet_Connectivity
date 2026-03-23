@@ -1,10 +1,13 @@
-package cn.edu.wtc.relay.orchestrator; // 替换为你的实际包名
+package cn.edu.wtc.relay.orchestrator;
 
 import cn.edu.wtc.memory.service.MemoryService;
 import cn.edu.wtc.ollama.service.ChatService;
 import cn.edu.wtc.ollama.service.SessionManager;
 import cn.edu.wtc.relay.detector.IntentDetector;
 import cn.edu.wtc.relay.search.SearchService;
+// <--- 新增导入
+import cn.edu.wtc.memory.entity.RagRequestLog;
+import cn.edu.wtc.memory.repository.RagRequestLogRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,14 +31,19 @@ public class RAGOrchestrator {
     private MemoryService memoryService;
     @Autowired
     private SessionManager sessionManager;
-    // 在类中注入 IntentDetector
     @Autowired
     private IntentDetector intentDetector;
+
+    // <--- 新增注入
+    @Autowired
+    private RagRequestLogRepository ragLogRepository;
 
     /**
      * 带 Session 的对话入口 (支持记忆和联网)
      */
     public String chatWithRag(String sessionId, String model, String message) throws IOException {
+        long startTime = System.currentTimeMillis(); // <--- 记录开始时间
+
         log.info("收到原始请求 -> SessionId: [{}], Model: [{}], Message: {}", sessionId, model, message);
 
         if (model == null || model.trim().isEmpty()) {
@@ -63,31 +71,33 @@ public class RAGOrchestrator {
             searchResult = performWebSearch(realQuery);
         }
 
-        String finalPrompt;
+        String finalPromptText; // <--- 重命名变量，避免与局部变量冲突
         if (needWebSearch) {
             String searchPart = String.format("基于以下搜索结果回答问题。\n搜索结果：%s\n\n用户问题：%s", searchResult, realQuery);
             if (!memoryContext.isEmpty()) {
-                finalPrompt = "以下是历史信息（请参考这些信息回答用户的问题）：\n" + memoryContext + "\n\n" + searchPart;
+                finalPromptText = "以下是历史信息（请参考这些信息回答用户的问题）：\n" + memoryContext + "\n\n" + searchPart;
             } else {
-                finalPrompt = searchPart;
+                finalPromptText = searchPart;
             }
         } else {
             if (!memoryContext.isEmpty()) {
-                finalPrompt = "以下是历史信息（请参考这些信息回答用户的问题）：\n" + memoryContext + "\n用户问题：" + message;
+                finalPromptText = "以下是历史信息（请参考这些信息回答用户的问题）：\n" + memoryContext + "\n用户问题：" + message;
             } else {
-                finalPrompt = message;
+                finalPromptText = message;
             }
         }
 
-        log.info("最终 Prompt（前500字符）:\n{}", finalPrompt.length() > 500 ? finalPrompt.substring(0, 500) + "..." : finalPrompt);
+        log.info("最终 Prompt（前500字符）:\n{}", finalPromptText.length() > 500 ? finalPromptText.substring(0, 500) + "..." : finalPromptText);
 
-        // 调用 ChatService（传入 finalPrompt，它已经包含了正确的用户问题）
-        String answer = chatService.chatWithSession(effectiveSessionId, actualModel, finalPrompt);
+        // 调用 ChatService
+        String answer = chatService.chatWithSession(effectiveSessionId, actualModel, finalPromptText);
 
-        // 异步写入记忆：使用真实用户消息（realQuery 或原始 message）
+        long endTime = System.currentTimeMillis(); // <--- 记录结束时间
+
+        // --- 原有异步记忆逻辑 ---
         final String finalSessionId = effectiveSessionId;
         final String finalAnswer = answer;
-        final String finalUserMsg = needWebSearch ? realQuery : message; // 关键修改
+        final String finalUserMsg = needWebSearch ? realQuery : message;
 
         CompletableFuture.runAsync(() -> {
             try {
@@ -95,6 +105,40 @@ public class RAGOrchestrator {
                 log.debug("记忆已异步写入会话：{}", finalSessionId);
             } catch (Exception e) {
                 log.error("异步记忆写入失败", e);
+            }
+        });
+
+        // --- 新增：异步记录 RAG 请求日志 ---
+        // 捕获最终变量用于 Lambda
+        final String logSessionId = effectiveSessionId;
+        final String logUserMsg = message; // 记录用户原始输入
+        final boolean logNeedWeb = needWebSearch;
+        final String logRealQuery = realQuery;
+        final String logSearchResult = searchResult != null ? searchResult : "";
+        final String logMemoryContext = memoryContext != null ? memoryContext : "";
+        final String logFinalPrompt = finalPromptText;
+        final String logAiResponse = answer;
+        final int logProcessTime = (int)(endTime - startTime);
+
+        CompletableFuture.runAsync(() -> {
+            try {
+                RagRequestLog logEntry = new RagRequestLog();
+                logEntry.setSessionId(logSessionId);
+                // requestTime 和 createdAt 会在 @PrePersist 中自动设置，也可以手动设
+                logEntry.setRequestTime(LocalDateTime.now());
+                logEntry.setUserMessage(logUserMsg);
+                logEntry.setNeedWebSearch(logNeedWeb);
+                logEntry.setRealQuery(logRealQuery);
+                logEntry.setSearchResult(logSearchResult);
+                logEntry.setMemoryContext(logMemoryContext);
+                logEntry.setFinalPrompt(logFinalPrompt);
+                logEntry.setAiResponse(logAiResponse);
+                logEntry.setProcessTimeMs(logProcessTime);
+
+                ragLogRepository.save(logEntry);
+                log.debug("RAG 请求日志已异步保存，耗时: {} ms", logProcessTime);
+            } catch (Exception e) {
+                log.error("异步保存 RAG 日志失败", e);
             }
         });
 
@@ -106,7 +150,6 @@ public class RAGOrchestrator {
     }
 
     private boolean needsWebSearch(String query) {
-        // 获取当前系统时间
         LocalDateTime now = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         String currentTime = now.format(formatter);
