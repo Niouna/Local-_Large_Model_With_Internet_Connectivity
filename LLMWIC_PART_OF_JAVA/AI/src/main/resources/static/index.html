@@ -3,35 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>本地 AI 助手</title>
+    <title>LLMWIC</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-    <header>
-        <h1>本地 AI 助手</h1>
-        <p id="statusText">⚙️ 连接已建立，准备就绪。</p>
-    </header>
+<!-- 左侧侧边栏 -->
+<div class="sidebar">
+    <div class="logo">LLMWIC</div>
+    <ul class="menu">
+        <li class="menu-item active" data-page="rag">
+            <span>LLMWIC_RAG</span>
+        </li>
+        <li class="menu-item" data-page="role-playing">
+            <span>LLMWIC_Role_playing</span>
+        </li>
+<!--         后台管理项，使用 onclick 进行跳转 老方法，暂时弃置-->
+<!--        <li class="menu-item" onclick="window.location.href='http://localhost:8080/admin/admin.html'">-->
+<!--            <span>后台管理</span>-->
+<!--        </li>-->
 
-    <div class="chat-box" id="chatBox">
-        <!-- 消息会动态添加到这里 -->
-        <div class="message system">
+        <!-- 新增后台管理项，使用 data-action 区分 -->
+        <li class="menu-item" data-action="redirect" data-url="http://localhost:8080/admin/admin.html">
+            <span>后台管理</span>
+        </li>
+    </ul>
+</div>
 
-            <div class="content">欢迎！点击 🌐 按钮可开启联网搜索模式。</div>
+<!-- 主内容区 -->
+<div class="main-content">
+    <!-- 头部区域：模型选择 -->
+    <div class="header">
+        <div class="model-select">
+            <label for="gpuModelSelect">GPU 模型：</label>
+            <select id="gpuModelSelect">
+                <option value="">加载中...</option>
+            </select>
+        </div>
+        <div class="model-select">
+            <label for="cpuModelSelect">CPU 模型：</label>
+            <select id="cpuModelSelect">
+                <option value="">加载中...</option>
+            </select>
+        </div>
+        <div class="prompt">选择一个模型开始对话</div>
+    </div>
+
+    <!-- 内容区域（根据页面切换） -->
+    <div id="rag-page" class="page active">
+        <div class="chat-container">
+            <div id="chatMessages"></div>
+            <div class="input-area">
+                <button id="webSearchToggle" class="web-toggle">🌐</button>
+                <textarea id="messageInput" placeholder="输入消息..."></textarea>
+                <button id="sendBtn">发送</button>
+            </div>
         </div>
     </div>
 
-    <!-- 模式状态指示器 -->
-    <div id="modeIndicator" class="mode-indicator">当前模式：本地对话</div>
-
-    <div class="input-area">
-        <!-- 联网搜索开关 -->
-        <button id="webSearchToggle" class="web-toggle" title="开启联网搜索">
-            🌐
-        </button>
-
-        <textarea id="userInput" placeholder="输入消息... (Shift+Enter 换行)" rows="1"></textarea>
-        <button id="sendBtn">发送</button>
+    <div id="role-playing-page" class="page">
+        <div class="placeholder">
+            <h2>LLMWIC_Role_playing</h2>
+            <p>此页面正在开发中...</p>
+        </div>
     </div>
 </div>
 

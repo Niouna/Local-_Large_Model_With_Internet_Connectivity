@@ -111,6 +111,9 @@ public class OllamaConfig {
     public void setLogLevel(String logLevel) { this.logLevel = logLevel; }
     public String getConfigFilePath() { return configFilePath; }
     public void setConfigFilePath(String configFilePath) { this.configFilePath = configFilePath; }
+    public Map<String, Integer> getModelPortMap() {
+        return modelPortMap;
+    }
 
     public void printConfig() {
         System.out.println("=== Ollama 客户端配置 ===");
