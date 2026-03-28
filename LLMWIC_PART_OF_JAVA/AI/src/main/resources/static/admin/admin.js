@@ -34,8 +34,61 @@ document.addEventListener('DOMContentLoaded', () => {
             if (tabId === 'sessions') loadSessions();
             if (tabId === 'memories') loadMemories(currentPage);
             if (tabId === 'rag-logs') loadRagLogs(ragCurrentPage);
+            if (tabId === 'dashboard') loadDashboard();
+            if (tabId === 'sessions') loadSessions();
+            if (tabId === 'memories') loadMemories(currentPage);
+            if (tabId === 'rag-logs') loadRagLogs(ragCurrentPage);
+            if (tabId === 'traits') loadTraits(0);
+            if (tabId === 'game-events') loadGameEvents(0);
+            if (tabId === 'game-memories') loadGameMemories(0);
+            if (tabId === 'game-recovery') loadGameRecoveryPoints(0);
+            if (tabId === 'game-snapshots') loadGameSnapshots(0);
         });
     });
+
+    // 叙事记忆
+    document.getElementById('refresh-game-memories')?.addEventListener('click', () => loadGameMemories(0));
+    document.getElementById('apply-game-memories-filter')?.addEventListener('click', () => {
+        gameMemoriesFilterSession = document.getElementById('filter-game-memories-session').value;
+        gameMemoriesFilterType = document.getElementById('filter-game-memories-type').value;
+        loadGameMemories(0);
+    });
+
+    // 恢复点
+    document.getElementById('refresh-game-recovery')?.addEventListener('click', () => loadGameRecoveryPoints(0));
+    document.getElementById('apply-game-recovery-filter')?.addEventListener('click', () => {
+        gameRecoveryFilterSession = document.getElementById('filter-game-recovery-session').value;
+        loadGameRecoveryPoints(0);
+    });
+
+    // 快照管理
+    document.getElementById('refresh-game-snapshots')?.addEventListener('click', () => loadGameSnapshots(0));
+    document.getElementById('apply-game-snapshots-filter')?.addEventListener('click', () => {
+        gameSnapshotsFilterSession = document.getElementById('filter-game-snapshots-session').value;
+        loadGameSnapshots(0);
+    });
+
+    // 游戏事件
+    document.getElementById('refresh-game-events')?.addEventListener('click', () => loadGameEvents(0));
+    document.getElementById('apply-game-events-filter')?.addEventListener('click', () => {
+        gameEventsFilterSession = document.getElementById('filter-game-events-session').value;
+        loadGameEvents(0);
+    });
+
+// 叙事记忆
+    document.getElementById('refresh-game-memories')?.addEventListener('click', () => loadGameMemories(0));
+    document.getElementById('apply-game-memories-filter')?.addEventListener('click', () => {
+        gameMemoriesFilterSession = document.getElementById('filter-game-memories-session').value;
+        gameMemoriesFilterType = document.getElementById('filter-game-memories-type').value;
+        loadGameMemories(0);
+    });
+
+    // 特质管理相关
+    document.getElementById('refresh-traits')?.addEventListener('click', () => loadTraits());
+    document.getElementById('add-trait')?.addEventListener('click', () => openTraitModal());
+    document.getElementById('cancel-trait')?.addEventListener('click', () => closeTraitModal());
+    document.getElementById('trait-form')?.addEventListener('submit', saveTrait);
+    document.querySelector('.close-trait')?.addEventListener('click', closeTraitModal);
 
     // 2. 仪表盘内部状态切换
     document.querySelectorAll('.status-tab-btn').forEach(btn => {
@@ -411,3 +464,575 @@ function escapeHtml(text) {
     div.textContent = text;
     return div.innerHTML;
 }
+
+// ---------- 特质管理 ----------
+let traitCurrentPage = 0;
+let traitTotalPages = 1;
+let traitPageSize = 10;
+
+async function loadTraits(page = 0) {
+    traitCurrentPage = page;
+    const params = new URLSearchParams({
+        page,
+        size: traitPageSize,
+        sort: 'traitName,asc'
+    });
+    try {
+        const res = await fetch(`/v1/game/traits?${params}`);
+        const data = await res.json();
+        // 注意：原有的 /v1/game/traits 返回的是列表，没有分页，我们可能需要调整。
+        // 为了分页，我们使用 JPA 的分页查询。但之前没有分页接口，这里我们暂时假设返回全量列表，前端自己做分页。
+        // 为了简单，我们直接使用全量列表，并在前端实现前端分页（或改为后端分页）。
+        // 由于时间关系，这里使用前端分页简单处理。
+        const traits = Array.isArray(data) ? data : data.content || [];
+        traitTotalPages = Math.ceil(traits.length / traitPageSize);
+        const start = traitCurrentPage * traitPageSize;
+        const pageTraits = traits.slice(start, start + traitPageSize);
+
+        const tbody = document.getElementById('traits-body');
+        if (pageTraits.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;">暂无特质数据</td></tr>';
+        } else {
+            tbody.innerHTML = pageTraits.map(t => `
+                <tr>
+                    <td>${t.id}</td>
+                    <td><strong>${escapeHtml(t.traitName)}</strong></td>
+                    <td style="max-width:300px;">${escapeHtml(t.description)}</td>
+                    <td style="max-width:200px;">${escapeHtml(t.example || '')}</td>
+                    <td>
+                        <button class="btn" style="padding:4px 8px;" onclick="editTrait(${t.id})">编辑</button>
+                        <button class="btn danger" style="padding:4px 8px;" onclick="deleteTrait(${t.id})">删除</button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+        renderTraitPagination();
+    } catch (err) {
+        console.error('加载特质失败', err);
+        document.getElementById('traits-body').innerHTML = '<tr><td colspan="5">加载失败</td></tr>';
+    }
+}
+
+function renderTraitPagination() {
+    const container = document.getElementById('traits-pagination');
+    if (traitTotalPages <= 1) {
+        container.innerHTML = '';
+        return;
+    }
+    let html = '';
+    for (let i = 0; i < traitTotalPages; i++) {
+        html += `<button class="page-btn ${i === traitCurrentPage ? 'active' : ''}" onclick="loadTraits(${i})">${i+1}</button>`;
+    }
+    container.innerHTML = html;
+}
+
+function openTraitModal(trait = null) {
+    const modal = document.getElementById('trait-modal');
+    const title = document.getElementById('trait-modal-title');
+    const idField = document.getElementById('trait-id');
+    const nameField = document.getElementById('trait-name');
+    const descField = document.getElementById('trait-description');
+    const exampleField = document.getElementById('trait-example');
+
+    if (trait) {
+        title.innerText = '编辑特质';
+        idField.value = trait.id;
+        nameField.value = trait.traitName;
+        descField.value = trait.description;
+        exampleField.value = trait.example || '';
+    } else {
+        title.innerText = '新增特质';
+        idField.value = '';
+        nameField.value = '';
+        descField.value = '';
+        exampleField.value = '';
+    }
+    modal.style.display = 'block';
+}
+
+function closeTraitModal() {
+    document.getElementById('trait-modal').style.display = 'none';
+}
+
+async function saveTrait(event) {
+    event.preventDefault();
+    const id = document.getElementById('trait-id').value;
+    const traitName = document.getElementById('trait-name').value.trim();
+    const description = document.getElementById('trait-description').value.trim();
+    const example = document.getElementById('trait-example').value.trim();
+
+    if (!traitName || !description) {
+        alert('请填写特质名称和描述');
+        return;
+    }
+
+    const payload = { traitName, description, example };
+    let url = '/v1/game/traits';
+    let method = 'POST';
+    if (id) {
+        url = `/v1/game/traits/${id}`;
+        method = 'PUT';
+    }
+
+    try {
+        const res = await fetch(url, {
+            method,
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        if (data.status === 'ok') {
+            alert(data.message);
+            closeTraitModal();
+            loadTraits(traitCurrentPage);
+        } else {
+            alert('操作失败: ' + data.message);
+        }
+    } catch (err) {
+        console.error('保存特质失败', err);
+        alert('网络错误');
+    }
+}
+
+window.editTrait = async (id) => {
+    try {
+        const res = await fetch(`/v1/game/traits/${id}`);
+        const trait = await res.json();
+        openTraitModal(trait);
+    } catch (err) {
+        console.error('获取特质详情失败', err);
+    }
+};
+
+window.deleteTrait = async (id) => {
+    if (!confirm('确定要删除此特质吗？删除后可能影响现有角色的特质引用。')) return;
+    try {
+        const res = await fetch(`/v1/game/traits/${id}`, { method: 'DELETE' });
+        const data = await res.json();
+        if (data.status === 'ok') {
+            alert(data.message);
+            loadTraits(traitCurrentPage);
+        } else {
+            alert('删除失败: ' + data.message);
+        }
+    } catch (err) {
+        console.error('删除失败', err);
+    }
+};
+
+let gameEventsPage = 0;
+let gameEventsTotalPages = 1;
+let gameEventsFilterSession = '';
+
+async function loadGameEvents(page = 0) {
+    gameEventsPage = page;
+    const params = new URLSearchParams({
+        page,
+        size: 10,
+        sessionId: gameEventsFilterSession || ''
+    });
+    try {
+        const res = await fetch(`/admin/game-events?${params}`);
+        const data = await res.json();
+        const events = data.content || [];
+        gameEventsTotalPages = data.totalPages || 1;
+        const tbody = document.getElementById('game-events-body');
+        if (events.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="9">暂无数据</td></tr>';
+        } else {
+            tbody.innerHTML = events.map(e => `
+                <tr>
+                    <td>${e.id}</td>
+                    <td style="font-family:monospace;">${escapeHtml(e.sessionId)}</td>
+                    <td>${e.turnNumber}</td>
+                    <td>${escapeHtml(e.eventType)}</td>
+                    <td style="max-width:150px; overflow:hidden; text-overflow:ellipsis;" title="${escapeHtml(e.userInput || '')}">${escapeHtml(e.userInput ? e.userInput.substring(0,50) : '')}</td>
+                    <td style="max-width:150px; overflow:hidden; text-overflow:ellipsis;" title="${escapeHtml(e.aiResponse || '')}">${escapeHtml(e.aiResponse ? e.aiResponse.substring(0,50) : '')}</td>
+                    <td>${escapeHtml(e.narrativeMode || '')}</td>
+                    <td>${e.processTimeMs}</td>
+                    <td>
+                        <button class="btn" style="padding:4px 8px;" onclick="viewGameEvent(${e.id})">详情</button>
+                        <button class="btn danger" style="padding:4px 8px;" onclick="deleteGameEvent(${e.id})">删除</button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+        renderGameEventsPagination();
+    } catch (err) {
+        console.error('加载游戏事件失败', err);
+        document.getElementById('game-events-body').innerHTML = '<tr><td colspan="9">加载失败</td></tr>';
+    }
+}
+
+function renderGameEventsPagination() {
+    const container = document.getElementById('game-events-pagination');
+    if (gameEventsTotalPages <= 1) {
+        container.innerHTML = '';
+        return;
+    }
+    let html = '';
+    for (let i = 0; i < gameEventsTotalPages; i++) {
+        html += `<button class="page-btn ${i === gameEventsPage ? 'active' : ''}" onclick="loadGameEvents(${i})">${i+1}</button>`;
+    }
+    container.innerHTML = html;
+}
+
+window.viewGameEvent = async (id) => {
+    try {
+        const res = await fetch(`/admin/game-events/${id}`);
+        const event = await res.json();
+        // 创建模态框显示详情（可复用现有模态框或新建）
+        showDetailModal('游戏事件详情', `
+            <div><strong>ID:</strong> ${event.id}</div>
+            <div><strong>会话ID:</strong> ${escapeHtml(event.sessionId)}</div>
+            <div><strong>回合数:</strong> ${event.turnNumber}</div>
+            <div><strong>事件类型:</strong> ${escapeHtml(event.eventType)}</div>
+            <div><strong>用户输入:</strong><pre>${escapeHtml(event.userInput || '')}</pre></div>
+            <div><strong>AI回复:</strong><pre>${escapeHtml(event.aiResponse || '')}</pre></div>
+            <div><strong>状态变化(Delta):</strong><pre>${escapeHtml(event.stateDelta || '')}</pre></div>
+            <div><strong>模式:</strong> ${escapeHtml(event.narrativeMode || '')}</div>
+            <div><strong>耗时(ms):</strong> ${event.processTimeMs}</div>
+            <div><strong>时间:</strong> ${new Date(event.eventTime).toLocaleString()}</div>
+        `);
+    } catch (err) {
+        console.error('获取详情失败', err);
+    }
+};
+
+window.deleteGameEvent = async (id) => {
+    if (!confirm('确定要删除该事件吗？')) return;
+    try {
+        const res = await fetch(`/admin/game-events/${id}`, { method: 'DELETE' });
+        const data = await res.json();
+        if (data.result === 'success') {
+            alert('删除成功');
+            loadGameEvents(gameEventsPage);
+        } else {
+            alert('删除失败');
+        }
+    } catch (err) {
+        console.error('删除失败', err);
+    }
+};
+
+function showDetailModal(title, contentHtml) {
+    // 检查是否已有模态框，没有则创建
+    let modal = document.getElementById('common-detail-modal');
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'common-detail-modal';
+        modal.className = 'modal';
+        modal.innerHTML = `
+            <div class="modal-content" style="max-width:800px;">
+                <span class="close-common">&times;</span>
+                <h2></h2>
+                <div id="common-detail-content"></div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+        modal.querySelector('.close-common').onclick = () => modal.style.display = 'none';
+        window.onclick = (e) => { if (e.target === modal) modal.style.display = 'none'; };
+    }
+    modal.querySelector('h2').innerText = title;
+    modal.querySelector('#common-detail-content').innerHTML = contentHtml;
+    modal.style.display = 'block';
+}
+
+// ---------- 叙事记忆 ----------
+let gameMemoriesPage = 0;
+let gameMemoriesTotalPages = 1;
+let gameMemoriesFilterSession = '';
+let gameMemoriesFilterType = '';
+
+async function loadGameMemories(page = 0) {
+    gameMemoriesPage = page;
+    const params = new URLSearchParams({
+        page,
+        size: 10,
+        sessionId: gameMemoriesFilterSession || '',
+        memoryType: gameMemoriesFilterType || ''
+    });
+    try {
+        const res = await fetch(`/admin/game-memories?${params}`);
+        const data = await res.json();
+        const memories = data.content || [];
+        gameMemoriesTotalPages = data.totalPages || 1;
+        const tbody = document.getElementById('game-memories-body');
+        if (memories.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="10">暂无数据</td></tr>';
+        } else {
+            tbody.innerHTML = memories.map(m => `
+                <tr>
+                    <td>${m.id}</td>
+                    <td style="font-family:monospace;">${escapeHtml(m.sessionId)}</td>
+                    <td>${m.turnNumber}</td>
+                    <td>${escapeHtml(m.memoryType)}</td>
+                    <td style="max-width:200px; overflow:hidden; text-overflow:ellipsis;" title="${escapeHtml(m.content)}">${escapeHtml(m.content ? m.content.substring(0,50) : '')}</td>
+                    <td>${m.importance}</td>
+                    <td style="max-width:150px; overflow:hidden; text-overflow:ellipsis;" title="${escapeHtml(m.userInput)}">${escapeHtml(m.userInput ? m.userInput.substring(0,40) : '')}</td>
+                    <td style="max-width:150px; overflow:hidden; text-overflow:ellipsis;" title="${escapeHtml(m.aiResponse)}">${escapeHtml(m.aiResponse ? m.aiResponse.substring(0,40) : '')}</td>
+                    <td>${new Date(m.createdAt).toLocaleString()}</td>
+                    <td>
+                        <button class="btn" style="padding:4px 8px;" onclick="viewGameMemory(${m.id})">详情</button>
+                        <button class="btn danger" style="padding:4px 8px;" onclick="deleteGameMemory(${m.id})">删除</button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+        renderGameMemoriesPagination();
+    } catch (err) {
+        console.error('加载叙事记忆失败', err);
+        document.getElementById('game-memories-body').innerHTML = '<tr><td colspan="10">加载失败</td></tr>';
+    }
+}
+
+function renderGameMemoriesPagination() {
+    const container = document.getElementById('game-memories-pagination');
+    if (gameMemoriesTotalPages <= 1) {
+        container.innerHTML = '';
+        return;
+    }
+    let html = '';
+    for (let i = 0; i < gameMemoriesTotalPages; i++) {
+        html += `<button class="page-btn ${i === gameMemoriesPage ? 'active' : ''}" onclick="loadGameMemories(${i})">${i+1}</button>`;
+    }
+    container.innerHTML = html;
+}
+
+window.viewGameMemory = async (id) => {
+    try {
+        const res = await fetch(`/admin/game-memories/${id}`);
+        const memory = await res.json();
+        showDetailModal('叙事记忆详情', `
+            <div><strong>ID:</strong> ${memory.id}</div>
+            <div><strong>会话ID:</strong> ${escapeHtml(memory.sessionId)}</div>
+            <div><strong>回合数:</strong> ${memory.turnNumber}</div>
+            <div><strong>记忆类型:</strong> ${escapeHtml(memory.memoryType)}</div>
+            <div><strong>内容:</strong><pre>${escapeHtml(memory.content)}</pre></div>
+            <div><strong>摘要:</strong><pre>${escapeHtml(memory.summary)}</pre></div>
+            <div><strong>重要性:</strong> ${memory.importance}</div>
+            <div><strong>用户输入:</strong><pre>${escapeHtml(memory.userInput)}</pre></div>
+            <div><strong>AI回复:</strong><pre>${escapeHtml(memory.aiResponse)}</pre></div>
+            <div><strong>创建时间:</strong> ${new Date(memory.createdAt).toLocaleString()}</div>
+        `);
+    } catch (err) {
+        console.error('获取详情失败', err);
+    }
+};
+
+window.deleteGameMemory = async (id) => {
+    if (!confirm('确定要删除该叙事记忆吗？')) return;
+    try {
+        const res = await fetch(`/admin/game-memories/${id}`, { method: 'DELETE' });
+        const data = await res.json();
+        if (data.result === 'success') {
+            alert('删除成功');
+            loadGameMemories(gameMemoriesPage);
+        } else {
+            alert('删除失败');
+        }
+    } catch (err) {
+        console.error('删除失败', err);
+    }
+};
+
+// ---------- 恢复点 ----------
+let gameRecoveryPage = 0;
+let gameRecoveryTotalPages = 1;
+let gameRecoveryFilterSession = '';
+
+async function loadGameRecoveryPoints(page = 0) {
+    gameRecoveryPage = page;
+    const params = new URLSearchParams({
+        page,
+        size: 10,
+        sessionId: gameRecoveryFilterSession || ''
+    });
+    try {
+        const res = await fetch(`/admin/game-recovery-points?${params}`);
+        const data = await res.json();
+        const points = data.content || [];
+        gameRecoveryTotalPages = data.totalPages || 1;
+        const tbody = document.getElementById('game-recovery-body');
+        if (points.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="8">暂无数据</td></tr>';
+        } else {
+            tbody.innerHTML = points.map(p => `
+                <tr>
+                    <td>${p.id}</td>
+                    <td style="font-family:monospace;">${escapeHtml(p.sessionId)}</td>
+                    <td>${escapeHtml(p.pointName)}</td>
+                    <td style="max-width:200px; overflow:hidden; text-overflow:ellipsis;" title="${escapeHtml(p.description)}">${escapeHtml(p.description ? p.description.substring(0,50) : '')}</td>
+                    <td>${p.turnNumber}</td>
+                    <td>${new Date(p.createdAt).toLocaleString()}</td>
+                    <td>${p.isAuto ? '是' : '否'}</td>
+                    <td>
+                        <button class="btn" style="padding:4px 8px;" onclick="viewGameRecoveryPoint(${p.id})">详情</button>
+                        <button class="btn danger" style="padding:4px 8px;" onclick="deleteGameRecoveryPoint(${p.id})">删除</button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+        renderGameRecoveryPagination();
+    } catch (err) {
+        console.error('加载恢复点失败', err);
+        document.getElementById('game-recovery-body').innerHTML = '<tr><td colspan="8">加载失败</td></tr>';
+    }
+}
+
+function renderGameRecoveryPagination() {
+    const container = document.getElementById('game-recovery-pagination');
+    if (gameRecoveryTotalPages <= 1) {
+        container.innerHTML = '';
+        return;
+    }
+    let html = '';
+    for (let i = 0; i < gameRecoveryTotalPages; i++) {
+        html += `<button class="page-btn ${i === gameRecoveryPage ? 'active' : ''}" onclick="loadGameRecoveryPoints(${i})">${i+1}</button>`;
+    }
+    container.innerHTML = html;
+}
+
+window.viewGameRecoveryPoint = async (id) => {
+    try {
+        const res = await fetch(`/admin/game-recovery-points/${id}`);
+        const point = await res.json();
+        showDetailModal('恢复点详情', `
+            <div><strong>ID:</strong> ${point.id}</div>
+            <div><strong>会话ID:</strong> ${escapeHtml(point.sessionId)}</div>
+            <div><strong>存档名称:</strong> ${escapeHtml(point.pointName)}</div>
+            <div><strong>描述:</strong> ${escapeHtml(point.description)}</div>
+            <div><strong>回合数:</strong> ${point.turnNumber}</div>
+            <div><strong>创建时间:</strong> ${new Date(point.createdAt).toLocaleString()}</div>
+            <div><strong>是否自动:</strong> ${point.isAuto ? '是' : '否'}</div>
+        `);
+    } catch (err) {
+        console.error('获取详情失败', err);
+    }
+};
+
+window.deleteGameRecoveryPoint = async (id) => {
+    if (!confirm('确定要删除该恢复点吗？')) return;
+    try {
+        const res = await fetch(`/admin/game-recovery-points/${id}`, { method: 'DELETE' });
+        const data = await res.json();
+        if (data.result === 'success') {
+            alert('删除成功');
+            loadGameRecoveryPoints(gameRecoveryPage);
+        } else {
+            alert('删除失败');
+        }
+    } catch (err) {
+        console.error('删除失败', err);
+    }
+};
+
+// ---------- 快照管理 ----------
+let gameSnapshotsPage = 0;
+let gameSnapshotsTotalPages = 1;
+let gameSnapshotsFilterSession = '';
+
+async function loadGameSnapshots(page = 0) {
+    gameSnapshotsPage = page;
+    const params = new URLSearchParams({
+        page,
+        size: 10,
+        sessionId: gameSnapshotsFilterSession || ''
+    });
+    try {
+        const res = await fetch(`/admin/game-snapshots?${params}`);
+        const data = await res.json();
+        const snapshots = data.content || [];
+        gameSnapshotsTotalPages = data.totalPages || 1;
+        const tbody = document.getElementById('game-snapshots-body');
+        if (snapshots.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="7">暂无数据</td></tr>';
+        } else {
+            tbody.innerHTML = snapshots.map(s => `
+                <tr>
+                    <td>${s.id}</td>
+                    <td style="font-family:monospace;">${escapeHtml(s.sessionId)}</td>
+                    <td>${s.turnNumber}</td>
+                    <td>${s.version}</td>
+                    <td>${new Date(s.snapshotTime).toLocaleString()}</td>
+                    <td>${s.isCurrent ? '<span style="color:#10b981;">✅ 是</span>' : '<span style="color:#9ca3af;">❌ 否</span>'}</td>
+                    <td>
+                        <button class="btn" style="padding:4px 8px;" onclick="viewGameSnapshot(${s.id})">详情</button>
+                        ${!s.isCurrent ? `<button class="btn" style="padding:4px 8px;" onclick="setCurrentSnapshot(${s.id})">设为当前</button>` : ''}
+                        <button class="btn danger" style="padding:4px 8px;" onclick="deleteGameSnapshot(${s.id})">删除</button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+        renderGameSnapshotsPagination();
+    } catch (err) {
+        console.error('加载快照失败', err);
+        document.getElementById('game-snapshots-body').innerHTML = '<tr><td colspan="7">加载失败</td></tr>';
+    }
+}
+
+function renderGameSnapshotsPagination() {
+    const container = document.getElementById('game-snapshots-pagination');
+    if (gameSnapshotsTotalPages <= 1) {
+        container.innerHTML = '';
+        return;
+    }
+    let html = '';
+    for (let i = 0; i < gameSnapshotsTotalPages; i++) {
+        html += `<button class="page-btn ${i === gameSnapshotsPage ? 'active' : ''}" onclick="loadGameSnapshots(${i})">${i+1}</button>`;
+    }
+    container.innerHTML = html;
+}
+
+window.viewGameSnapshot = async (id) => {
+    try {
+        const res = await fetch(`/admin/game-snapshots/${id}`);
+        const snapshot = await res.json();
+        showDetailModal('快照详情', `
+            <div><strong>ID:</strong> ${snapshot.id}</div>
+            <div><strong>会话ID:</strong> ${escapeHtml(snapshot.sessionId)}</div>
+            <div><strong>回合数:</strong> ${snapshot.turnNumber}</div>
+            <div><strong>版本:</strong> ${snapshot.version}</div>
+            <div><strong>快照时间:</strong> ${new Date(snapshot.snapshotTime).toLocaleString()}</div>
+            <div><strong>是否当前:</strong> ${snapshot.isCurrent ? '是' : '否'}</div>
+            <div><strong>世界状态:</strong><pre>${escapeHtml(snapshot.worldState)}</pre></div>
+            <div><strong>角色状态:</strong><pre>${escapeHtml(snapshot.characterState)}</pre></div>
+            <div><strong>剧情状态:</strong><pre>${escapeHtml(snapshot.plotState)}</pre></div>
+            <div><strong>叙事记忆:</strong><pre>${escapeHtml(snapshot.narrativeMemory)}</pre></div>
+        `);
+    } catch (err) {
+        console.error('获取详情失败', err);
+    }
+};
+
+window.setCurrentSnapshot = async (id) => {
+    if (!confirm('确定要将此快照设为当前吗？这会影响游戏恢复时的状态。')) return;
+    try {
+        const res = await fetch(`/admin/game-snapshots/${id}/current`, { method: 'PUT' });
+        const data = await res.json();
+        if (data.status === 'ok') {
+            alert(data.message);
+            loadGameSnapshots(gameSnapshotsPage);
+        } else {
+            alert('操作失败: ' + data.message);
+        }
+    } catch (err) {
+        console.error('设为当前失败', err);
+    }
+};
+
+window.deleteGameSnapshot = async (id) => {
+    if (!confirm('确定要删除该快照吗？')) return;
+    try {
+        const res = await fetch(`/admin/game-snapshots/${id}`, { method: 'DELETE' });
+        const data = await res.json();
+        if (data.result === 'success') {
+            alert('删除成功');
+            loadGameSnapshots(gameSnapshotsPage);
+        } else {
+            alert('删除失败');
+        }
+    } catch (err) {
+        console.error('删除失败', err);
+    }
+};

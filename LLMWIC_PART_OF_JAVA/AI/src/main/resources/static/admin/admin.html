@@ -18,6 +18,11 @@
             <button class="tab-btn" data-tab="sessions">会话管理</button>
             <button class="tab-btn" data-tab="memories">记忆管理</button>
             <button class="tab-btn" data-tab="rag-logs">RAG追踪</button>
+            <button class="tab-btn" data-tab="traits">角色特质</button>
+            <button class="tab-btn" data-tab="game-events">游戏事件</button>
+            <button class="tab-btn" data-tab="game-memories">叙事记忆</button>
+            <button class="tab-btn" data-tab="game-recovery">恢复点</button>
+            <button class="tab-btn" data-tab="game-snapshots">快照管理</button>
         </nav>
     </header>
 
@@ -155,6 +160,175 @@
             </div>
             <div id="rag-logs-pagination" class="pagination"></div>
         </div>
+
+        <!-- 特质管理 -->
+        <div id="traits" class="tab-content">
+            <div class="section-header">
+                <h2>角色特质定义库</h2>
+                <div class="toolbar">
+                    <button id="refresh-traits" class="btn">🔄 刷新</button>
+                    <button id="add-trait" class="btn">➕ 新增特质</button>
+                </div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>特质名称</th>
+                        <th>描述</th>
+                        <th>示例</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody id="traits-body">
+                    <tr><td colspan="5">加载中...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="traits-pagination" class="pagination"></div>
+        </div>
+
+
+        <!-- 游戏事件 -->
+        <div id="game-events" class="tab-content">
+            <div class="section-header">
+                <h2>游戏事件日志</h2>
+                <div class="toolbar">
+                    <button id="refresh-game-events" class="btn">🔄 刷新</button>
+                    <input type="text" id="filter-game-events-session" placeholder="筛选会话ID" style="width:200px; padding:0.5rem;">
+                    <button id="apply-game-events-filter" class="btn">筛选</button>
+                </div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>会话ID</th>
+                        <th>回合数</th>
+                        <th>事件类型</th>
+                        <th>用户输入</th>
+                        <th>AI回复(摘要)</th>
+                        <th>模式</th>
+                        <th>耗时(ms)</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody id="game-events-body">
+                    <tr><td colspan="9">加载中...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="game-events-pagination" class="pagination"></div>
+        </div>
+
+        <!-- 叙事记忆 -->
+        <div id="game-memories" class="tab-content">
+            <div class="section-header">
+                <h2>叙事记忆</h2>
+                <div class="toolbar">
+                    <button id="refresh-game-memories" class="btn">🔄 刷新</button>
+                    <input type="text" id="filter-game-memories-session" placeholder="筛选会话ID" style="width:200px; padding:0.5rem;">
+                    <select id="filter-game-memories-type">
+                        <option value="">所有类型</option>
+                        <option value="PLOT">剧情</option>
+                        <option value="CHOICE">选择</option>
+                        <option value="FORESHADOWING">伏笔</option>
+                    </select>
+                    <button id="apply-game-memories-filter" class="btn">筛选</button>
+                </div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>会话ID</th>
+                        <th>回合数</th>
+                        <th>记忆类型</th>
+                        <th>内容(摘要)</th>
+                        <th>重要性</th>
+                        <th>用户输入(摘要)</th>
+                        <th>AI回复(摘要)</th>
+                        <th>创建时间</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody id="game-memories-body">
+                    <tr><td colspan="10">加载中...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="game-memories-pagination" class="pagination"></div>
+        </div>
+
+        <!-- 恢复点 -->
+        <div id="game-recovery" class="tab-content">
+            <div class="section-header">
+                <h2>游戏恢复点</h2>
+                <div class="toolbar">
+                    <button id="refresh-game-recovery" class="btn">🔄 刷新</button>
+                    <input type="text" id="filter-game-recovery-session" placeholder="筛选会话ID" style="width:200px; padding:0.5rem;">
+                    <button id="apply-game-recovery-filter" class="btn">筛选</button>
+                </div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>会话ID</th>
+                        <th>存档名称</th>
+                        <th>描述</th>
+                        <th>回合数</th>
+                        <th>创建时间</th>
+                        <th>是否自动</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody id="game-recovery-body">
+                    <tr><td colspan="8">加载中...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="game-recovery-pagination" class="pagination"></div>
+        </div>
+
+        <!-- 快照管理 -->
+        <div id="game-snapshots" class="tab-content">
+            <div class="section-header">
+                <h2>游戏快照</h2>
+                <div class="toolbar">
+                    <button id="refresh-game-snapshots" class="btn">🔄 刷新</button>
+                    <input type="text" id="filter-game-snapshots-session" placeholder="筛选会话ID" style="width:200px; padding:0.5rem;">
+                    <button id="apply-game-snapshots-filter" class="btn">筛选</button>
+                </div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>会话ID</th>
+                        <th>回合数</th>
+                        <th>版本</th>
+                        <th>快照时间</th>
+                        <th>是否当前</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody id="game-snapshots-body">
+                    <tr><td colspan="7">加载中...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="game-snapshots-pagination" class="pagination"></div>
+        </div>
+
+
+
+
     </main>
 </div>
 
@@ -176,6 +350,36 @@
         <div id="rag-detail-content"></div>
     </div>
 </div>
+
+<!-- 特质编辑模态框 -->
+<div id="trait-modal" class="modal">
+    <div class="modal-content" style="max-width:600px;">
+        <span class="close-trait">&times;</span>
+        <h2 id="trait-modal-title">新增特质</h2>
+        <form id="trait-form">
+            <input type="hidden" id="trait-id">
+            <div class="form-group" style="margin-bottom:1rem;">
+                <label>特质名称 *</label>
+                <input type="text" id="trait-name" required style="width:100%; padding:0.5rem;">
+            </div>
+            <div class="form-group" style="margin-bottom:1rem;">
+                <label>描述 *</label>
+                <textarea id="trait-description" rows="3" required style="width:100%; padding:0.5rem;"></textarea>
+            </div>
+            <div class="form-group" style="margin-bottom:1rem;">
+                <label>示例（可选）</label>
+                <textarea id="trait-example" rows="2" style="width:100%; padding:0.5rem;"></textarea>
+            </div>
+            <div style="display:flex; gap:1rem; justify-content:flex-end;">
+                <button type="button" class="btn" id="cancel-trait">取消</button>
+                <button type="submit" class="btn" style="background:#10b981;">保存</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
 
 <script src="admin.js"></script>
 </body>

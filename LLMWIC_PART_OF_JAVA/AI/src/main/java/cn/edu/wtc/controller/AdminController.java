@@ -1,5 +1,15 @@
 package cn.edu.wtc.controller;
 
+import cn.edu.wtc.game.entity.CharacterTraitDefinition;
+import cn.edu.wtc.game.entity.GameEventLog;
+import cn.edu.wtc.game.entity.GameRecoveryPoint;
+import cn.edu.wtc.game.entity.GameStateSnapshot;
+import cn.edu.wtc.game.memory.GameNarrativeMemory;
+import cn.edu.wtc.game.repository.CharacterTraitDefinitionRepository;
+import cn.edu.wtc.game.repository.GameEventLogRepository;
+import cn.edu.wtc.game.repository.GameNarrativeMemoryRepository;
+import cn.edu.wtc.game.repository.GameRecoveryPointRepository;
+import cn.edu.wtc.game.repository.GameStateSnapshotRepository;
 import cn.edu.wtc.manager.OllamaServiceManager;
 import cn.edu.wtc.memory.entity.ConversationMemory;
 import cn.edu.wtc.memory.entity.RagRequestLog;
@@ -32,13 +42,27 @@ public class AdminController {
     @Autowired
     private ConversationMemoryRepository memoryRepository;
     @Autowired
-    private RagRequestLogRepository ragLogRepository;  // 新增注入
+    private RagRequestLogRepository ragLogRepository;
     @Autowired
     private MemoryService memoryService;
     @Autowired
     private MemoryDebugSnapshotService snapshotService;
     @Autowired
     private JdbcTemplate jdbcTemplate;
+
+    // 游戏相关 Repository
+    @Autowired
+    private GameEventLogRepository gameEventLogRepository;
+    @Autowired
+    private GameNarrativeMemoryRepository gameNarrativeMemoryRepository;
+    @Autowired
+    private GameRecoveryPointRepository gameRecoveryPointRepository;
+    @Autowired
+    private GameStateSnapshotRepository gameStateSnapshotRepository;
+
+    // 特质定义 Repository
+    @Autowired
+    private CharacterTraitDefinitionRepository traitRepository;
 
     // ------------------ 状态仪表盘 ------------------
     @GetMapping("/status/ollama")
@@ -167,8 +191,7 @@ public class AdminController {
         return Map.of("result", "success");
     }
 
-    // ------------------ 新增：RAG 日志追踪 ------------------
-
+    // ------------------ RAG 日志追踪 ------------------
     @GetMapping("/rag-logs")
     public Page<RagRequestLog> listRagLogs(
             @RequestParam(required = false) String sessionId,
@@ -187,5 +210,234 @@ public class AdminController {
     @GetMapping("/rag-logs/{id}")
     public RagRequestLog getRagLogDetail(@PathVariable Long id) {
         return ragLogRepository.findById(id).orElse(null);
+    }
+
+    // ------------------ 游戏事件 ------------------
+    @GetMapping("/game-events")
+    public Page<GameEventLog> getGameEvents(
+            @RequestParam(required = false) String sessionId,
+            @RequestParam(required = false) String eventType,
+            Pageable pageable) {
+        Specification<GameEventLog> spec = (root, query, cb) -> {
+            List<Predicate> predicates = new ArrayList<>();
+            if (sessionId != null && !sessionId.isEmpty()) {
+                predicates.add(cb.like(root.get("sessionId"), "%" + sessionId + "%"));
+            }
+            if (eventType != null && !eventType.isEmpty()) {
+                predicates.add(cb.equal(root.get("eventType"), eventType));
+            }
+            return cb.and(predicates.toArray(new Predicate[0]));
+        };
+        return gameEventLogRepository.findAll(spec, pageable);
+    }
+
+    @GetMapping("/game-events/{id}")
+    public GameEventLog getGameEvent(@PathVariable Long id) {
+        return gameEventLogRepository.findById(id).orElse(null);
+    }
+
+    @DeleteMapping("/game-events/{id}")
+    public Map<String, String> deleteGameEvent(@PathVariable Long id) {
+        gameEventLogRepository.deleteById(id);
+        return Map.of("result", "success");
+    }
+
+    // ------------------ 叙事记忆 ------------------
+    @GetMapping("/game-memories")
+    public Page<GameNarrativeMemory> getGameMemories(
+            @RequestParam(required = false) String sessionId,
+            @RequestParam(required = false) String memoryType,
+            Pageable pageable) {
+        Specification<GameNarrativeMemory> spec = (root, query, cb) -> {
+            List<Predicate> predicates = new ArrayList<>();
+            if (sessionId != null && !sessionId.isEmpty()) {
+                predicates.add(cb.like(root.get("sessionId"), "%" + sessionId + "%"));
+            }
+            if (memoryType != null && !memoryType.isEmpty()) {
+                predicates.add(cb.equal(root.get("memoryType"), memoryType));
+            }
+            return cb.and(predicates.toArray(new Predicate[0]));
+        };
+        return gameNarrativeMemoryRepository.findAll(spec, pageable);
+    }
+
+    @GetMapping("/game-memories/{id}")
+    public GameNarrativeMemory getGameMemory(@PathVariable Long id) {
+        return gameNarrativeMemoryRepository.findById(id).orElse(null);
+    }
+
+    @DeleteMapping("/game-memories/{id}")
+    public Map<String, String> deleteGameMemory(@PathVariable Long id) {
+        gameNarrativeMemoryRepository.deleteById(id);
+        return Map.of("result", "success");
+    }
+
+    // ------------------ 恢复点 ------------------
+    @GetMapping("/game-recovery-points")
+    public Page<GameRecoveryPoint> getGameRecoveryPoints(
+            @RequestParam(required = false) String sessionId,
+            Pageable pageable) {
+        Specification<GameRecoveryPoint> spec = (root, query, cb) -> {
+            List<Predicate> predicates = new ArrayList<>();
+            if (sessionId != null && !sessionId.isEmpty()) {
+                predicates.add(cb.like(root.get("sessionId"), "%" + sessionId + "%"));
+            }
+            return cb.and(predicates.toArray(new Predicate[0]));
+        };
+        return gameRecoveryPointRepository.findAll(spec, pageable);
+    }
+
+    @GetMapping("/game-recovery-points/{id}")
+    public GameRecoveryPoint getGameRecoveryPoint(@PathVariable Long id) {
+        return gameRecoveryPointRepository.findById(id).orElse(null);
+    }
+
+    @DeleteMapping("/game-recovery-points/{id}")
+    public Map<String, String> deleteGameRecoveryPoint(@PathVariable Long id) {
+        gameRecoveryPointRepository.deleteById(id);
+        return Map.of("result", "success");
+    }
+
+    // ------------------ 快照管理 ------------------
+    @GetMapping("/game-snapshots")
+    public Page<GameStateSnapshot> getGameSnapshots(
+            @RequestParam(required = false) String sessionId,
+            Pageable pageable) {
+        Specification<GameStateSnapshot> spec = (root, query, cb) -> {
+            List<Predicate> predicates = new ArrayList<>();
+            if (sessionId != null && !sessionId.isEmpty()) {
+                predicates.add(cb.like(root.get("sessionId"), "%" + sessionId + "%"));
+            }
+            return cb.and(predicates.toArray(new Predicate[0]));
+        };
+        return gameStateSnapshotRepository.findAll(spec, pageable);
+    }
+
+    @GetMapping("/game-snapshots/{id}")
+    public GameStateSnapshot getGameSnapshot(@PathVariable Long id) {
+        return gameStateSnapshotRepository.findById(id).orElse(null);
+    }
+
+    @DeleteMapping("/game-snapshots/{id}")
+    public Map<String, String> deleteGameSnapshot(@PathVariable Long id) {
+        gameStateSnapshotRepository.deleteById(id);
+        return Map.of("result", "success");
+    }
+
+    @PutMapping("/game-snapshots/{id}/current")
+    public Map<String, String> setCurrentSnapshot(@PathVariable Long id) {
+        GameStateSnapshot snapshot = gameStateSnapshotRepository.findById(id).orElse(null);
+        if (snapshot == null) {
+            return Map.of("status", "error", "message", "快照不存在");
+        }
+        // 将同会话的其他快照设为非当前
+        gameStateSnapshotRepository.updateCurrentFlag(snapshot.getSessionId());
+        snapshot.setIsCurrent(true);
+        gameStateSnapshotRepository.save(snapshot);
+        return Map.of("status", "ok", "message", "已设为当前快照");
+    }
+
+    // ------------------ 角色特质管理 ------------------
+    @GetMapping("/traits")
+    public List<CharacterTraitDefinition> getAllTraits() {
+        return traitRepository.findAll();
+    }
+
+    @GetMapping("/traits/{id}")
+    public CharacterTraitDefinition getTrait(@PathVariable Long id) {
+        return traitRepository.findById(id).orElse(null);
+    }
+
+    @PostMapping("/traits")
+    public Map<String, Object> createTrait(@RequestBody Map<String, String> request) {
+        Map<String, Object> result = new HashMap<>();
+        try {
+            String traitName = request.get("traitName");
+            String description = request.get("description");
+            String example = request.get("example");
+
+            if (traitName == null || traitName.trim().isEmpty()) {
+                result.put("status", "error");
+                result.put("message", "特质名称不能为空");
+                return result;
+            }
+
+            if (traitRepository.existsByTraitName(traitName)) {
+                result.put("status", "error");
+                result.put("message", "特质名称已存在");
+                return result;
+            }
+
+            CharacterTraitDefinition trait = new CharacterTraitDefinition();
+            trait.setTraitName(traitName.trim());
+            trait.setDescription(description != null ? description.trim() : "");
+            trait.setExample(example != null ? example.trim() : "");
+
+            traitRepository.save(trait);
+
+            result.put("status", "ok");
+            result.put("message", "特质创建成功");
+            result.put("id", trait.getId());
+        } catch (Exception e) {
+            result.put("status", "error");
+            result.put("message", e.getMessage());
+        }
+        return result;
+    }
+
+    @PutMapping("/traits/{id}")
+    public Map<String, Object> updateTrait(@PathVariable Long id, @RequestBody Map<String, String> request) {
+        Map<String, Object> result = new HashMap<>();
+        try {
+            CharacterTraitDefinition trait = traitRepository.findById(id).orElse(null);
+            if (trait == null) {
+                result.put("status", "error");
+                result.put("message", "特质不存在");
+                return result;
+            }
+
+            String traitName = request.get("traitName");
+            String description = request.get("description");
+            String example = request.get("example");
+
+            if (traitName != null && !traitName.trim().isEmpty()) {
+                if (!traitName.equals(trait.getTraitName()) && traitRepository.existsByTraitName(traitName)) {
+                    result.put("status", "error");
+                    result.put("message", "特质名称已存在");
+                    return result;
+                }
+                trait.setTraitName(traitName.trim());
+            }
+            if (description != null) trait.setDescription(description.trim());
+            if (example != null) trait.setExample(example.trim());
+
+            traitRepository.save(trait);
+
+            result.put("status", "ok");
+            result.put("message", "特质更新成功");
+        } catch (Exception e) {
+            result.put("status", "error");
+            result.put("message", e.getMessage());
+        }
+        return result;
+    }
+
+    @DeleteMapping("/traits/{id}")
+    public Map<String, Object> deleteTrait(@PathVariable Long id) {
+        Map<String, Object> result = new HashMap<>();
+        try {
+            if (!traitRepository.existsById(id)) {
+                result.put("status", "error");
+                result.put("message", "特质不存在");
+                return result;
+            }
+            traitRepository.deleteById(id);
+            result.put("status", "ok");
+            result.put("message", "特质删除成功");
+        } catch (Exception e) {
+            result.put("status", "error");
+            result.put("message", e.getMessage());
+        }
+        return result;
     }
 }

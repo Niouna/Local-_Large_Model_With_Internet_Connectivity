@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLMWIC_Role_playing </title>
+    <link rel="stylesheet" href="role-playing.css">
+</head>
+<body>
+<!-- 侧边栏 -->
+<div class="sidebar">
+    <div class="logo">LLMWIC</div>
+    <ul class="menu">
+        <li class="menu-item" data-page="rag">
+            <span>LLMWIC_RAG</span>
+        </li>
+        <li class="menu-item active" data-page="role-playing">
+            <span>LLMWIC_Role_playing</span>
+        </li>
+        <!-- 世界管理菜单项 -->
+        <li class="menu-item" data-page="world-manager">
+            <span>世界管理</span>
+        </li>
+        <li class="menu-item" data-action="redirect" data-url="http://localhost:8080/admin/admin.html">
+            <span>后台管理</span>
+        </li>
+    </ul>
+</div>
+
+<!-- 主内容区 -->
+<div class="main-content">
+    <!-- 头部 -->
+    <div class="header">
+        <div class="model-select">
+            <label for="gameModelSelect">选择模型：</label>
+            <select id="gameModelSelect">
+                <option value="deepseek-r1:7b">deepseek-r1:7b (GPU - 剧情生成)</option>
+                <option value="qwen2.5:7b">qwen2.5:7b (GPU - 剧情生成)</option>
+            </select>
+        </div>
+        <div class="prompt">🎭 LLMWIC_Role_playing - 你的选择将改变故事走向</div>
+    </div>
+
+    <!-- ========== 1. 角色扮演页面 ========== -->
+    <div id="role-playing-page" class="page active">
+        <div class="game-panel">
+            <div class="game-main">
+                <div class="control-bar">
+                    <span style="font-size:0.85rem; color:#64748b;">📖 剧情发展模式：</span>
+                    <button class="mode-btn" data-mode="NORMAL">📖 平稳发展</button>
+                    <button class="mode-btn" data-mode="SURPRISE">🎲 意外发生</button>
+                    <button class="mode-btn" data-mode="FORESHADOW">🔗 回收伏笔</button>
+                    <button class="mode-btn" data-mode="TWIST">⚠️ 坏事发生</button>
+                    <button class="mode-btn" data-mode="WAVE">🌊 一波三折</button>
+                    <div style="flex:1"></div>
+                    <button id="stopGenerateBtn" class="small-btn" style="display:none;">⏸️ 停止</button>
+                    <button id="regenerateBtn" class="small-btn">🔄 重新生成</button>
+                    <button id="savePointBtn" class="small-btn">💾 保存进度</button>
+                    <button id="loadPointBtn" class="small-btn">📂 加载进度</button>
+                    <!-- 新增的“加载世界”按钮 -->
+                    <button class="action-btn load-snapshot-btn">📂 加载世界</button>
+                </div>
+                <div class="narrative-area" id="narrativeArea">
+                    <div class="narrative-text" id="narrativeText">
+                        欢迎来到 LLMWIC_Role_playing！<br><br> 开始你的行动，你的冒险故事从此出发...
+                    </div>
+                </div>
+                <div class="options-area" id="optionsArea" style="display:none;">
+                    <div style="margin-bottom: 8px; font-weight:600;">📌 可选行动：</div>
+                    <div id="optionsList"></div>
+                </div>
+                <div class="input-area">
+                    <textarea id="messageInput" placeholder="输入你的行动..." rows="2" style="flex:1;"></textarea>
+                    <button id="sendBtn">发送行动</button>
+                </div>
+            </div>
+            <div class="game-sidebar">
+                <h4 style="margin-bottom:12px;">📊 世界状态</h4>
+                <div id="entityCardContainer" style="display: none;">
+                    <div class="entity-tabs" id="entityTabs"></div>
+                    <div class="entity-card" id="entityCard"></div>
+                </div>
+                <div id="loadingState" style="text-align:center; padding:20px; color:#64748b;">
+                    <span class="loading"></span> 加载状态中...
+                </div>
+                <div class="action-buttons">
+                    <button id="refreshStateBtn" class="small-btn">🔄 刷新状态</button>
+                    <button id="resetGameBtn" class="small-btn" style="background:#fee2e2;">🗑️ 重置游戏</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 世界管理页面容器 -->
+    <div id="world-manager-page" class="page">
+        <div class="game-panel">
+            <div style="display: flex; gap: 24px; flex-wrap: wrap;">
+                <!-- 卡片1：创建新世界 -->
+                <div class="world-card" style="flex: 1; min-width: 400px;">
+                    <h2>✨ 创建新世界档案</h2>
+                    <form id="createWorldForm">
+                        <div class="form-group">
+                            <label>世界名称 *</label>
+                            <input type="text" id="worldName" required placeholder="例如：钻石大陆">
+                        </div>
+                        <div class="form-group">
+                            <label>世界背景/世界观 *</label>
+                            <textarea id="worldBackground" rows="4" required
+                                      placeholder="描述这个世界的历史、地理、文明、魔法/科技体系等..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>故事引子/剧情开端 *</label>
+                            <textarea id="storyHook" rows="3" required
+                                      placeholder="描述故事的起始事件，玩家的初始处境..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>玩家角色名称</label>
+                            <input type="text" id="playerName" value="冒险者">
+                        </div>
+                        <div class="form-group">
+                            <label>玩家角色描述（可选）</label>
+                            <textarea id="playerDescription" rows="2"
+                                      placeholder="描述玩家角色的背景、外貌等..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>玩家特质</label>
+                            <select id="playerTraitsSelect" multiple size="4" style="height: auto;"></select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>核心NPC列表</label>
+                            <div id="npcList"></div>
+                            <button type="button" id="addNpcBtn" class="small-btn">➕ 添加NPC</button>
+                        </div>
+
+                        <button type="submit" class="btn" style="margin-top: 16px;">创建世界并开始游戏</button>
+                    </form>
+                </div>
+
+                <!-- 卡片2：加载/修改现有世界 -->
+                <div class="world-card" style="flex: 1; min-width: 400px;">
+                    <h2>📂 加载现有世界</h2>
+                    <div class="form-group">
+                        <label>选择世界</label>
+                        <div style="display: flex; gap: 8px;">
+                            <select id="existingWorldSelect" style="flex: 1;">
+                                <option value="">-- 请先刷新列表 --</option>
+                            </select>
+                            <button type="button" id="refreshWorldListBtn" class="small-btn">🔄 刷新</button>
+                        </div>
+                    </div>
+                    <div id="worldPreview" style="display: none; margin-top: 16px;">
+                        <div style="background: #f8fafc; padding: 12px; border-radius: 8px; margin-bottom: 12px;">
+                            <strong>📖 世界背景</strong>
+                            <div id="previewBackground" style="margin-top: 4px; font-size: 0.85rem; color: #475569;"></div>
+                        </div>
+                        <div style="background: #f8fafc; padding: 12px; border-radius: 8px; margin-bottom: 12px;">
+                            <strong>🎭 故事引子</strong>
+                            <div id="previewStoryHook" style="margin-top: 4px; font-size: 0.85rem; color: #475569;"></div>
+                        </div>
+                        <div style="background: #f8fafc; padding: 12px; border-radius: 8px; margin-bottom: 12px;">
+                            <strong>👤 玩家角色</strong>
+                            <div id="previewPlayer" style="margin-top: 4px; font-size: 0.85rem;"></div>
+                        </div>
+                        <div style="background: #f8fafc; padding: 12px; border-radius: 8px; margin-bottom: 12px;">
+                            <strong>👥 核心NPC</strong>
+                            <div id="previewNPCs" style="margin-top: 4px; font-size: 0.85rem;"></div>
+                        </div>
+                        <div style="display: flex; gap: 8px;">
+                            <button id="loadWorldBtn" class="btn" style="flex: 1;">🎮 加载此世界</button>
+                            <button id="editWorldBtn" class="small-btn">✏️ 编辑</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 编辑世界模态框 -->
+    <div id="editWorldModal" class="modal">
+        <div class="modal-content" style="max-width: 800px;">
+            <span class="close-edit">&times;</span>
+            <h3>✏️ 编辑世界</h3>
+            <div id="editWorldForm" style="max-height: 70vh; overflow-y: auto;">
+                <div class="form-group">
+                    <label>世界背景</label>
+                    <textarea id="editWorldBackground" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>故事引子</label>
+                    <textarea id="editStoryHook" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>玩家名称</label>
+                    <input type="text" id="editPlayerName">
+                </div>
+                <div class="form-group">
+                    <label>玩家描述</label>
+                    <textarea id="editPlayerDescription" rows="2"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>玩家特质</label>
+                    <select id="editPlayerTraits" multiple size="4"></select>
+                </div>
+                <div class="form-group">
+                    <label>NPC列表</label>
+                    <div id="editNpcList"></div>
+                    <button type="button" id="editAddNpcBtn" class="small-btn">➕ 添加NPC</button>
+                </div>
+                <button id="saveWorldChangesBtn" class="btn" style="margin-top: 16px;">保存修改</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 模态框：保存进度 -->
+<div id="saveModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>💾 保存进度</h3>
+        <form class="save-form" onsubmit="event.preventDefault(); saveRecoveryPoint();">
+            <label for="saveName">存档名称:</label>
+            <input type="text" id="saveName" required>
+            <label for="saveDescription">描述:</label>
+            <textarea id="saveDescription"></textarea>
+            <button type="submit" class="btn-success">确认保存</button>
+        </form>
+    </div>
+</div>
+
+<!-- 模态框：加载进度 -->
+<div id="loadModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>📂 加载进度</h3>
+        <div class="recovery-list" id="recoveryList">
+            <p style="text-align:center; padding:20px;"><span class="loading"></span> 正在加载存档...</p>
+        </div>
+    </div>
+</div>
+
+<script src="role-playing.js"></script>
+</body>
+</html>

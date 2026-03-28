@@ -1,5 +1,6 @@
 package cn.edu.wtc.ollama.service;
 
+import cn.edu.wtc.ollama.callback.ChatStreamCallback;
 import cn.edu.wtc.ollama.client.OllamaClient;
 import cn.edu.wtc.ollama.model.Conversation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,6 +40,17 @@ public class ChatService {
 
         conv.addAssistantMessage(response);
         return response;
+    }
+
+    /**
+     * 流式对话（带回调）
+     */
+    /**
+     * 流式对话（带回调）
+     */
+    public void chatStream(String model, String prompt, ChatStreamCallback callback) {
+        List<Map<String, String>> messages = List.of(Map.of("role", "user", "content", prompt));
+        ollamaClient.chatStream(model, messages, callback);
     }
 
     public String chatWithSession(String sessionId, String message) throws IOException {

@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLMWIC_Role_playing</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 游戏专用样式 */
+        .game-panel {
+            display: flex;
+            gap: 20px;
+            height: calc(100vh - 140px);
+        }
+
+        .game-main {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            background: #f8fafc;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+
+        .game-sidebar {
+            flex: 1;
+            background: #f1f5f9;
+            border-radius: 12px;
+            padding: 16px;
+            overflow-y: auto;
+            border: 1px solid #e2e8f0;
+        }
+
+        .narrative-area {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            min-height: 300px;
+        }
+
+        .narrative-text {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            line-height: 1.8;
+            white-space: pre-wrap;
+        }
+
+        .options-area {
+            padding: 16px 20px;
+            border-top: 1px solid #e2e8f0;
+            background: white;
+        }
+
+        .option-btn {
+            background: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            padding: 10px 16px;
+            margin: 8px 8px 0 0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.9rem;
+        }
+
+        .option-btn:hover {
+            background: #e2e8f0;
+            transform: translateY(-1px);
+        }
+
+        .control-bar {
+            display: flex;
+            gap: 12px;
+            padding: 12px 20px;
+            background: white;
+            border-bottom: 1px solid #e2e8f0;
+            flex-wrap: wrap;
+        }
+
+        .mode-btn {
+            background: #f1f5f9;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .mode-btn:hover {
+            background: #e2e8f0;
+        }
+
+        .mode-btn.active {
+            background: #3b82f6;
+            color: white;
+        }
+
+        /* 实体卡片样式 */
+        .entity-card-container {
+            margin-top: 16px;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .entity-tabs {
+            display: flex;
+            gap: 4px;
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 8px;
+            overflow-x: auto;
+        }
+
+        .entity-tab {
+            padding: 8px 16px;
+            background: transparent;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .entity-tab:hover {
+            background: #e2e8f0;
+        }
+
+        .entity-tab.active {
+            background: #3b82f6;
+            color: white;
+        }
+
+        .entity-card {
+            padding: 16px;
+        }
+
+        .entity-card h3 {
+            margin: 0 0 12px 0;
+            font-size: 1.1rem;
+            color: #1e293b;
+            border-left: 3px solid #3b82f6;
+            padding-left: 10px;
+        }
+
+        .entity-details {
+            margin-bottom: 16px;
+        }
+
+        .entity-details p {
+            margin: 8px 0;
+            font-size: 0.9rem;
+            color: #334155;
+        }
+
+        .entity-details strong {
+            color: #475569;
+            width: 60px;
+            display: inline-block;
+        }
+
+        .entity-attributes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .attribute {
+            background: #f8fafc;
+            padding: 8px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .attribute .label {
+            display: block;
+            font-size: 0.7rem;
+            color: #64748b;
+        }
+
+        .attribute .value {
+            display: block;
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        .badge-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 8px;
+        }
+
+        .badge {
+            background: #f1f5f9;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            color: #475569;
+        }
+
+        .badge.foreshadow {
+            background: #fef3c7;
+            color: #b45309;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #e2e8f0;
+            border-top-color: #3b82f6;
+            border-radius: 50%;
+            animation: spin 0.6s linear infinite;
+            vertical-align: middle;
+            margin-left: 8px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 8px;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+
+        .small-btn {
+            background: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            transition: all 0.2s;
+        }
+
+        .small-btn:hover {
+            background: #e2e8f0;
+        }
+
+        /* 模态框样式 */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover { color: black; }
+        .save-form input, .save-form textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        .save-form textarea {
+            resize: vertical;
+            min-height: 60px;
+        }
+        .recovery-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .recovery-list li {
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .recovery-list li:hover {
+            background: #f1f5f9;
+        }
+        .recovery-list li.auto-save {
+            background: #fef9c3;
+        }
+        .btn-success {
+            background: #10b981;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .btn-success:hover {
+            background: #059669;
+        }
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+<div class="sidebar">
+    <div class="logo">LLMWIC</div>
+    <ul class="menu">
+        <li class="menu-item" data-page="rag">
+            <span>LLMWIC_RAG</span>
+        </li>
+        <li class="menu-item active" data-page="role-playing">
+            <span>LLMWIC_Role_playing</span>
+        </li>
+        <li class="menu-item" data-action="redirect" data-url="http://localhost:8080/admin/admin.html">
+            <span>后台管理</span>
+        </li>
+    </ul>
+</div>
+
+<div class="main-content">
+    <div class="header">
+        <div class="model-select">
+            <label for="gameModelSelect">选择模型：</label>
+            <select id="gameModelSelect">
+                <option value="deepseek-r1:7b">deepseek-r1:7b (GPU - 剧情生成)</option>
+                <option value="qwen2.5:7b">qwen2.5:7b (GPU - 剧情生成)</option>
+            </select>
+        </div>
+        <div class="prompt">🎭 LLMWIC_Role_playing - 你的选择将改变故事走向</div>
+    </div>
+
+    <div id="role-playing-page" class="page active">
+        <div class="game-panel">
+            <div class="game-main">
+                <div class="control-bar">
+                    <span style="font-size:0.85rem; color:#64748b;">📖 剧情发展模式：</span>
+                    <button class="mode-btn" data-mode="NORMAL">📖 平稳发展</button>
+                    <button class="mode-btn" data-mode="SURPRISE">🎲 意外发生</button>
+                    <button class="mode-btn" data-mode="FORESHADOW">🔗 回收伏笔</button>
+                    <button class="mode-btn" data-mode="TWIST">⚠️ 坏事发生</button>
+                    <button class="mode-btn" data-mode="WAVE">🌊 一波三折</button>
+                    <div style="flex:1"></div>
+                    <button id="stopGenerateBtn" class="small-btn" style="display:none;">⏸️ 停止</button>
+                    <button id="regenerateBtn" class="small-btn">🔄 重新生成</button>
+                    <button id="savePointBtn" class="small-btn">💾 保存进度</button>
+                    <button id="loadPointBtn" class="small-btn">📂 加载进度</button>
+                </div>
+
+                <div class="narrative-area" id="narrativeArea">
+                    <div class="narrative-text" id="narrativeText">
+                        欢迎来到 LLMWIC_Role_playing！<br><br>
+                        开始你的行动，你的冒险故事从此出发...
+                    </div>
+                </div>
+
+                <div class="options-area" id="optionsArea" style="display:none;">
+                    <div style="margin-bottom: 8px; font-weight:600;">📌 可选行动：</div>
+                    <div id="optionsList"></div>
+                </div>
+
+                <div class="input-area">
+                    <textarea id="messageInput" placeholder="输入你的行动..." rows="2" style="flex:1;"></textarea>
+                    <button id="sendBtn">发送行动</button>
+                </div>
+            </div>
+
+            <div class="game-sidebar">
+                <h4 style="margin-bottom:12px;">📊 世界状态</h4>
+
+                <!-- 动态实体卡片容器 -->
+                <div id="entityCardContainer" style="display: none;">
+                    <div class="entity-tabs" id="entityTabs"></div>
+                    <div class="entity-card" id="entityCard"></div>
+                </div>
+
+                <div id="loadingState" style="text-align:center; padding:20px; color:#64748b;">
+                    <span class="loading"></span> 加载状态中...
+                </div>
+
+                <div class="action-buttons">
+                    <button id="refreshStateBtn" class="small-btn">🔄 刷新状态</button>
+                    <button id="resetGameBtn" class="small-btn" style="background:#fee2e2;">🗑️ 重置游戏</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 保存模态框 -->
+<div id="saveModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>💾 保存进度</h3>
+        <form class="save-form" onsubmit="event.preventDefault(); saveRecoveryPoint();">
+            <label for="saveName">存档名称:</label>
+            <input type="text" id="saveName" placeholder="例如：森林探险" required>
+            <label for="saveDescription">描述 (可选):</label>
+            <textarea id="saveDescription" placeholder="记录这个存档的特殊事件..."></textarea>
+            <button type="submit" class="btn-success">确认保存</button>
+        </form>
+    </div>
+</div>
+
+<!-- 加载模态框 -->
+<div id="loadModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>📂 加载进度</h3>
+        <div class="recovery-list" id="recoveryList">
+            <p style="text-align:center; padding:20px;"><span class="loading"></span> 正在加载存档...</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // --- DOM Elements ---
+    const narrativeText = document.getElementById('narrativeText');
+    const messageInput = document.getElementById('messageInput');
+    const sendBtn = document.getElementById('sendBtn');
+    const gameModelSelect = document.getElementById('gameModelSelect');
+    const regenerateBtn = document.getElementById('regenerateBtn');
+    const stopGenerateBtn = document.getElementById('stopGenerateBtn');
+    const savePointBtn = document.getElementById('savePointBtn');
+    const loadPointBtn = document.getElementById('loadPointBtn');
+    const refreshStateBtn = document.getElementById('refreshStateBtn');
+    const resetGameBtn = document.getElementById('resetGameBtn');
+    const entityCardContainer = document.getElementById('entityCardContainer');
+    const entityTabs = document.getElementById('entityTabs');
+    const entityCard = document.getElementById('entityCard');
+    const loadingState = document.getElementById('loadingState');
+
+    // --- State ---
+    let currentSessionId = null;
+    let currentModel = 'deepseek-r1:7b';
+    let currentMode = 'NORMAL';
+    let isGenerating = false;
+    let abortController = null;
+    let lastUserInput = '';
+    let lastMode = 'NORMAL';
+    let currentEntities = {};
+    let currentEntityId = 'player';
+
+    // --- 初始化 ---
+    document.addEventListener('DOMContentLoaded', () => {
+        currentSessionId = localStorage.getItem('gameSessionId');
+        if (!currentSessionId) {
+            currentSessionId = 'game_' + Date.now() + '_' + Math.random().toString(36).substr(2, 8);
+            localStorage.setItem('gameSessionId', currentSessionId);
+        }
+
+        const savedModel = localStorage.getItem('gameModel');
+        if (savedModel) {
+            gameModelSelect.value = savedModel;
+            currentModel = savedModel;
+        }
+
+        loadGameState();
+        initEventListeners();
+        initSidebarMenu();
+        initModals();
+    });
+
+    function initEventListeners() {
+        sendBtn.addEventListener('click', sendAction);
+        messageInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendAction();
+            }
+        });
+
+        gameModelSelect.addEventListener('change', () => {
+            currentModel = gameModelSelect.value;
+            localStorage.setItem('gameModel', currentModel);
+        });
+
+        document.querySelectorAll('.mode-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentMode = btn.dataset.mode;
+            });
+        });
+        document.querySelector('.mode-btn[data-mode="NORMAL"]').classList.add('active');
+
+        regenerateBtn.addEventListener('click', regenerate);
+        stopGenerateBtn.addEventListener('click', stopGeneration);
+        savePointBtn.addEventListener('click', openSaveModal);
+        loadPointBtn.addEventListener('click', openLoadModal);
+        refreshStateBtn.addEventListener('click', loadGameState);
+        resetGameBtn.addEventListener('click', resetGame);
+    }
+
+    function initSidebarMenu() {
+        const menuItems = document.querySelectorAll('.menu-item');
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const action = item.getAttribute('data-action');
+                if (action === 'redirect') {
+                    const url = item.getAttribute('data-url');
+                    if (url) window.open(url, '_blank');
+                } else {
+                    menuItems.forEach(i => i.classList.remove('active'));
+                    item.classList.add('active');
+                    const pageId = item.getAttribute('data-page');
+                    if (pageId) {
+                        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+                        const targetPage = document.getElementById(`${pageId}-page`);
+                        if (targetPage) targetPage.classList.add('active');
+                    }
+                }
+            });
+        });
+    }
+
+    function initModals() {
+        const saveModal = document.getElementById('saveModal');
+        const loadModal = document.getElementById('loadModal');
+        const closeBtns = document.querySelectorAll('.close');
+
+        closeBtns.forEach(btn => {
+            btn.onclick = () => {
+                if (saveModal) saveModal.style.display = 'none';
+                if (loadModal) loadModal.style.display = 'none';
+            };
+        });
+
+        window.onclick = (event) => {
+            if (event.target === saveModal) saveModal.style.display = 'none';
+            if (event.target === loadModal) loadModal.style.display = 'none';
+        };
+    }
+
+    // --- 发送行动 ---
+    async function sendAction() {
+        if (isGenerating) {
+            alert('正在生成中，请稍后或点击停止');
+            return;
+        }
+
+        const userInput = messageInput.value.trim();
+        if (!userInput) return;
+
+        lastUserInput = userInput;
+        lastMode = currentMode;
+
+        messageInput.value = '';
+        appendUserMessage(userInput);
+        await generateNarrative(userInput, currentMode);
+    }
+
+    async function generateNarrative(userInput, mode) {
+        isGenerating = true;
+        sendBtn.disabled = true;
+        regenerateBtn.disabled = true;
+        stopGenerateBtn.style.display = 'inline-block';
+
+        showLoadingIndicator();
+        abortController = new AbortController();
+
+        try {
+            const response = await fetch('/v1/game/stream', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    sessionId: currentSessionId,
+                    userInput: userInput,
+                    mode: mode,
+                    model: currentModel,
+                    stream: true
+                }),
+                signal: abortController.signal
+            });
+
+            const reader = response.body.getReader();
+            const decoder = new TextDecoder();
+            let buffer = '';
+
+            while (true) {
+                const { done, value } = await reader.read();
+                if (done) break;
+
+                buffer += decoder.decode(value, { stream: true });
+                const lines = buffer.split('\n');
+                buffer = lines.pop() || '';
+
+                for (const line of lines) {
+                    const trimmedLine = line.trim();
+                    if (trimmedLine.startsWith('data:')) {
+                        try {
+                            const jsonStr = trimmedLine.substring(5).trim();
+                            if (jsonStr && jsonStr !== '[DONE]') {
+                                const data = JSON.parse(jsonStr);
+
+                                if (data.thinking) continue;
+                                if (data.narrative) {
+                                    removeLoadingIndicator();
+                                    appendNarrative(data.narrative);
+                                }
+                                if (data.options) showOptions(data.options);
+                                if (data.stateChanges) {
+                                    loadGameState();
+                                }
+                                if (data.error) appendSystemMessage('❌ ' + data.error);
+                            }
+                        } catch (e) {
+                            console.warn('解析数据失败:', trimmedLine);
+                        }
+                    }
+                }
+            }
+
+        } catch (error) {
+            if (error.name === 'AbortError') {
+                appendSystemMessage('⏸️ 已停止生成');
+            } else {
+                appendSystemMessage(`❌ 生成失败: ${error.message}`);
+            }
+        } finally {
+            isGenerating = false;
+            sendBtn.disabled = false;
+            regenerateBtn.disabled = false;
+            stopGenerateBtn.style.display = 'none';
+            hideLoadingIndicator();
+            abortController = null;
+        }
+    }
+
+    // --- UI 函数 ---
+    function appendNarrative(text) {
+        removeLoadingIndicator();
+        let contentDiv = document.getElementById('narrativeText');
+        if (contentDiv.innerHTML.includes('欢迎来到 LLMWIC_Role_playing')) {
+            contentDiv.innerHTML = '';
+        }
+        const narrativeDiv = document.createElement('div');
+        narrativeDiv.className = 'narrative-entry';
+        narrativeDiv.style.marginBottom = '16px';
+        narrativeDiv.style.borderLeft = '3px solid #10b981';
+        narrativeDiv.style.paddingLeft = '12px';
+        narrativeDiv.style.lineHeight = '1.8';
+        narrativeDiv.innerHTML = escapeHtml(text).replace(/\n/g, '<br>');
+        contentDiv.appendChild(narrativeDiv);
+        scrollToBottom();
+    }
+
+    function appendUserMessage(text) {
+        let contentDiv = document.getElementById('narrativeText');
+        if (contentDiv.innerHTML.includes('欢迎来到 LLMWIC_Role_playing')) {
+            contentDiv.innerHTML = '';
+        }
+        const userDiv = document.createElement('div');
+        userDiv.className = 'user-message';
+        userDiv.style.marginBottom = '16px';
+        userDiv.style.textAlign = 'right';
+        userDiv.innerHTML = `<span style="background:#3b82f6; color:white; padding:8px 16px; border-radius:20px; display:inline-block; max-width:80%;">${escapeHtml(text)}</span>`;
+        contentDiv.appendChild(userDiv);
+        scrollToBottom();
+    }
+
+    function appendSystemMessage(text) {
+        let contentDiv = document.getElementById('narrativeText');
+        const sysDiv = document.createElement('div');
+        sysDiv.className = 'system-message';
+        sysDiv.style.marginBottom = '8px';
+        sysDiv.style.textAlign = 'center';
+        sysDiv.style.fontSize = '0.8rem';
+        sysDiv.style.color = '#6b7280';
+        sysDiv.innerHTML = text;
+        contentDiv.appendChild(sysDiv);
+        scrollToBottom();
+    }
+
+    function showOptions(options) {
+        const optionsArea = document.getElementById('optionsArea');
+        const optionsList = document.getElementById('optionsList');
+        optionsList.innerHTML = '';
+        if (Array.isArray(options)) {
+            options.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.textContent = opt.text || opt;
+                btn.onclick = () => {
+                    messageInput.value = opt.action || opt.text;
+                    sendAction();
+                    optionsArea.style.display = 'none';
+                };
+                optionsList.appendChild(btn);
+            });
+            optionsArea.style.display = 'block';
+        }
+    }
+
+    function showLoadingIndicator() {
+        const optionsArea = document.getElementById('optionsArea');
+        if (optionsArea) optionsArea.style.display = 'none';
+        let loadingDiv = document.getElementById('loadingIndicator');
+        if (!loadingDiv) {
+            loadingDiv = document.createElement('div');
+            loadingDiv.id = 'loadingIndicator';
+            loadingDiv.style.textAlign = 'center';
+            loadingDiv.style.padding = '20px';
+            loadingDiv.style.color = '#6b7280';
+            document.getElementById('narrativeText').appendChild(loadingDiv);
+        }
+        loadingDiv.innerHTML = '<span class="loading"></span> AI 正在思考...';
+        scrollToBottom();
+    }
+
+    function removeLoadingIndicator() {
+        const loadingDiv = document.getElementById('loadingIndicator');
+        if (loadingDiv) loadingDiv.remove();
+    }
+
+    function hideLoadingIndicator() {
+        removeLoadingIndicator();
+    }
+
+    function scrollToBottom() {
+        const narrativeArea = document.getElementById('narrativeArea');
+        narrativeArea.scrollTop = narrativeArea.scrollHeight;
+    }
+
+    function stopGeneration() {
+        if (abortController) {
+            abortController.abort();
+            abortController = null;
+        }
+    }
+
+    async function regenerate() {
+        if (!lastUserInput) {
+            alert('没有可重新生成的消息');
+            return;
+        }
+        if (isGenerating) stopGeneration();
+        await new Promise(resolve => setTimeout(resolve, 500));
+
+        const contentDiv = document.getElementById('narrativeText');
+        const entries = contentDiv.querySelectorAll('.narrative-entry');
+        if (entries.length > 0) entries[entries.length - 1].remove();
+
+        await generateNarrative(lastUserInput, lastMode);
+    }
+
+    // --- 加载游戏状态 ---
+    async function loadGameState() {
+        try {
+            loadingState.style.display = 'block';
+            const response = await fetch(`/v1/game/state/${currentSessionId}`);
+            if (response.ok) {
+                const state = await response.json();
+                updateEntityDisplay(state);
+                loadingState.style.display = 'none';
+                entityCardContainer.style.display = 'block';
+            } else {
+                loadingState.innerHTML = '加载失败，请刷新重试';
+            }
+        } catch (error) {
+            console.error('加载状态失败', error);
+            loadingState.innerHTML = '加载失败: ' + error.message;
+        }
+    }
+
+    function updateEntityDisplay(state) {
+        currentEntities = {};
+
+        currentEntities.player = {
+            id: 'player',
+            name: state.playerName || '冒险者',
+            type: 'player',
+            location: state.currentLocation || '起始地点',
+            attributes: state.attributes || {力量: 10, 敏捷: 10, 智力: 10, 魅力: 10},
+            inventory: state.inventory || [],
+            foreshadowing: state.activeForeshadowing || [],
+            turnNumber: state.turnNumber || 0
+        };
+
+        if (state.npcs && Array.isArray(state.npcs)) {
+            state.npcs.forEach(npc => {
+                currentEntities[npc.id] = {
+                    id: npc.id,
+                    name: npc.name,
+                    type: 'npc',
+                    location: npc.location || state.currentLocation,
+                    attributes: npc.attributes || {},
+                    inventory: npc.inventory || [],
+                    foreshadowing: npc.foreshadowing || [],
+                    relationship: npc.relationship || 0
+                };
+            });
+        }
+
+        renderEntityTabs();
+        renderEntityCard(currentEntityId);
+    }
+
+    function renderEntityTabs() {
+        entityTabs.innerHTML = '';
+        const entities = Object.values(currentEntities);
+
+        entities.forEach(entity => {
+            const btn = document.createElement('button');
+            btn.className = 'entity-tab' + (entity.id === currentEntityId ? ' active' : '');
+            btn.textContent = entity.type === 'player' ? '👤 ' + entity.name : '👥 ' + entity.name;
+            btn.onclick = () => {
+                document.querySelectorAll('.entity-tab').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentEntityId = entity.id;
+                renderEntityCard(currentEntityId);
+            };
+            entityTabs.appendChild(btn);
+        });
+    }
+
+    function renderEntityCard(entityId) {
+        const entity = currentEntities[entityId];
+        if (!entity) {
+            entityCard.innerHTML = '<p>无法加载实体数据</p>';
+            return;
+        }
+
+        let attributesHtml = '';
+        if (entity.attributes && Object.keys(entity.attributes).length > 0) {
+            for (const [key, value] of Object.entries(entity.attributes)) {
+                attributesHtml += `
+                    <div class="attribute">
+                        <span class="label">${key}</span>
+                        <span class="value">${value}</span>
+                    </div>
+                `;
+            }
+        } else {
+            attributesHtml = '<div style="text-align:center; color:#94a3b8;">无属性数据</div>';
+        }
+
+        let inventoryHtml = '';
+        if (entity.inventory && entity.inventory.length > 0) {
+            inventoryHtml = `<div class="badge-list">${entity.inventory.map(item => `<span class="badge">📦 ${escapeHtml(item)}</span>`).join('')}</div>`;
+        } else {
+            inventoryHtml = '<span style="color:#94a3b8;">空</span>';
+        }
+
+        let foreshadowingHtml = '';
+        if (entity.foreshadowing && entity.foreshadowing.length > 0) {
+            foreshadowingHtml = `<div class="badge-list">${entity.foreshadowing.map(f => `<span class="badge foreshadow">🔮 ${escapeHtml(f)}</span>`).join('')}</div>`;
+        } else {
+            foreshadowingHtml = '<span style="color:#94a3b8;">无</span>';
+        }
+
+        let relationshipHtml = '';
+        if (entity.type === 'npc' && entity.relationship !== undefined) {
+            relationshipHtml = `<p><strong>💝 关系值:</strong> ${entity.relationship}</p>`;
+        }
+
+        entityCard.innerHTML = `
+            <h3>${entity.type === 'player' ? '👤' : '👥'} ${escapeHtml(entity.name)}</h3>
+            <div class="entity-details">
+                <p><strong>📍 位置:</strong> ${escapeHtml(entity.location)}</p>
+                ${relationshipHtml}
+                <p><strong>🎒 背包:</strong> ${inventoryHtml}</p>
+                <p><strong>🔮 伏笔:</strong> ${foreshadowingHtml}</p>
+                <p><strong>📜 剧情进度:</strong> 第 ${entity.turnNumber || 0} 轮</p>
+            </div>
+            <div class="entity-attributes">
+                ${attributesHtml}
+            </div>
+        `;
+    }
+
+    // --- 重置游戏 ---
+    async function resetGame() {
+        if (!confirm('确定要重置游戏吗？所有进度将丢失！')) return;
+        try {
+            await fetch(`/v1/game/reset/${currentSessionId}`, { method: 'POST' });
+            currentSessionId = 'game_' + Date.now() + '_' + Math.random().toString(36).substr(2, 8);
+            localStorage.setItem('gameSessionId', currentSessionId);
+
+            document.getElementById('narrativeText').innerHTML = '欢迎来到 LLMWIC_Role_playing！<br><br>开始你的行动，你的冒险故事从此出发...';
+            document.getElementById('optionsArea').style.display = 'none';
+
+            appendSystemMessage('🎮 游戏已重置，开始新的冒险吧！');
+            loadGameState();
+        } catch (error) {
+            console.error('重置失败', error);
+        }
+    }
+
+    // --- 存档/读档功能 ---
+    function openSaveModal() {
+        document.getElementById('saveName').value = `存档_${new Date().toLocaleString()}`;
+        document.getElementById('saveModal').style.display = 'block';
+    }
+
+    function openLoadModal() {
+        document.getElementById('loadModal').style.display = 'block';
+        loadRecoveryPoints();
+    }
+
+    async function saveRecoveryPoint() {
+        const name = document.getElementById('saveName').value;
+        const desc = document.getElementById('saveDescription').value;
+
+        if (!name) {
+            alert('请输入存档名称');
+            return;
+        }
+
+        try {
+            const response = await fetch('/v1/game/recovery-point', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ sessionId: currentSessionId, pointName: name, description: desc })
+            });
+            const result = await response.json();
+            alert(result.message);
+            document.getElementById('saveModal').style.display = 'none';
+            document.getElementById('saveDescription').value = '';
+        } catch (error) {
+            console.error('保存失败', error);
+            alert('保存失败: ' + error.message);
+        }
+    }
+
+    async function loadRecoveryPoints() {
+        const listEl = document.getElementById('recoveryList');
+        listEl.innerHTML = '<p style="text-align:center; padding:20px;"><span class="loading"></span> 正在加载存档...</p>';
+
+        try {
+            const response = await fetch(`/v1/game/recovery-points/${currentSessionId}`);
+            const data = await response.json();
+
+            if (data.status === 'ok' && data.points && data.points.length > 0) {
+                const ul = document.createElement('ul');
+                data.points.forEach(p => {
+                    const li = document.createElement('li');
+                    if (p.isAuto) li.classList.add('auto-save');
+                    li.innerHTML = `
+                        <strong>${escapeHtml(p.pointName)}</strong><br>
+                        <small>📖 回合: ${p.turnNumber} | 📅 ${new Date(p.createdAt).toLocaleString()}</small>
+                        ${p.description ? `<br><span style="color:#64748b;">📝 ${escapeHtml(p.description)}</span>` : ''}
+                    `;
+                    li.onclick = () => restoreToPoint(p.id);
+                    ul.appendChild(li);
+                });
+                listEl.innerHTML = '';
+                listEl.appendChild(ul);
+            } else {
+                listEl.innerHTML = '<div class="empty-state">📭 暂无存档记录<br><small>点击"保存进度"创建第一个存档</small></div>';
+            }
+        } catch (error) {
+            console.error('加载存档列表失败', error);
+            listEl.innerHTML = '<div class="empty-state">❌ 加载失败，请重试</div>';
+        }
+    }
+
+    async function restoreToPoint(id) {
+        if (!confirm('⚠️ 确定要加载此存档吗？\n当前未保存的进度将会丢失！')) return;
+
+        try {
+            const response = await fetch(`/v1/game/restore/${id}`, { method: 'POST' });
+            const result = await response.json();
+            alert(result.message);
+            if (result.status === 'ok') {
+                document.getElementById('loadModal').style.display = 'none';
+                location.reload();
+            }
+        } catch (error) {
+            console.error('恢复失败', error);
+            alert('恢复失败: ' + error.message);
+        }
+    }
+
+    // --- 工具函数 ---
+    function escapeHtml(text) {
+        if (!text) return '';
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+</script>
+</body>
+</html>

@@ -67,6 +67,12 @@
             <version>1.1.14</version> <!-- 或者你当前使用的版本 -->
             <scope>runtime</scope>
         </dependency>
+        <!-- Reactor 核心依赖，用于流式响应 -->
+        <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-core</artifactId>
+            <version>3.5.11</version>
+        </dependency>
     </dependencies>
 
     <build>
